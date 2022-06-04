@@ -35,17 +35,17 @@ LANGSTR					Traditional_Chinese
 
 STRTABLE_ID				SE_VPN_20121007
 
-CM_JAPANESE_ONLY_OLD_STARTUP	%s\\Unite Gaming Game Client 2.0 タスクトレイ.lnk
+CM_JAPANESE_ONLY_OLD_STARTUP	%s\\GAMING LAUNCHER Client 2.0 タスクトレイ.lnk
 
 
 # 軟體資訊
-PRODUCT_NAME_VPN_CLI	Unite Gaming Game Client 
+PRODUCT_NAME_VPN_CLI	GAMING LAUNCHER Client
 PRODUCT_NAME_VPN_CMGR	Unite Gaming Game  Client 管理器
-PRODUCT_NAME_VPN_SVR	Unite Gaming Game Server 
-PRODUCT_NAME_VPN_BRIDGE	Unite Gaming Game Bridge 
+PRODUCT_NAME_VPN_SVR	GAMING LAUNCHER Server
+PRODUCT_NAME_VPN_BRIDGE	GAMING LAUNCHER Bridge
 PRODUCT_NAME_VPN_SMGR	Unite Gaming Game  Server 管理器
-PRODUCT_NAME_ELOGSVC	Unite Gaming EtherLogger 
-PRODUCT_NAME_ELOGMGR	Unite Gaming EtherLogger 
+PRODUCT_NAME_ELOGSVC	GAMING LAUNCHER EtherLogger
+PRODUCT_NAME_ELOGMGR	GAMING LAUNCHER EtherLogger
 
 # 軟體更新檢查用的 Family Name
 PRODUCT_FAMILY_NAME		Unite GamingDev
@@ -188,7 +188,7 @@ ERR_118					許可證金鑰不正確
 ERR_119					Game Server 上沒有註冊有效的產品許可證。請與 Game Server 管理員聯繫。
 ERR_120					Game Server 作為群集運行所需要的許可證未註冊。請與 Game Server 的管理員。
 ERR_121					Game 連接設置已使用“Web 安裝程式創建工具包”或“簡單安裝程式創建工具包”安裝。目標伺服器版本不支援支援 Unite Gaming Game 的 2.0 管理包。請與系統管理員或安裝程式創建者聯繫。
-ERR_122					與 Game Server SDK for .NET，它只能連接到 Unite Gaming Game Server 版本，支援 Unite Gaming Game 的 2.0 管理包。 Game Server 的目標不是一個版本，支援 Unite Gaming Game 的 2.0 管理包。與系統管理員聯繫。
+ERR_122					與 Game Server SDK for .NET，它只能連接到 GAMING LAUNCHER Server 版本，支援 Unite Gaming Game 的 2.0 管理包。 Game Server 的目標不是一個版本，支援 Unite Gaming Game 的 2.0 管理包。與系統管理員聯繫。
 ERR_123					試用版軟體在目標伺服器上已過期。聯繫伺服器的系統管理員以下載新的測試版或從 http://www.softether.com/ 下載完整版本。
 
 # ----- 不完全翻訳ここから -----
@@ -785,18 +785,18 @@ REMOTE_DEF_TITLE		指定你要進行遠端連接的電腦。
 
 
 # 關於客戶通知服務
-CN_TITLE				Unite Gaming Game Client 
+CN_TITLE				GAMING LAUNCHER Client 
 
 
 # 關於連線管理員
-CM_TITLE				Unite Gaming Game Client  管理器
+CM_TITLE				GAMING LAUNCHER Client  管理器
 CM_PW_LOCALMACHINE		我的電腦
 CM_NO_REMOTE			Game Client 服務運行在 %s 上，不允許遠端連接。
 CM_CONNECT_FAILED		無法連接到 %s 上的 Game Client 服務。\r\n確認 Game 服務已開啟並正常運行。
 CM_BAD_PASSWORD			密碼錯誤。請重新輸入密碼。密碼大小寫敏感。
 CM_NUM_CONN_COUNT		Game 連接中: %u 帳戶
 CM_CONN_NO				未連接
-CM_PRODUCT_NAME			Unite Gaming Game Client Build %u
+CM_PRODUCT_NAME			GAMING LAUNCHER Client Build %u
 CM_ACCOUNT_COLUMN_1		Game 連接設置名稱
 CM_ACCOUNT_COLUMN_2		狀態
 CM_ACCOUNT_COLUMN_3		Game Server 主機名稱(地址)
@@ -1014,7 +1014,7 @@ CM_TRAY_ICON_RESTORE	工具列圖示已被清除。\r\n\r\n要恢復該圖示，
 CM_WOULDYOULOAD_IE_PROXY	目前，這台電腦的 Internet Explorer 配置使用代理伺服器"%S"。\r\n您想在新的 Game 連接設置中應用當前代理設置嗎？\r\n\r\n點擊“是”使用Internet Explorer 的代理設置。\r\n點擊“否”使用直接連接至 Game Server(不是代理伺服器)。\r\n此設置可以在連接設置的屬性視窗、在今後的任何時間進行修改。
 CM_MSG_TITLE			Game Server "%S" (虛擬 HUB: "%S")
 CM_JUMPLIST_RCCONNECT	最近使用的連接設置
-CM_VPNGATE_MESSAGE		在 Game Gate 學術項目網站上有一個公共 Game 中繼伺服器列表。\r\n網際網路上的任何人都可以建立 Game 連接至任一列表上的 Game 伺服器。無需用戶註冊。\r\n\r\nVPN Gate 不是 Unite Gaming Game 的一部分。\r\n此圖示只提供了一個超連結到 http://www.vpngate.net/。\r\n\r\n安裝帶有 Unite Gaming Game Client 的 Game Gate Client 外掛程式。它可用簡單的配置連接到 Game Gate 的一個公共 Game 中繼伺服器。\r\n\r\n你想訪問 http://www.vpngate.net/ (設在日本筑波大學) ?
+CM_VPNGATE_MESSAGE		在 Game Gate 學術項目網站上有一個公共 Game 中繼伺服器列表。\r\n網際網路上的任何人都可以建立 Game 連接至任一列表上的 Game 伺服器。無需用戶註冊。\r\n\r\nVPN Gate 不是 Unite Gaming Game 的一部分。\r\n此圖示只提供了一個超連結到 http://www.vpngate.net/。\r\n\r\n安裝帶有 GAMING LAUNCHER Client 的 Game Gate Client 外掛程式。它可用簡單的配置連接到 Game Gate 的一個公共 Game 中繼伺服器。\r\n\r\n你想訪問 http://www.vpngate.net/ (設在日本筑波大學) ?
 CM_VLAN_REINSTALL_MSG	After reinstalling the Virtual Network Adapter driver, the current Virtual Network Adapter's MAC address will change. Also, all TCP/IP settings within the Virtual Network Adapter will reset.\r\n\r\nIn case the reinstalled Virtual Network Adapter fails to work, delete it and create a new one. If it still doesn't work properly, please create a new Virtual Network Adapter with a different name.
 
 
@@ -1059,7 +1059,7 @@ VGC_TITLE				Game Gate 外掛程式消息
 
 VGC_VER_DIFF			Game Gate 用戶端外掛程式的版本與 Unite Gaming Game 用戶端相異。\r\n\r\n- 當前的 Game Gate 外掛程式: Build %u\r\n- 當前的 Unite Gaming Game 用戶端: Build %u\r\n\r\n推薦下載並安裝 Game Gate 外掛程式 Build %u，否則可能出現通信錯誤或清單更新出錯。VPN 伺服器列表更新失敗多次，請更新 Game Gate 外掛程式版本。\r\n\r\n最新的 Game Gate 外掛程式可用於 http://www.vpngate.net/。\r\n(如果您無法直接訪問上述網站，請使用鏡像網站。)\r\n\r\n)\r\n\r\n
 
-VGS_STOP				Game Gate 服務將在您點擊 確定 按鈕後停止。\r\n\r\n在 Game Gate 服務被停止後，這台電腦將不會接受新的 Game 連接請求，但是，仍然活躍的 Game 會話可能會殘留。\r\n (這類 Game 會話有時在枚舉中不可見。) \r\n\r\n要想徹底終止所有仍然活躍的 Game 會話，重啟 Unite Gaming Game Server 或者 Unite Gaming Game Client 服務，或者重新開機這台電腦。
+VGS_STOP				Game Gate 服務將在您點擊 確定 按鈕後停止。\r\n\r\n在 Game Gate 服務被停止後，這台電腦將不會接受新的 Game 連接請求，但是，仍然活躍的 Game 會話可能會殘留。\r\n (這類 Game 會話有時在枚舉中不可見。) \r\n\r\n要想徹底終止所有仍然活躍的 Game 會話，重啟 GAMING LAUNCHER Server 或者 GAMING LAUNCHER Client 服務，或者重新開機這台電腦。
 
 VGS_START				This will activate the Game Gate Relay Service function.\r\n\r\nVPN Gate Relay Service function must be activated by your own risk.\r\nSome countries prohibit using of encrypted Game by laws.\r\nFor more details about Game Gate Relay Service please visit http://www.vpngate.net/en/join.aspx.\r\n\r\nThe Game Gate Academic Experiment Service is operated as a research project at the graduate school on University of Tsukuba, Japan. The service is governed under the Japanese laws. Other countries' laws are none of our concerns nor responsibilities.\r\n\r\nBy nature, there are almost 200 countries in the World, with different laws. It is impossible to verify every countries' laws and regulations and make the software comply with all countries' laws in advance to release the software. If a user uses Game Gate service in a specific country, and damaged by public servants of the authority, the developer of either the service or software will never be liable to recover or compensate such damages or criminal responsibilities.\r\nBy using this software and service, the user must observe all concerned laws and rules with user's own responsibility. The user will be completely liable to any damages and responsibilities which are results of using this software and service, regardless of either inside or outside of Japan's territory.\r\nIf you don't agree nor understand the above warnings, do not use any of Game Gate Academic Experiment Service functions.
 
@@ -1105,55 +1105,55 @@ UNIX_SVC_ERROR_FORK		Failed to create child process for the %S service.\n
 UNIX_SVC_NONROOT		\nWarning: The current user context is non-root. It is recommended to run the Game service by the root user. Although the Game service may run under non-root users, some privilege-required functions (e.g. the local bridge function) need the root privilege.\n
 
 
-# 服務定義 (Unite Gaming Game Client)
+# 服務定義 (GAMING LAUNCHER Client)
 SVC_VPNCLIENT_NAME		vpnclient
-SVC_VPNCLIENT_TITLE		Unite Gaming Game Client
-SVC_VPNCLIENT_DESCRIPT	它為 Unite Gaming Game Client 管理虛擬網路介面卡設備驅動和連接服務。當服務停止時，此電腦將無法使用 Unite Gaming Game Client 連接到 Unite Gaming Game Server。
+SVC_VPNCLIENT_TITLE		GAMING LAUNCHER Client
+SVC_VPNCLIENT_DESCRIPT	它為 GAMING LAUNCHER Client 管理虛擬網路介面卡設備驅動和連接服務。當服務停止時，此電腦將無法使用 GAMING LAUNCHER Client 連接到 GAMING LAUNCHER Server。
 
 
-# 服務定義 (Unite Gaming Game Server)
+# 服務定義 (GAMING LAUNCHER Server)
 SVC_VPNSERVER_NAME		vpnserver
-SVC_VPNSERVER_TITLE		Unite Gaming Game Server
-SVC_VPNSERVER_DESCRIPT	它管理 Unite Gaming Game Server 服務進程。Unite Gaming Game Server 通過 TCP/IP 協議提供高性能 Unite Gaming Game Server 功能。當此服務被停止時，此電腦上的 Unite Gaming Game Client 也將停止，且 Unite Gaming Game Client 將無法與此電腦建立 Game 連接。
+SVC_VPNSERVER_TITLE		GAMING LAUNCHER Server
+SVC_VPNSERVER_DESCRIPT	它管理 GAMING LAUNCHER Server 服務進程。GAMING LAUNCHER Server 通過 TCP/IP 協議提供高性能 GAMING LAUNCHER Server 功能。當此服務被停止時，此電腦上的 GAMING LAUNCHER Client 也將停止，且 GAMING LAUNCHER Client 將無法與此電腦建立 Game 連接。
 
 
-# 服務定義 (Unite Gaming Game Bridge)
+# 服務定義 (GAMING LAUNCHER Bridge)
 SVC_VPNBRIDGE_NAME		vpnbridge
-SVC_VPNBRIDGE_TITLE		Unite Gaming Game Bridge
-SVC_VPNBRIDGE_DESCRIPT	它管理 Unite Gaming Game Bridge 服務進程。Unite Gaming Game Bridge 提供此電腦連接的網路與遠端 Unite Gaming Game Server 之間的連接。當此服務被停止時，此電腦上的 Unite Gaming Game Bridge 也將停止，且無法再通過橋接器連接進行通信。
+SVC_VPNBRIDGE_TITLE		GAMING LAUNCHER Bridge
+SVC_VPNBRIDGE_DESCRIPT	它管理 GAMING LAUNCHER Bridge 服務進程。GAMING LAUNCHER Bridge 提供此電腦連接的網路與遠端 GAMING LAUNCHER Server 之間的連接。當此服務被停止時，此電腦上的 GAMING LAUNCHER Bridge 也將停止，且無法再通過橋接器連接進行通信。
 
 
-# 服務定義 (Unite Gaming Game Client)
+# 服務定義 (GAMING LAUNCHER Client)
 SVC_SEVPNCLIENTDEV_NAME		sevpnclientdev
-SVC_SEVPNCLIENTDEV_TITLE		Unite Gaming Game Client 
-SVC_SEVPNCLIENTDEV_DESCRIPT	它為 Unite Gaming Game Client 管理虛擬網路介面卡設備驅動和連接服務。當服務停止時，此電腦將無法使用 Unite Gaming Game Client 連接到 Unite Gaming Game Server。
+SVC_SEVPNCLIENTDEV_TITLE		GAMING LAUNCHER Client 
+SVC_SEVPNCLIENTDEV_DESCRIPT	它為 GAMING LAUNCHER Client 管理虛擬網路介面卡設備驅動和連接服務。當服務停止時，此電腦將無法使用 GAMING LAUNCHER Client 連接到 GAMING LAUNCHER Server。
 
 
-# 服務定義 (Unite Gaming Game Server)
+# 服務定義 (GAMING LAUNCHER Server)
 SVC_SEVPNSERVERDEV_NAME		sevpnserverdev
-SVC_SEVPNSERVERDEV_TITLE		Unite Gaming Game Server 
-SVC_SEVPNSERVERDEV_DESCRIPT	它管理 Unite Gaming Game Server 服務進程。Unite Gaming Game Server 通過 TCP/IP 協議提供高性能 Unite Gaming Game Server 功能。當此服務被停止時，此電腦上的 Unite Gaming Game Client 也將停止，且 Unite Gaming Game Client 將無法與此電腦建立 Game 連接。
+SVC_SEVPNSERVERDEV_TITLE		GAMING LAUNCHER Server 
+SVC_SEVPNSERVERDEV_DESCRIPT	它管理 GAMING LAUNCHER Server 服務進程。GAMING LAUNCHER Server 通過 TCP/IP 協議提供高性能 GAMING LAUNCHER Server 功能。當此服務被停止時，此電腦上的 GAMING LAUNCHER Client 也將停止，且 GAMING LAUNCHER Client 將無法與此電腦建立 Game 連接。
 
 
-# 服務定義 (Unite Gaming Game Bridge)
+# 服務定義 (GAMING LAUNCHER Bridge)
 SVC_SEVPNBRIDGEDEV_NAME		sevpnbridgedev
-SVC_SEVPNBRIDGEDEV_TITLE		Unite Gaming Game Bridge 
-SVC_SEVPNBRIDGEDEV_DESCRIPT	它管理 Unite Gaming Game Bridge 服務進程。Unite Gaming Game Bridge 提供此電腦連接的網路與遠端 Unite Gaming Game Server 之間的連接。當此服務被停止時，此電腦上的 Unite Gaming Game Bridge 也將停止，且無法再通過橋接器連接進行通信。
+SVC_SEVPNBRIDGEDEV_TITLE		GAMING LAUNCHER Bridge 
+SVC_SEVPNBRIDGEDEV_DESCRIPT	它管理 GAMING LAUNCHER Bridge 服務進程。GAMING LAUNCHER Bridge 提供此電腦連接的網路與遠端 GAMING LAUNCHER Server 之間的連接。當此服務被停止時，此電腦上的 GAMING LAUNCHER Bridge 也將停止，且無法再通過橋接器連接進行通信。
 
 
 # 服務定義 (Unite Gaming Game User-mode Router)
 SVC_VPNROUTER_NAME		vpnrouter
 SVC_VPNROUTER_TITLE		Unite Gaming Game Router 
-SVC_VPNROUTER_DESCRIPT	這是用來管理 Unite Gaming Game 路由器(服務模式)的伺服器進程。 Unite Gaming Game 的路由器是一個程式，它提供了一個虛擬 NAT 和 DHCP 伺服器，在使用者模式下運行，通過使用簡單的操作，它可以建立一個在虛擬 IP 網路和一個物理 IP 網路之間的安全連接。如果此服務被停止，在這台電腦上的 Unite Gaming Game 路由器將停止， Unite Gaming Game Client 將無法在這台電腦上使用路由服務。
+SVC_VPNROUTER_DESCRIPT	這是用來管理 Unite Gaming Game 路由器(服務模式)的伺服器進程。 Unite Gaming Game 的路由器是一個程式，它提供了一個虛擬 NAT 和 DHCP 伺服器，在使用者模式下運行，通過使用簡單的操作，它可以建立一個在虛擬 IP 網路和一個物理 IP 網路之間的安全連接。如果此服務被停止，在這台電腦上的 Unite Gaming Game 路由器將停止， GAMING LAUNCHER Client 將無法在這台電腦上使用路由服務。
 
 
 # サービス定義 (EtherLogger)
 SVC_ELOGSVC_NAME		elogsvc
-SVC_ELOGSVC_TITLE		Unite Gaming EtherLogger 
-SVC_ELOGSVC_DESCRIPT	Unite Gaming EtherLogger 是一個捕捉從局域網卡連接到電腦上資料流程的服務，保存由管理員指定類型的封包的包頭日誌，所有資料以文字檔格式。
+SVC_ELOGSVC_TITLE		GAMING LAUNCHER EtherLogger 
+SVC_ELOGSVC_DESCRIPT	GAMING LAUNCHER EtherLogger 是一個捕捉從局域網卡連接到電腦上資料流程的服務，保存由管理員指定類型的封包的包頭日誌，所有資料以文字檔格式。
 
 
-#關於 Unite Gaming Game Server 管理器
+#關於 GAMING LAUNCHER Server 管理器
 SM_TITLE				Unite Gaming Game  Server 管理器
 SM_LOCALHOST			本地主機 (此伺服器)
 SM_SERVER_BRIDGE_TITLE	管理 Game Bridge "%S"
@@ -1517,11 +1517,11 @@ SM_SNAT_IS_KERNEL		核心模式 NAT 功能運作中
 SM_SNAT_IS_RAW			Raw IP 模式 NAT 功能運作中
 SM_BRIDGE_TOO_OLD_VER	當前連接的 Game Server 版本不支援本地橋接器功能。\r\n請更新到最新版本。
 SM_BRIDGE_UNSUPPORTED	當前連接的 Game Server 運行的作業系統無法使用本地橋接器功能。請參閱 Game Server 線上文檔以獲得支援本地橋接器功能的作業系統清單。
-SM_BRIDGE_WPCAP_REMOTE	為在此 Game Server 上使用本地橋接器功能，您必須安裝 WinPcap 軟體。WinPcap 軟體當前沒有在伺服器上安裝。\r\n\r\n要進行 WinPcap 軟體的安裝，您必須在運行 Game Server 的伺服器上啟動 Unite Gaming Game Server 管理器，然後連接到本機 (您自己電腦的位置)，打開本地橋接器功能設置視窗。\r\n首先退出此管理會話，然後在此伺服器上啟動 Unite Gaming Game Server 管理器之後，連接到本機並繼續設置進程。
-SM_BRIDGE_WPCAP_ROOT	為在此 Game Server 上使用本地橋接器功能，您必須安裝 WinPcap 軟體。\r\n\r\n若要繼續安裝，您必須以管理員身份登入到此電腦上。\r\n以管理員身份登入，然後再次啟動 Unite Gaming Game Server 管理器。
+SM_BRIDGE_WPCAP_REMOTE	為在此 Game Server 上使用本地橋接器功能，您必須安裝 WinPcap 軟體。WinPcap 軟體當前沒有在伺服器上安裝。\r\n\r\n要進行 WinPcap 軟體的安裝，您必須在運行 Game Server 的伺服器上啟動 GAMING LAUNCHER Server 管理器，然後連接到本機 (您自己電腦的位置)，打開本地橋接器功能設置視窗。\r\n首先退出此管理會話，然後在此伺服器上啟動 GAMING LAUNCHER Server 管理器之後，連接到本機並繼續設置進程。
+SM_BRIDGE_WPCAP_ROOT	為在此 Game Server 上使用本地橋接器功能，您必須安裝 WinPcap 軟體。\r\n\r\n若要繼續安裝，您必須以管理員身份登入到此電腦上。\r\n以管理員身份登入，然後再次啟動 GAMING LAUNCHER Server 管理器。
 SM_BRIDGE_WPCAP_INSTALL	為在此 Game Server 上使用本地橋接器功能，您必須安裝 WinPcap 軟體。WinPcap 軟體當前沒有在伺服器上安裝。\r\n\r\nWinPcap 是一個與 Game Server 捆綁在一起的免費軟體。\r\n\r\n請問您是否開始安裝 WinPcap ?
 SM_BRIDGE_WPCAP_REBOOT1	WinPcap 安裝完成後，您在使用本地橋接器功能之前必須重新開機電腦。\r\n\r\n在您手動重啟電腦並啟動 Game Server 後，配置本地橋接器功能的設置。
-SM_BRIDGE_WPCAP_REBOOT2	WinPcap 安裝完成後，您在使用本地橋接器功能之前必須重新開機電腦。\r\n\r\n重新啟動 Unite Gaming Game Server 會花費一點時間，但所有當前正連接到 Game Server 的會話將被切斷\r\n此管理會話也將被切斷，所以您將需要重新連接。\r\n\r\n您是否要重啟 Unite Gaming Game Server 服務?
+SM_BRIDGE_WPCAP_REBOOT2	WinPcap 安裝完成後，您在使用本地橋接器功能之前必須重新開機電腦。\r\n\r\n重新啟動 GAMING LAUNCHER Server 會花費一點時間，但所有當前正連接到 Game Server 的會話將被切斷\r\n此管理會話也將被切斷，所以您將需要重新連接。\r\n\r\n您是否要重啟 GAMING LAUNCHER Server 服務?
 SM_BRIDGE_RESOURCE		無法載入 WinPcap 的驅動程式。
 SM_BRIDGE_COLUMN_1		編號
 SM_BRIDGE_COLUMN_2		虛擬 HUB 名稱
@@ -1628,7 +1628,7 @@ SM_SETUP_BRIDGE_ONLY	您當前連接到 Game Bridge ，您只能為“多點 Gam
 SM_SETUP_BRIDGE_EDGE	每個網站的 Game Bridge(&E)
 SM_SETUP_WARNING		當前 Game Server 或 Game Bridge 的設置將被初始化。\r\n您是否確定?
 SM_SETUP_SELECT			選擇乙太網設備建立橋接
-SM_SETUP_NO_LICENSE_KEY	目前此 Unite Gaming Game Server 上沒有註冊任何一個許可證。\r\n\r\n如果要作為 Game Server 運行 Unite Gaming Game Server，您必須輸入一個許可證金鑰。\r\n您是否要打開授權管理器視窗? ?\r\n\r\n(作為試用版使用 Game Server ，您必須從 Unite Gaming Game Project 的網站獲取試用金鑰。\r\n點擊“是”並點擊獲取或延長許可證按鈕獲取一個試用金鑰。
+SM_SETUP_NO_LICENSE_KEY	目前此 GAMING LAUNCHER Server 上沒有註冊任何一個許可證。\r\n\r\n如果要作為 Game Server 運行 GAMING LAUNCHER Server，您必須輸入一個許可證金鑰。\r\n您是否要打開授權管理器視窗? ?\r\n\r\n(作為試用版使用 Game Server ，您必須從 Unite Gaming Game Project 的網站獲取試用金鑰。\r\n點擊“是”並點擊獲取或延長許可證按鈕獲取一個試用金鑰。
 
 # ----- 不完全翻訳ここから -----
 SM_HUBEXT_OPTION_TITLE	虛擬 HUB 擴展選項
@@ -1683,7 +1683,7 @@ SM_FACTORY_DEFAULT_WARNING	這將在 Game Server / Bridge 上執行出廠復位�
 SM_FACTORY_DEFAULT_PERFORMED	在伺服器上正在執行出廠回復操作。\r\n\r\n按“確定”退出當前 Game Server 管理器的會話“。\r\n退出後，請重新啟動 Game Server 管理器並再次連接到 Game Server。\r\n然後你會看到 Game Server 復位。
 SM_AZURE_STATUS_CONNECTED	狀態: 已連接
 SM_AZURE_STATUS_NOT_CONNECTED	狀態: 沒有連接
-SM_NO_BRIDGE_NICS		無物理網路介面卡、適合本地橋在 Game 伺服器電腦上被發現。\r\n為了創建一個本地橋，你必須在電腦上至少安裝一個物理網路介面卡。\r\n您不能為本地橋使用 Wi-Fi 適配器或 3G 適配器。\r\n請安裝一個相容有線乙太網的物理網路介面卡。\r\n\r\n如果最近安裝的網路介面卡沒有出現，重新開機電腦。\r\n\r\n如果本地橋無論如何不能使用，你可以使用“SecureNAT 功能”代替。\r\n\r\n如果你有一定的原因使用不同尋常的網路介面卡（即 Wi-Fi 網路連接適配器，3G 適配器或虛擬適配器），設置“ShowAllInterfaces”變數在“LocalBridgeList”指令為“true”，然後重啟VPN伺服器。然後，這些設備將出現在名單上。（僅限於進階 Windows 用戶）。\r\n\r\n若是在 Windows Update 後發生此狀況，請重新安裝 Unite Gaming Game Server 或是 Unite Gaming Game Bridge 。
+SM_NO_BRIDGE_NICS		無物理網路介面卡、適合本地橋在 Game 伺服器電腦上被發現。\r\n為了創建一個本地橋，你必須在電腦上至少安裝一個物理網路介面卡。\r\n您不能為本地橋使用 Wi-Fi 適配器或 3G 適配器。\r\n請安裝一個相容有線乙太網的物理網路介面卡。\r\n\r\n如果最近安裝的網路介面卡沒有出現，重新開機電腦。\r\n\r\n如果本地橋無論如何不能使用，你可以使用“SecureNAT 功能”代替。\r\n\r\n如果你有一定的原因使用不同尋常的網路介面卡（即 Wi-Fi 網路連接適配器，3G 適配器或虛擬適配器），設置“ShowAllInterfaces”變數在“LocalBridgeList”指令為“true”，然後重啟VPN伺服器。然後，這些設備將出現在名單上。（僅限於進階 Windows 用戶）。\r\n\r\n若是在 Windows Update 後發生此狀況，請重新安裝 GAMING LAUNCHER Server 或是 GAMING LAUNCHER Bridge 。
 SM_CERT_MESSAGE			The current SSL self-signed root certificate on this Game Server is in the old format.\r\n\r\nSome versions of OpenGame Connect for Android have a bug to misinterpret SSL certificates in the old format. It might cause the connection problem from OpenGame Connect for Android to this Game Server.\r\n\r\nIf you are planning to use OpenGame Connect for Android as a Game client, it is recommended to regenerate the SSL server certificate.\r\n\r\nDo you want to regenerate the server certificate now? 
 SM_CERT_MESSAGE_CLI		--- Caution ---\r\n\r\nThe current SSL self-signed root certificate on this Game Server is in the old format.\r\n\r\nSome versions of OpenGame Connect for Android have a bug to misinterpret SSL certificates in the old format. It might cause the connection problem from OpenGame Connect for Android to this Game Server.\r\n\r\nIf you are planning to use OpenGame Connect for Android as a Game client, it is recommended to regenerate the SSL server certificate.\r\n\r\nTo regenerate and update the server certificate, execute the "ServerCertRegenerate" command after updating the Game Server to the latest version.
 SM_CERT_NEED_ROOT		The specified SSL certificate is a sub-certificate which was issued by a CA (Certificate Authority).\r\n\r\nIf you are planning to support either Microsoft SSTP or OpenGame protocol on this Game server, you have to install the root certificate and all intermediate certificates (if exists) on this Game Server.\r\n\r\nTo install these certificates, copy the root certificate and all intermediate certificate files (in the X.509 format) into the "chain_certs" subdirectory on the directory which is Game Server has been installed on.\r\n\r\nIf you don't know how to obtain root and intermediate certificate files for your certificate authority (CA), please refer to the CA's web site or contact technical support staffs of the CA.
@@ -1752,10 +1752,10 @@ L_LINE					------------------------------------------------------
 
 # (服務端日誌)
 LS_START_UTF8			Log Messages are written with UTF-8 Encoding Format.
-LS_START_1				Unite Gaming Game Server 已啟動。
+LS_START_1				GAMING LAUNCHER Server 已啟動。
 LS_START_2				%S %S
 LS_START_3				%S
-LS_END_1				Unite Gaming Game Server 引擎已成功關閉。
+LS_END_1				GAMING LAUNCHER Server 引擎已成功關閉。
 LS_END_2				服務端引擎關閉進程已啟動。
 LS_STOP_ALL_LISTENER	將停止所有 TCP 監聽器。
 LS_STOP_ALL_LISTENER_2	已停止所有 TCP 監聽器。
@@ -1797,7 +1797,7 @@ LS_HUB_NOT_FOUND		連接 "%S": 客戶端正在嘗試連接的虛擬 HUB "%S" 在
 LS_WG_KEY_NOT_FOUND		Connection "%S": The WireGuard key is not associated with a user on the server.
 LS_IP_DENIED			連接 "%S": 基於虛擬 HUB 上定義的源 IP 訪問限制列表，用戶端的源 IP 位址 "%S" 被拒絕。
 LS_LICENSE_ERROR		連接 "%S": 因為發生許可證相關錯誤，用戶端無法連接到服務端。
-LS_BETA_EXPIRES			Unite Gaming Game Server 測試版已過期。測試版使用期限已到。請從 http://selinks.org/ 下載新的測試版或完整版。
+LS_BETA_EXPIRES			GAMING LAUNCHER Server 測試版已過期。測試版使用期限已到。請從 http://selinks.org/ 下載新的測試版或完整版。
 LS_TICKET_1				新的用戶端鑒權票證已發佈為群集成員 "%S"。虛擬機器 HUB "%S"，用戶名 "%S" ("%S")，會話名 "%S"，票證 "%S"。
 LS_TICKET_2				新的用戶端鑒權票證已從群集控制器接收。虛擬機器 HUB "%S"，用戶名 "%S" ("%S")，會話名 "%S"，票證 "%S"，有效期限 %u 秒。
 LS_ENUM_HUB				連接 "%S": 此服務端上已枚舉 %u 個虛擬 HUB 伺服器。
@@ -2102,10 +2102,10 @@ LA_SET_SPECIAL_LISTENER	特殊監聽器啟用/禁用狀態已變更。
 
 
 # (用戶端日誌)
-LC_START_1				已啟動 Unite Gaming Game Client 引擎。
+LC_START_1				已啟動 GAMING LAUNCHER Client 引擎。
 LC_START_2				%S %S
 LC_START_3				%S
-LC_END					已關閉 Unite Gaming Game Client 引擎。
+LC_END					已關閉 GAMING LAUNCHER Client 引擎。
 LC_LOAD_CONFIG_1		載入設定檔。
 LC_LOAD_CONFIG_2		設定檔已已載入。
 LC_LOAD_CONFIG_3		設定檔不存在。使用初始設置。
@@ -2196,7 +2196,7 @@ EM_NO_LICENSE			因為甚至沒有一個產品許可證被註冊，此 Unite Gam
 
 EM_UNSUPPORTED	禁用在此作業系統上正在運行的 Unite Gaming 乙太網記錄器。對於 Unite Gaming 乙太網記錄器可以使用的清單，請參閱 Unite Gaming 乙太網記錄器的線上文檔。
 EM_WPCAP_REMOTE	為了使用 Unite Gaming 乙太網記錄器，你需要安裝WinPcap軟體。WinPcap 軟體目前在伺服器電腦上沒有安裝。\r\n\r\n要繼續安裝 WinPcap 軟體，你必須開啟正在運行 Game Server 的那台伺服器電腦上的 Unite Gaming 乙太網記錄器管理器，然後再連接到本地主機(您自己的電腦的位置)，會顯示本地橋功能設置視窗。 \r\n要繼續，首先退出管理會話，然後，在伺服器電腦上啟動 Unite Gaming 乙太網記錄器管理器之後，連接到本地主機，並繼續設置過程。
-EM_WPCAP_ROOT	為了使用 Unite Gaming 乙太網記錄器，你需要安裝WinPcap軟體。 \r\n\r\n要繼續安裝，您必須具有管理員許可權作為使用者登入到這台電腦。\r\n作為管理員登入，重新啟動 Unite Gaming Game Server 管理器。
+EM_WPCAP_ROOT	為了使用 Unite Gaming 乙太網記錄器，你需要安裝WinPcap軟體。 \r\n\r\n要繼續安裝，您必須具有管理員許可權作為使用者登入到這台電腦。\r\n作為管理員登入，重新啟動 GAMING LAUNCHER Server 管理器。
 EM_WPCAP_INSTALL	為了使用 Unite Gaming 乙太網記錄器，你需要安裝WinPcap軟體。WinPcap 軟體目前在伺服器電腦上沒有安裝。 \r\n\r\nWinPcap 是一個易於安裝的免費軟體，與 Game Server 捆綁在一起。\r\n\r\n您要開始安裝 WinPcap 嗎？
 EM_WPCAP_REBOOT1	在 WinPcap 安裝完成後，在使用 Unite Gaming 乙太網記錄器前，你必須重新開機電腦。\r\n\r\n在您手動重新開機電腦和 Unite Gaming 乙太網記錄器後，重新配置設置。
 EM_WPCAP_REBOOT2	在 WinPcap 安裝後，你必須重新開機 Unite Gaming 乙太網記錄器服務。 \r\n\r\n它僅需要很短的時間重新開機 Unite Gaming 乙太網記錄器服務，但是所有當前連接到 Unite Gaming 乙太網記錄器的管理會話將被斷開。 \r\n此管理會話也將被斷開，因此您需要重新連接並繼續。\r\n\r\n您是要重新開機 Unite Gaming 乙太網記錄器服務嗎？
@@ -2463,7 +2463,7 @@ B_DELETE				刪除(&D)
 
 PREFIX					D_CM_PASSWORD
 CAPTION					設置密碼 - Game Client 管理器
-S_TITLE					您可以設置密碼來限制此 Unite Gaming Game Client 服務。\r\n設置密碼後，在下次使用 Game Client 連線管理員到 Unite Gaming Game Client 服務時，您將被被要求輸入密碼。
+S_TITLE					您可以設置密碼來限制此 GAMING LAUNCHER Client 服務。\r\n設置密碼後，在下次使用 Game Client 連線管理員到 GAMING LAUNCHER Client 服務時，您將被被要求輸入密碼。
 STATIC1					設置用戶端管理密碼:
 R_USE_PASSWORD			使用密碼(&U)
 R_REMOTE_ONLY			僅在遠端操作時需要密碼(&R)
@@ -2545,7 +2545,7 @@ S_STATIC				※注意: 如果認證類型是 RADIUS 或 NT 域認證，您不能
 
 PREFIX					D_SM_MAIN
 CAPTION					Unite Gaming Game  Server 管理器
-STATIC1					Unite Gaming Game Server 連接設置(&S):
+STATIC1					GAMING LAUNCHER Server 連接設置(&S):
 STATIC2					Game Server 或 Game Bridge 的連接設置被定義如下。按兩下該項以連接到服務端。\r\n要添加新連接，按一下“新設置”。
 B_NEW_SETTING			新設置(&N)
 B_EDIT_SETTING			編輯設置(&E)
@@ -2554,7 +2554,7 @@ IDOK					連接(&C)
 B_SECURE_MANAGER		智慧卡管理器(&S)...
 B_SELECT_SECURE			選擇智慧卡(&M)...
 B_ABOUT					版本資訊(&A)...
-IDCANCEL				退出 Unite Gaming Game Server 管理器(&X)
+IDCANCEL				退出 GAMING LAUNCHER Server 管理器(&X)
 B_CERT_TOOL				製作證書
 
 
@@ -2589,7 +2589,7 @@ IDCANCEL				取消
 
 
 PREFIX					D_SM_SERVER
-CAPTION					%s - Unite Gaming Game Server 管理器
+CAPTION					%s - GAMING LAUNCHER Server 管理器
 S_TITLE					管理 Game Server "%S"
 S_VHUB_BRIDGE			通過此 Game Server 託管的虛擬 HUB (&Z):
 IDOK					管理虛擬 HUB (&A)
@@ -3743,7 +3743,7 @@ IDCANCEL				關閉(&C)
 
 PREFIX					D_SM_LICENSE
 CAPTION					添加或刪除許可證
-STATIC1					使用 Unite Gaming Game Server 必須取得有效的許可證並註冊許可證金鑰。你可以註冊一個新的許可證金鑰，刪除已註冊的許可證金鑰並在此顯示當前許可證清單和 Game Server 的許可證模式。
+STATIC1					使用 GAMING LAUNCHER Server 必須取得有效的許可證並註冊許可證金鑰。你可以註冊一個新的許可證金鑰，刪除已註冊的許可證金鑰並在此顯示當前許可證清單和 Game Server 的許可證模式。
 S_BOLD					當前已註冊的許可證金鑰(&L):
 B_OBTAIN				獲取或延長許可證(&O)
 STATIC2					點擊“獲取或延長許可證”以訪問將提供有關如何獲取許可證說明的網站。
@@ -3751,13 +3751,13 @@ B_ADD					添加一個許可證金鑰(&A)
 B_DEL					刪除(&D)
 IDOK					許可證相關資訊(&I)
 STATIC3					選擇一個許可證，點擊“許可證相關資訊”來連接到 Unite Gaming 有限公司網站 (softether.com)，來查詢被選許可證的相關註冊資訊。
-S_BOLD2					當前許可和 Unite Gaming Game Server 模式(&M):
+S_BOLD2					當前許可和 GAMING LAUNCHER Server 模式(&M):
 IDCANCEL				退出(&X)
 
 
 PREFIX					D_SM_LICENSE_ADD
 CAPTION					添加許可證金鑰
-S_INFO					您可以註冊一個 Unite Gaming Game Server 產品許可證或連接許可證。
+S_INFO					您可以註冊一個 GAMING LAUNCHER Server 產品許可證或連接許可證。
 STATIC1					許可證金鑰長度為 36 字母數位字元和破折號組合 ( '-' )。他們是證明一個許可證所有權的關鍵代碼。\r\n\r\n當許可證證書與此軟體一起收到時，許可證金鑰印在此授權證書上。如果本軟體的許可證是網上購買的，許可證金鑰是由電子郵件或購買許可證的網站提供的。許可證金鑰也可以通過一些其他方法寫下來。如果你不知道的許可證金鑰寫在哪裡，問賣給你許可證的供應商。
 STATIC2					請準確輸入許可證金鑰(&I):
 STATIC3					分組輸入許可證金鑰，每組6位。您不需要輸入破折號。您也可以複製 && 粘貼許可證金鑰。
@@ -3767,23 +3767,23 @@ IDCANCEL				取消
 
 
 PREFIX					D_FREEINFO
-CAPTION					Unite Gaming Game Server 的免費版
-S_INFO_1				感謝您試用 Unite Gaming Game Server 免費版。
-S_INFO_2				Unite Gaming Game Server 運行在目標伺服器 "%S" 上是免費版供個人使用。\r\n當使用免費版時，您可以使用所有的 Unite Gaming Game Server 的功能，但使用者協定禁止以下的使用。
+CAPTION					GAMING LAUNCHER Server 的免費版
+S_INFO_1				感謝您試用 GAMING LAUNCHER Server 免費版。
+S_INFO_2				GAMING LAUNCHER Server 運行在目標伺服器 "%S" 上是免費版供個人使用。\r\n當使用免費版時，您可以使用所有的 GAMING LAUNCHER Server 的功能，但使用者協定禁止以下的使用。
 S_INFO_3				通過 Game Server 的商業目的旅行的通迅中使用。
-S_INFO_4				請注意，如果軟體基於上述禁止使用的情況下被使用，這樣就違反了 Unite Gaming Game Server 使用者協定。一旦你取得了 Unite Gaming Game Server 的定期產品許可證，上述限制即可解除。關於常規產品版本的詳細資訊，請訪問 www.softether.com。\r\n如果該伺服器在上述描述的情況下被使用，請通過我們的網站 www.softether.com 聯繫我們。請注意: 當連接到 Game Server 的免費版，此視窗將出現。當使用除免費版以外的其他們版本時，此視窗不出現。\n\n注意: 除了這個通知視窗，免費版軟體和產品版軟體之間沒有任何差別。
+S_INFO_4				請注意，如果軟體基於上述禁止使用的情況下被使用，這樣就違反了 GAMING LAUNCHER Server 使用者協定。一旦你取得了 GAMING LAUNCHER Server 的定期產品許可證，上述限制即可解除。關於常規產品版本的詳細資訊，請訪問 www.softether.com。\r\n如果該伺服器在上述描述的情況下被使用，請通過我們的網站 www.softether.com 聯繫我們。請注意: 當連接到 Game Server 的免費版，此視窗將出現。當使用除免費版以外的其他們版本時，此視窗不出現。\n\n注意: 除了這個通知視窗，免費版軟體和產品版軟體之間沒有任何差別。
 B_HIDE					下次隱藏此視窗(&H)
 IDCANCEL				確定(&O)
 
 
 PREFIX					D_CM_SETTING
-CAPTION					切換 Unite Gaming Game Client 工作模式
-STATIC1					您可以使用 Unite Gaming Game Client 的“標準模式”或“簡單模式”。要切換到另一種模式，勾選下面相應的核取方塊。
+CAPTION					切換 GAMING LAUNCHER Client 工作模式
+STATIC1					您可以使用 GAMING LAUNCHER Client 的“標準模式”或“簡單模式”。要切換到另一種模式，勾選下面相應的核取方塊。
 R_NORMAL				標準模式(&N)
 R_EASY					簡單模式(&E)
-STATIC2					當使用“標準模式”時，您可以進行 Unite Gaming Game Client 軟體提供的所有操作。我們建議一般使用者和系統管理員使用此模式。
+STATIC2					當使用“標準模式”時，您可以進行 GAMING LAUNCHER Client 軟體提供的所有操作。我們建議一般使用者和系統管理員使用此模式。
 STATIC3					“簡單模式”只允許最常用的操作，如連接到 Game Server。我們建議初級使用者使用這種模式。
-STATIC4					通過使用設置鎖，您可以通過使用一個在 Unite Gaming Game Client 註冊的連接設置連接到一個 Game Server ，但這樣做，您無法變更連接設置的參數、創建一個新的連接設置或者刪除一個連接設置。
+STATIC4					通過使用設置鎖，您可以通過使用一個在 GAMING LAUNCHER Client 註冊的連接設置連接到一個 Game Server ，但這樣做，您無法變更連接設置的參數、創建一個新的連接設置或者刪除一個連接設置。
 R_LOCK					啟用設置鎖(&L)
 S_PASSWORD1				您可以指定一個密碼。下次禁用設置鎖時將被要注輸入該密碼。
 S_PASSWORD2				密碼(&P):
@@ -3795,7 +3795,7 @@ B_VGS					Game 和門戶服務設置 (&G)...
 
 
 PREFIX					D_CM_EASY
-CAPTION					Unite Gaming Game Client 簡易管理器 ()
+CAPTION					GAMING LAUNCHER Client 簡易管理器 ()
 B_MODE					切換運行模式(&M)
 IDCANCEL				關閉(&C)
 B_STATUS				查看連接模式(&S)
@@ -3803,9 +3803,9 @@ B_VGC					Game Gate 學術專案
 
 
 PREFIX					D_SM_SETUP
-CAPTION					Unite Gaming Game Server / Bridge 簡單安裝 ()
-S_TITLE					Unite Gaming Game Server / Bridge 簡單安裝 ()
-IDC_STATIC_1			通過使用此安裝，您可以為以下使用和目的輕鬆地安裝 Unite Gaming Game Server 或 Game Bridge。退出安裝後，您可以使用 Game Server 管理器自由配置更進階的設置。
+CAPTION					GAMING LAUNCHER Server / Bridge 簡單安裝 ()
+S_TITLE					GAMING LAUNCHER Server / Bridge 簡單安裝 ()
+IDC_STATIC_1			通過使用此安裝，您可以為以下使用和目的輕鬆地安裝 GAMING LAUNCHER Server 或 Game Bridge。退出安裝後，您可以使用 Game Server 管理器自由配置更進階的設置。
 S_BOLD					選擇你要構建的 Game Server 類型。可以一起選擇多種類型。
 C_REMOTE				遠端存取 Game Server (&R)
 S_REMOTE_1				遠端存取 Game Server 允許 Game Client 電腦遠端存取現有的乙太網段，如公司局域網。\n\n連接到 Game Server 的任何 Game Client 都能訪問到網路，就像他們直接的、物理的連接到網路一樣。
@@ -4063,7 +4063,7 @@ S_TITLE					%s 移除精靈
 PREFIX					D_SW_EASY1
 CAPTION					D_SW_EASY1
 S_WELCOME				在一個企業裡為許多電腦安裝和設置 Game Client 是很辛苦的工作。
-S_TITLE					什麼是 Unite Gaming Game Client 簡單安裝程式?
+S_TITLE					什麼是 GAMING LAUNCHER Client 簡單安裝程式?
 S_WELCOME2				簡單安裝程式創建器是為公司管理員使用的一個工具。您可以通過使用簡單安裝程式創建器用嵌入的某個具體 Game 連接設置來創建一個 Game Client 安裝程式。個人用戶還可以開發此工具。
 S_WELCOME3				通過使用檔案伺服器或者 e-mail，可以將一個已創建的簡單安裝程式分發給公司的員工。如果使用者運行簡單安裝程式， Game Client 會被安裝、 Game 連接設置會被導入完成，並且 Game 連接也會自動啟動。
 
@@ -4084,9 +4084,9 @@ B_EASYMODE				安裝時將 Game Client 管理器設置成簡單模式(&E)
 
 PREFIX					D_SW_WEB1
 CAPTION					D_SW_WEB1
-S_WELCOME				您可以創建一個 Unite Gaming Game Client Web 安裝工具，並且將它上傳到公司的 Web 伺服器。用戶打開網頁就能自動安裝 Unite Gaming Game Client，您也可以設置自動輸入和快速啟動一個已內建的 Game 連接設置。
+S_WELCOME				您可以創建一個 GAMING LAUNCHER Client Web 安裝工具，並且將它上傳到公司的 Web 伺服器。用戶打開網頁就能自動安裝 GAMING LAUNCHER Client，您也可以設置自動輸入和快速啟動一個已內建的 Game 連接設置。
 S_TITLE					Unite Gaming Game Web 安裝工具是什麼？
-S_WELCOME2				已生成的 Web 安裝工具可以當做 HTML 檔放在內聯網 Web 伺服器上。如果一個公司員工連接到該 HTML 檔的 URL 上這個 Unite Gaming Game Client 安裝工具就會被執行。
+S_WELCOME2				已生成的 Web 安裝工具可以當做 HTML 檔放在內聯網 Web 伺服器上。如果一個公司員工連接到該 HTML 檔的 URL 上這個 GAMING LAUNCHER Client 安裝工具就會被執行。
 S_WELCOME3				使用 ActiveX 控制。支援在 Windows 2000 或更高版本上的 Internet Explorer 5.0 或更高版本的瀏覽器。不支援其他瀏覽器或更低級的作業系統(如 Windows 98) 。
 
 
@@ -6331,7 +6331,7 @@ CMD_AcDel_Prompt_ID			要刪除的規則的 ID:
 
 # LicenseAdd 命令
 CMD_LicenseAdd				註冊新的許可證金鑰
-CMD_LicenseAdd_Help			在 Unite Gaming Game Server 註冊新的許可證金鑰。\n要使用 Unite Gaming Game Server，需獲取有效的許可證，並註冊許可證金鑰。許可證金鑰是由 36 個字母數位字元和連字號 ( '-' ) 組成的，以證明許可證所有權的金鑰的代碼。\n一起獲得本軟體及許可證證書時，許可證金鑰會被印刷在許可證證書上。如果線上購買本軟體的許可證時，許可證金鑰會在購買時的網頁畫面或郵件中記載。此外，許可證金鑰還可能其他以方法被記載。如有不明，請諮詢許可證的銷售方。\n\n要獲取目前註冊的許可證清單，使用 LicenseList 指令。\n要顯示目前 Game Server 的許可證狀態，使用 LicenseStatus 指令。\n要運行此指令，需要 Game Server 的管理員許可權。\n該指令虛擬專用橋不能運行。
+CMD_LicenseAdd_Help			在 GAMING LAUNCHER Server 註冊新的許可證金鑰。\n要使用 GAMING LAUNCHER Server，需獲取有效的許可證，並註冊許可證金鑰。許可證金鑰是由 36 個字母數位字元和連字號 ( '-' ) 組成的，以證明許可證所有權的金鑰的代碼。\n一起獲得本軟體及許可證證書時，許可證金鑰會被印刷在許可證證書上。如果線上購買本軟體的許可證時，許可證金鑰會在購買時的網頁畫面或郵件中記載。此外，許可證金鑰還可能其他以方法被記載。如有不明，請諮詢許可證的銷售方。\n\n要獲取目前註冊的許可證清單，使用 LicenseList 指令。\n要顯示目前 Game Server 的許可證狀態，使用 LicenseStatus 指令。\n要運行此指令，需要 Game Server 的管理員許可權。\n該指令虛擬專用橋不能運行。
 CMD_LicenseAdd_Args			LicenseAdd [key]
 CMD_LicenseAdd_[key]		指定要註冊的許可證金鑰。36 位元字母數位，6 個一組以連字號分隔，進行指定。
 CMD_LicenseAdd_Prompt_Key	許可證金鑰: 
@@ -6339,7 +6339,7 @@ CMD_LicenseAdd_Prompt_Key	許可證金鑰:
 
 # LicenseDel 命令
 CMD_LicenseDel				刪除已註冊許可
-CMD_LicenseDel_Help			從 Unite Gaming Game Server 上目前註冊的許可證名單中刪除指定的許可證。\n\n要獲得目前註冊的許可證名單，使用 LicenseList 指令。\n要顯示目前的 Game Server 的許可證狀態，使用 LicenseStatus 指令。\n要運行此指令，需要 Game Server 管理員許可權。\n此指令，虛擬專用橋不能運行。
+CMD_LicenseDel_Help			從 GAMING LAUNCHER Server 上目前註冊的許可證名單中刪除指定的許可證。\n\n要獲得目前註冊的許可證名單，使用 LicenseList 指令。\n要顯示目前的 Game Server 的許可證狀態，使用 LicenseStatus 指令。\n要運行此指令，需要 Game Server 管理員許可權。\n此指令，虛擬專用橋不能運行。
 CMD_LicenseDel_Args			LicenseDel [id]
 CMD_LicenseDel_[id]			指定要刪除的的許可證的號碼。
 CMD_LicenseDel_Prompt_ID	刪除許可證號碼: 
@@ -6347,19 +6347,19 @@ CMD_LicenseDel_Prompt_ID	刪除許可證號碼:
 
 # LicenseList 命令
 CMD_LicenseList				獲得已註冊許可證的列表
-CMD_LicenseList_Help		在 Unite Gaming Game Server 上顯示目前註冊許可證的許可證金鑰，許可證類型，狀態，有效期限，許可證 ID，許可證類型 ID，伺服器 ID 和編號 ID 的列表。\n\n要顯示目前的 Game Server 的許可證狀態，使用 LicenseStatus 指令。\n要運行此指令，需要 Game Server 管理員許可權。\n此命令，虛擬專用橋不能運行。
+CMD_LicenseList_Help		在 GAMING LAUNCHER Server 上顯示目前註冊許可證的許可證金鑰，許可證類型，狀態，有效期限，許可證 ID，許可證類型 ID，伺服器 ID 和編號 ID 的列表。\n\n要顯示目前的 Game Server 的許可證狀態，使用 LicenseStatus 指令。\n要運行此指令，需要 Game Server 管理員許可權。\n此命令，虛擬專用橋不能運行。
 CMD_LicenseList_Args		LicenseList
 
 
 # LicenseStatus 命令
 CMD_LicenseStatus			獲取目前的 Game Server 狀態
-CMD_LicenseStatus_Help		獲取並顯示當前 Unite Gaming Game Server 的許可證狀態。 \n顯示 Unite Gaming Game Server 目前產品版本名稱，伺服器 ID，產品許可證的有效期限，及可以利用的用戶端連接許可證數和橋連接許可證數。\n\n要運行此指令，需要 Game Server 管理員許可權。\n此指令，虛擬專用橋不能運行。
+CMD_LicenseStatus_Help		獲取並顯示當前 GAMING LAUNCHER Server 的許可證狀態。 \n顯示 GAMING LAUNCHER Server 目前產品版本名稱，伺服器 ID，產品許可證的有效期限，及可以利用的用戶端連接許可證數和橋連接許可證數。\n\n要運行此指令，需要 Game Server 管理員許可權。\n此指令，虛擬專用橋不能運行。
 CMD_LicenseStatus_Args		LicenseStatus
 
 # Unite Gaming Game 4.0 添加的 命令
 # IPsecEnable 命令
 CMD_IPsecEnable						啟用或禁用 IPsec Game Server 功能
-CMD_IPsecEnable_Help				在 Unite Gaming Game Server 上啟用或禁用IPsec Game Server 功能。\n如果您禁用了此功能，VPN Server 上的虛擬 HUB 將會接受從 L2TP 相容的 PC，Mac OS X 和智慧手機的遠端 Game 連接，同時也會接受 EtherIP 網站到網站的 Game 連接。從智能手機上的 Game 連接，如iPhone、iPad 和 Android, 和從 Mac OS X 和 Windows 上的本地 Game Client 的連接也都會接受。\n\n要執行此命令，您必須具有 Game Server 管理員許可權。\n該命令在 Game Bridge 上不能運行。\n以集群成員運行的 Game Server 的虛擬 HUB 不能執行此命令。
+CMD_IPsecEnable_Help				在 GAMING LAUNCHER Server 上啟用或禁用IPsec Game Server 功能。\n如果您禁用了此功能，VPN Server 上的虛擬 HUB 將會接受從 L2TP 相容的 PC，Mac OS X 和智慧手機的遠端 Game 連接，同時也會接受 EtherIP 網站到網站的 Game 連接。從智能手機上的 Game 連接，如iPhone、iPad 和 Android, 和從 Mac OS X 和 Windows 上的本地 Game Client 的連接也都會接受。\n\n要執行此命令，您必須具有 Game Server 管理員許可權。\n該命令在 Game Bridge 上不能運行。\n以集群成員運行的 Game Server 的虛擬 HUB 不能執行此命令。
 CMD_IPsecEnable_Args				IPsecEnable [/L2TP:yes|no] [/L2TPRAW:yes|no] [/ETHERIP:yes|no] [/PSK:pre-shared-key] [/DEFAULTHUB:default_hub]
 CMD_IPsecEnable_L2TP				啟用或禁用 L2TP over IPsec 伺服器功能。要接受來自 iPhone, iPad, Android, Windows 或者 Mac OS X 的 Game 連接，請啟用本選項。
 CMD_IPsecEnable_L2TPRAW				啟用或禁用 L2TP 伺服器功能 (未加密的原始 L2TP).要接受特殊 Game 客服端，請啟用本選項。
@@ -6375,7 +6375,7 @@ CMD_IPsecEnable_Prompt_DEFAULTHUB	為避免在用戶名中遺漏 HUB，請默認
 
 # IPsecGet 命令
 CMD_IPsecGet					獲得當前IPsec Game Server 設置
-CMD_IPsecGet_Help				獲得並顯示在 Unite Gaming Game Server 上的當前 IPsec Game Server 設置。\n\n要執行此命令，您必須具有 Game Server 管理員許可權。\n該命令在 Game Bridge 上不能運行。\n以集群成員運行的 Game Server 的虛擬 HUB 不能執行此命令。
+CMD_IPsecGet_Help				獲得並顯示在 GAMING LAUNCHER Server 上的當前 IPsec Game Server 設置。\n\n要執行此命令，您必須具有 Game Server 管理員許可權。\n該命令在 Game Bridge 上不能運行。\n以集群成員運行的 Game Server 的虛擬 HUB 不能執行此命令。
 CMD_IPsecGet_Args				IPsecGet
 CMD_IPsecGet_PRINT_L2TP			L2TP over IPsec 伺服器功能已啟用
 CMD_IPsecGet_PRINT_L2TPRAW		原始 L2TP 伺服器功能已啟用
@@ -7193,7 +7193,7 @@ TTC_RES_BPS_TOTAL			總平均輸送量
 
 # Check 命令
 CMD_Check					檢測 Unite Gaming Game 是否能正常運行
-CMD_Check_Help				正在運行 vpncmd 的電腦上，正檢測 Unite Gaming Game Server / Bridge 的運行平臺是否適合。\n通過了這一檢查的系統，Unite Gaming Game 軟體有較高的可能性進行正常運行。此外，無法通過此檢查的系統，如果使用了 Unite Gaming Game 軟體可能會發生一些問題。
+CMD_Check_Help				正在運行 vpncmd 的電腦上，正檢測 GAMING LAUNCHER Server / Bridge 的運行平臺是否適合。\n通過了這一檢查的系統，Unite Gaming Game 軟體有較高的可能性進行正常運行。此外，無法通過此檢查的系統，如果使用了 Unite Gaming Game 軟體可能會發生一些問題。
 CMD_Check_Args				Check
 
 
@@ -7204,8 +7204,8 @@ CHECK_NOTE					如果運行了此運行環境檢測工具的系統通過了測�
 CHECK_EXEC_TAG				'%s' 的檢測中...\n
 CHECK_PASS					[合格] ○
 CHECK_FAIL					[不合格] ×
-CHECK_RESULT_1				全部檢測通過，說明 Unite Gaming Game Server / Bridge 在此系統上正常運行的可能性很高。
-CHECK_RESULT_2				一部分的檢測結果是不合格。請確認系統的運行環境。如果在這個系統上實行 Unite Gaming Game Server / Bridge，有發生問題的可能性。
+CHECK_RESULT_1				全部檢測通過，說明 GAMING LAUNCHER Server / Bridge 在此系統上正常運行的可能性很高。
+CHECK_RESULT_2				一部分的檢測結果是不合格。請確認系統的運行環境。如果在這個系統上實行 GAMING LAUNCHER Server / Bridge，有發生問題的可能性。
 CHECK_TEST_123456789		123456789
 
 
@@ -7228,19 +7228,19 @@ SW_EXIT_CONFIRM			Unite Gaming Game 的安裝未完成。\r\n\r\n您確定要退
 SW_UNINSTALL_CONFIRM	開啟%s移除程式。\r\n\r\n您確定要繼續嗎？
 
 
-SW_COMPONENT_VPNSERVER_TITLE				Unite Gaming Game Server
+SW_COMPONENT_VPNSERVER_TITLE				GAMING LAUNCHER Server
 SW_COMPONENT_VPNSERVER_DESCRIPTION			把它安裝在伺服器電腦上作為 Game 的中心網站。管理工具也會同時安裝。
 
-SW_COMPONENT_VPNCLIENT_TITLE				Unite Gaming Game Client
+SW_COMPONENT_VPNCLIENT_TITLE				GAMING LAUNCHER Client
 SW_COMPONENT_VPNCLIENT_DESCRIPTION			安裝它在 Game Client 電腦上。VPN Client 電腦將能連接到中心 Game Server 。管理工具也會同時安裝。
 
-SW_COMPONENT_VPNBRIDGE_TITLE				Unite Gaming Game Bridge
+SW_COMPONENT_VPNBRIDGE_TITLE				GAMING LAUNCHER Bridge
 SW_COMPONENT_VPNBRIDGE_DESCRIPTION			安裝它在每個網站的電腦上。每個 Game Bridge 將會建立一個通向中心 Game Server 的 Game 連接。管理工具也會同時安裝。
 
-SW_COMPONENT_VPNSMGR_TITLE					Unite Gaming Game Server 管理工具 (僅限管理工具)
+SW_COMPONENT_VPNSMGR_TITLE					GAMING LAUNCHER Server 管理工具 (僅限管理工具)
 SW_COMPONENT_VPNSMGR_DESCRIPTION			安裝的只有 Game Server 管理工具。不會安裝 Game Server 服務程式。您可以在 Windows, Linux, Mac OS X, Solaris, FreeBSD 的系統上使用此 Game Server 管理工具進行連接和管理遠端的 Game Server / Bridge 端。
 
-SW_COMPONENT_VPNCMGR_TITLE					Unite Gaming Game Client 管理工具(僅限管理工具)
+SW_COMPONENT_VPNCMGR_TITLE					GAMING LAUNCHER Client 管理工具(僅限管理工具)
 SW_COMPONENT_VPNCMGR_DESCRIPTION			安裝的只有 Game Client 管理工具。不會安裝 Game Client 服務程式。您可以在 Windows 或 Linux 的系統上使用此 Game Client 管理工具進行連接和管理遠端的 Game Client 。
 
 SW_WELCOME_TITLE					歡迎來到 Unite Gaming Game  安裝精靈
@@ -7256,9 +7256,9 @@ SW_ERROR_TITLE						安裝結果
 SW_FINISH_TITLE						安裝結束
 SW_UNINST1_TITLE					移除程式
 SW_LANG1_TITLE						Unite Gaming Game : 設定顯示語言
-SW_EASY1_TITLE						歡迎來到 Unite Gaming Game Client 簡單安裝程式創建工具
+SW_EASY1_TITLE						歡迎來到 GAMING LAUNCHER Client 簡單安裝程式創建工具
 SW_EASY2_TITLE						指定資料夾
-SW_WEB1_TITLE						歡迎來到 Unite Gaming Game Client Web安裝程式創建工具
+SW_WEB1_TITLE						歡迎來到 GAMING LAUNCHER Client Web安裝程式創建工具
 SW_WEB2_TITLE						指定資料夾
 
 SW_UNINSTALLINFO_URL					http://selinks.org/
@@ -7286,8 +7286,8 @@ SW_SYSTEM_MODE_ALREADY_INSTALLED	本軟體 "%s" 以系統模式被安裝在這�
 SW_SETUPLOG_CORRUPTED				"setuplog.dat" 檔已被破壞。
 SW_MSI_UNINSTALL_FAILED				之前的版本 %s (產品號: "%S")已安裝。 Windows安裝工具移除舊版本失敗。\r\n\r\n請您手動移除並且重啟本安裝工具。
 SW_MSI_UNINSTALL_REBOOT_REQUIRED	Windows 安裝工具已經移除舊版本 %s。請重啟電腦。\r\n\r\n點擊結束按鈕並且手動重啟電腦，然後在電腦重啟後，重啟本安裝工具。
-SW_NOTICE_VPNSERVER_IS_INSTALLED	Unite Gaming Game Bridge 端作為軟體一部分來安裝。但是，本電腦已經安裝了 Unite Gaming Game Server。\r\n\r\n通常，您不需要在同一台電腦上同時安裝 Unite Gaming Game Server 端和 Unite Gaming Game Bridge 端。\r\n如果您同時安裝了這兩個軟體，那麼有些衝突就會發生，例如埠號重複。\r\n如果您想把 Unite Gaming Game Server 端替換成 Unite Gaming Game Bridge 端，您應該退出本安裝工具，移除 Unite Gaming Game Server 端，並在移除成功後重啟本安裝工具。\r\n\r\n您確定要繼續 Unite Gaming Game Bridge 端的安裝嗎？
-SW_NOTICE_VPNBRIDGE_IS_INSTALLED	Unite Gaming Game Server 端被選為一個部分來安裝。但是，本電腦已安裝 Unite Gaming Game Bridge 端。通常，您不需要在同一台電腦上同時安裝 Unite Gaming Game Server 端和 Unite Gaming Game Bridge 端。\r\n如果您同時安裝了這兩個軟體，那麼有些衝突就會發生，例如埠號重複。\r\n如果您想把 Unite Gaming Game Bridge 替換成 Unite Gaming Game Server 端，您應該退出本安裝工具，移除 Unite Gaming Game Bridge，並在移除成功後重啟本安裝工具。\r\n\r\n您確定要繼續 Unite Gaming Game Server 端的安裝嗎？
+SW_NOTICE_VPNSERVER_IS_INSTALLED	GAMING LAUNCHER Bridge 端作為軟體一部分來安裝。但是，本電腦已經安裝了 GAMING LAUNCHER Server。\r\n\r\n通常，您不需要在同一台電腦上同時安裝 GAMING LAUNCHER Server 端和 GAMING LAUNCHER Bridge 端。\r\n如果您同時安裝了這兩個軟體，那麼有些衝突就會發生，例如埠號重複。\r\n如果您想把 GAMING LAUNCHER Server 端替換成 GAMING LAUNCHER Bridge 端，您應該退出本安裝工具，移除 GAMING LAUNCHER Server 端，並在移除成功後重啟本安裝工具。\r\n\r\n您確定要繼續 GAMING LAUNCHER Bridge 端的安裝嗎？
+SW_NOTICE_VPNBRIDGE_IS_INSTALLED	GAMING LAUNCHER Server 端被選為一個部分來安裝。但是，本電腦已安裝 GAMING LAUNCHER Bridge 端。通常，您不需要在同一台電腦上同時安裝 GAMING LAUNCHER Server 端和 GAMING LAUNCHER Bridge 端。\r\n如果您同時安裝了這兩個軟體，那麼有些衝突就會發生，例如埠號重複。\r\n如果您想把 GAMING LAUNCHER Bridge 替換成 GAMING LAUNCHER Server 端，您應該退出本安裝工具，移除 GAMING LAUNCHER Bridge，並在移除成功後重啟本安裝工具。\r\n\r\n您確定要繼續 GAMING LAUNCHER Server 端的安裝嗎？
 SW_OS_FAILED						本作業系統不支援%s.
 SW_LANG_NOT_CHANGED					%s的語言設置沒有改變。
 SW_LANG_LIST_LOAD_FAILED			載入可用語言清單失敗。
@@ -7302,7 +7302,7 @@ SW_EASY_ERROR_MSG					Game Client 簡單安裝工具創建失敗。
 SW_OTHER_INSTANCE_EXISTS			另外一個 Unite Gaming Game 安裝精靈正在運行中\r\n\r\n您可以在那個安裝精靈退出後，繼續運行此安裝精靈。
 SW_PERFORM_MSG_WEB_INFO				編譯 Game Client Web安裝工具
 SW_WEB_ERROR_MSG					Game Client Web 安裝工具創建失敗。
-SW_INSTALLER_CACHE_IS_NOT_SIGNED	目前已安裝 Unite Gaming Game Client 的這台電腦沒有安 Unite Gaming 公司簽署 Authenticode 數位憑證的數位簽章包。\r\n它有可能是從一個客戶定制的安裝工具上安裝的(例如：簡單安裝程式生成器製造的一個安裝程式。)\r\n\r\n如果您繼續創建 Web 安裝工具，當下載的時候，會在使用者介面上出現一個警示資訊。\r\n為避免出現警示資訊，您需要取消本創建精靈，從 Unite Gaming 公司官網下載最新版本的 Unite Gaming Game Client，重新安裝並開啟本 Web 安裝工具創建器精靈。\r\n\r\n你確定要繼續創建一個 Web 安裝工具嗎？
+SW_INSTALLER_CACHE_IS_NOT_SIGNED	目前已安裝 GAMING LAUNCHER Client 的這台電腦沒有安 Unite Gaming 公司簽署 Authenticode 數位憑證的數位簽章包。\r\n它有可能是從一個客戶定制的安裝工具上安裝的(例如：簡單安裝程式生成器製造的一個安裝程式。)\r\n\r\n如果您繼續創建 Web 安裝工具，當下載的時候，會在使用者介面上出現一個警示資訊。\r\n為避免出現警示資訊，您需要取消本創建精靈，從 Unite Gaming 公司官網下載最新版本的 GAMING LAUNCHER Client，重新安裝並開啟本 Web 安裝工具創建器精靈。\r\n\r\n你確定要繼續創建一個 Web 安裝工具嗎？
 SW_FILE_NOT_FOUNT					沒有找到檔案 "%s"
 SW_WEB_FINISHED						Web安裝工具已創建，並保存為 "%s"。\r\n\r\n請將 ZIP 檔解壓縮，並將解壓後的檔上傳到 Web 伺服器，編輯一個HTML檔和一個 inf 檔來適當替換URL。\r\n\r\n部署 Web 安裝程式的解釋說明在ZIP檔中描述。
 
@@ -7358,63 +7358,63 @@ SW_DIRNAME_CONFIG_TOOLS					設定工具
 SW_DIRNAME_ADMIN_TOOLS					管理工具
 SW_DIRNAME_LANGUAGE_TOOLS				語言設定
 
-SW_RUN_TEXT_VPNSMGR					開啟 Unite Gaming Game Server 管理工具
-SW_RUN_TEXT_VPNCMGR					開啟 Unite Gaming Game Client 管理工具.
+SW_RUN_TEXT_VPNSMGR					開啟 GAMING LAUNCHER Server 管理工具
+SW_RUN_TEXT_VPNCMGR					開啟 GAMING LAUNCHER Client 管理工具.
 
 SW_NIC_UNINSTALL						Unite Gaming Game 用戶端的虛擬網路介面卡已在系統上創建。\r\n你要刪除這些虛擬網路介面卡?
 
 # --- Do not translate this section !!! stay them in English !!! ---
 SW_TAG_USERNAME_ENGLISH					\ (User-Mode)
-SW_LINK_NAME_VPNSERVER_SVC				Unite Gaming Game Server Developer User-mode Service
-SW_LINK_NAME_VPNBRIDGE_SVC				Unite Gaming Game Bridge Developer User-mode Service
-SW_LONG_VPNSERVER						Unite Gaming Game Server 
-SW_LONG_VPNCLIENT						Unite Gaming Game Client 
-SW_LONG_VPNBRIDGE						Unite Gaming Game Bridge 
-SW_LONG_VPNSMGR						Unite Gaming Game Server Manager 
-SW_LONG_VPNCMGR						Unite Gaming Game Client Manager 
+SW_LINK_NAME_VPNSERVER_SVC				GAMING LAUNCHER Server Developer User-mode Service
+SW_LINK_NAME_VPNBRIDGE_SVC				GAMING LAUNCHER Bridge Developer User-mode Service
+SW_LONG_VPNSERVER						GAMING LAUNCHER Server 
+SW_LONG_VPNCLIENT						GAMING LAUNCHER Client 
+SW_LONG_VPNBRIDGE						GAMING LAUNCHER Bridge 
+SW_LONG_VPNSMGR						GAMING LAUNCHER Server Manager 
+SW_LONG_VPNCMGR						GAMING LAUNCHER Client Manager 
 SW_LANG_SET_FAILED						Failed to write the new language setting on lang.config file.
 # --- end of "Do not translate this section" ---
 
 
 # 快捷方式檔案名
-SW_LINK_NAME_VPNSMGR_SHORT				Unite Gaming Game Server 管理工具 (Dev)
+SW_LINK_NAME_VPNSMGR_SHORT				GAMING LAUNCHER Server 管理工具 (Dev)
 SW_LINK_NAME_VPNSMGR_SHORT_UM				SE-Game Server Manager (Dev・User)
 SW_LINK_NAME_VPNSMGR_SHORT_TOOLSONLY		SE-Game Server Manager (Dev・Tools)
 SW_LINK_NAME_VPNSMGR_SHORT_TOOLSONLY_UM	SE-Game Server Manager (Dev・Tools・User)
-SW_LINK_NAME_VPNSMGR_FULL				Unite Gaming Game Server 管理工具 
-SW_LINK_NAME_VPNSMGR_COMMENT			您在一個遠端電腦上可以管理 Unite Gaming Game Server 或者 Unite Gaming Game Bridge 端。
+SW_LINK_NAME_VPNSMGR_FULL				GAMING LAUNCHER Server 管理工具 
+SW_LINK_NAME_VPNSMGR_COMMENT			您在一個遠端電腦上可以管理 GAMING LAUNCHER Server 或者 GAMING LAUNCHER Bridge 端。
 
-SW_LINK_NAME_VPNCMGR_SHORT				Unite Gaming Game Client 管理工具 (Dev)
-SW_LINK_NAME_VPNCMGR_FULL				Unite Gaming Game Client 管理工具 
-SW_LINK_NAME_VPNCMGR_COMMENT			您可以通過使用 Unite Gaming Game Client  連接到 Game Server。
+SW_LINK_NAME_VPNCMGR_SHORT				GAMING LAUNCHER Client 管理工具 (Dev)
+SW_LINK_NAME_VPNCMGR_FULL				GAMING LAUNCHER Client 管理工具 
+SW_LINK_NAME_VPNCMGR_COMMENT			您可以通過使用 GAMING LAUNCHER Client  連接到 Game Server。
 
-SW_LINK_NAME_VPNCMGRTOOLS_SHORT		Unite Gaming Game Client 遠端系統管理工具 (Dev)
+SW_LINK_NAME_VPNCMGRTOOLS_SHORT		GAMING LAUNCHER Client 遠端系統管理工具 (Dev)
 SW_LINK_NAME_VPNCMGRTOOLS_SHORT_UM			SE-Game Client Remote Manager (Dev・User)
-SW_LINK_NAME_VPNCMGRTOOLS_FULL			Unite Gaming Game Client 遠端系統管理工具 
+SW_LINK_NAME_VPNCMGRTOOLS_FULL			GAMING LAUNCHER Client 遠端系統管理工具 
 
-SW_LINK_NAME_VPNCMGR2_FULL				管理遠端電腦上的 Unite Gaming Game Client
-SW_LINK_NAME_VPNCMGR2_COMMENT			您可以建立一個遠端連接來管理遠端電腦上的 Unite Gaming Game Client 。
+SW_LINK_NAME_VPNCMGR2_FULL				管理遠端電腦上的 GAMING LAUNCHER Client
+SW_LINK_NAME_VPNCMGR2_COMMENT			您可以建立一個遠端連接來管理遠端電腦上的 GAMING LAUNCHER Client 。
 
-SW_LINK_NAME_VPNCMGRTRAY_FULL			Unite Gaming Game Client 管理工具啟動功能表
-SW_LINK_NAME_VPNCMGRTRAY_COMMENT		在工作列的通知區域註冊一個 Unite Gaming Game Client 圖示。
+SW_LINK_NAME_VPNCMGRTRAY_FULL			GAMING LAUNCHER Client 管理工具啟動功能表
+SW_LINK_NAME_VPNCMGRTRAY_COMMENT		在工作列的通知區域註冊一個 GAMING LAUNCHER Client 圖示。
 
 SW_LINK_NAME_EASYINSTALLER				簡單安裝工具創建工具
-SW_LINK_NAME_EASYINSTALLER_COMMENT		為公司系統管理員創建 Unite Gaming Game Client 簡單安裝工具的工具，有自動快速啟動到指定目標 Game 連接的功能。
+SW_LINK_NAME_EASYINSTALLER_COMMENT		為公司系統管理員創建 GAMING LAUNCHER Client 簡單安裝工具的工具，有自動快速啟動到指定目標 Game 連接的功能。
 
 SW_LINK_NAME_WEBINSTALLER				Web安裝工具創建工具
-SW_LINK_NAME_WEBINSTALLER_COMMENT		為公司系統管理員創建 Unite Gaming Game Client Web安裝工具(ActiveX 安裝工具)的工具，有自動快速啟動到指定目標 Game 連接的功能。
+SW_LINK_NAME_WEBINSTALLER_COMMENT		為公司系統管理員創建 GAMING LAUNCHER Client Web安裝工具(ActiveX 安裝工具)的工具，有自動快速啟動到指定目標 Game 連接的功能。
 
 
 SW_LINK_NAME_VPNCMD					Unite Gaming Game 命令列實用工具(vpncmd)
-SW_LINK_NAME_VPNCMD_COMMENT			用 vpncmd 在命令列介面管理 Unite Gaming Game Server ， Unite Gaming Game Bridge 端和 Unite Gaming Game Client 。
+SW_LINK_NAME_VPNCMD_COMMENT			用 vpncmd 在命令列介面管理 GAMING LAUNCHER Server ， GAMING LAUNCHER Bridge 端和 GAMING LAUNCHER Client 。
 SW_LINK_NAME_TRAFFIC					網路傳送速率測量工具
 SW_LINK_NAME_TRAFFIC_COMMENT			工具執行用 TCP/IP 連接的兩台電腦之間的封包傳輸，會用儘量大的輸送量，從而測量出精確的網路可用傳送速率。本工具不僅限於 Game，也可以用在物理網路中。
 SW_LINK_NAME_TCP						TCP/IP 優化實用工具
 SW_LINK_NAME_TCP_COMMENT				TCP/IP 優化實用工具可以調節 Windows 的 TCP/IP 參數，以提高本電腦的網路通信輸送量。
 SW_LINK_NAME_SERVICES					服務正在本電腦運行
 SW_LINK_NAME_SERVICES_COMMENT			開始，結束和配置 Windows 服務。您可以開啟和關閉 Unite Gaming Game 服務。
-SW_LINK_NAME_VPNSERVER_SVC_COMMENT		使用使用者模式開啟 Unite Gaming Game Server 服務。
-SW_LINK_NAME_VPNBRIDGE_SVC_COMMENT		使用使用者模式開啟 Unite Gaming Game Bridge 服務。
+SW_LINK_NAME_VPNSERVER_SVC_COMMENT		使用使用者模式開啟 GAMING LAUNCHER Server 服務。
+SW_LINK_NAME_VPNBRIDGE_SVC_COMMENT		使用使用者模式開啟 GAMING LAUNCHER Bridge 服務。
 
 SW_LINK_NAME_UNINSTALL					移除 %s
 SW_LINK_NAME_UNINSTALL_COMMENT			在本電腦中移除 %s

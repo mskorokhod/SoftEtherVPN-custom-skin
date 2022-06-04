@@ -33,16 +33,16 @@ STRTABLE_ID				SE_VPN_20121007
 
 
 # 日本語版のみの文字列 (他の言語では不要)
-CM_JAPANESE_ONLY_OLD_STARTUP	%s\\Unite Gaming Game Client 2.0 タスクトレイ.lnk
+CM_JAPANESE_ONLY_OLD_STARTUP	%s\\GAMING LAUNCHER Client 2.0 タスクトレイ.lnk
 
 # ソフトウェア情報
-PRODUCT_NAME_VPN_CLI	Unite Gaming Game Client 
-PRODUCT_NAME_VPN_CMGR	Unite Gaming Game  クライアント接続マネージャ
-PRODUCT_NAME_VPN_SVR	Unite Gaming Game Server 
-PRODUCT_NAME_VPN_BRIDGE	Unite Gaming Game Bridge 
-PRODUCT_NAME_VPN_SMGR	Unite Gaming Game  サーバー管理マネージャ
-PRODUCT_NAME_ELOGSVC	Unite Gaming EtherLogger 
-PRODUCT_NAME_ELOGMGR	Unite Gaming EtherLogger 
+PRODUCT_NAME_VPN_CLI	GAMING LAUNCHER Client
+PRODUCT_NAME_VPN_CMGR	GAMING LAUNCHER  クライアント接続マネージャ
+PRODUCT_NAME_VPN_SVR	GAMING LAUNCHER Server
+PRODUCT_NAME_VPN_BRIDGE	GAMING LAUNCHER Bridge
+PRODUCT_NAME_VPN_SMGR	GAMING LAUNCHER  サーバー管理マネージャ
+PRODUCT_NAME_ELOGSVC	GAMING LAUNCHER EtherLogger
+PRODUCT_NAME_ELOGMGR	GAMING LAUNCHER EtherLogger
 
 # ソフトウェア更新チェック用の Family Name
 PRODUCT_FAMILY_NAME		Unite GamingDev
@@ -187,7 +187,7 @@ ERR_118					ライセンスキーが正しくありません。
 ERR_119					Game Server に有効なライセンスが登録されていません。VPN Server の管理者に連絡してください。
 ERR_120					Game Server がクラスタとして動作するために必要な製品ライセンスが登録されていません。VPN Server の管理者に連絡してください。
 ERR_121					この Game Client の接続設定は Unite Gaming Game 2.0 Administration Pack に含まれる「Web インストーラ作成キット」または「簡易インストーラ作成キット」によってインストールされたものですが、接続先の Game Server は Unite Gaming Game 2.0 Administration Pack に対応したエディションではありません。インストーラの作成元やシステム管理者にお問い合わせください。
-ERR_122					Game Server SDK for .NET ライブラリは Unite Gaming Game 2.0 Administration Pack に対応したエディションの Unite Gaming Game Server にのみ接続することができます。接続先の Game Server は Unite Gaming Game 2.0 Administration Pack に対応したエディションではありません。システム管理者にお問い合わせください。
+ERR_122					Game Server SDK for .NET ライブラリは Unite Gaming Game 2.0 Administration Pack に対応したエディションの GAMING LAUNCHER Server にのみ接続することができます。接続先の Game Server は Unite Gaming Game 2.0 Administration Pack に対応したエディションではありません。システム管理者にお問い合わせください。
 ERR_123					接続先のソフトウェアはベータ版で、期限が切れています。より新しいベータ版または完成版の提供が開始された後は利用することはできません。http://selinks.org/ にアクセスし、最新版のソフトウェアを入手するよう、接続先のサーバーの管理者に連絡してください。
 ERR_124					Game Server への接続がサーバ側で拒否されました。
 ERR_125					Game Server への接続がクライアント側で拒否されました。
@@ -476,7 +476,7 @@ WINVER_ERROR_PC_REMOTE	接続先のサーバーコンピュータ
 
 
 # オープンソース版に関する警告
-OSS_MSG					はじめに - Unite Gaming Game Server について\r\n\r\nこの Game Server は、筑波大学において学術実験目的で開発され Unite Gaming プロジェクト http://www.softether.org/ で無償配布されているオープンソースのフリーソフトです。\r\nUnite Gaming Game ソフトウェアは国立大学法人筑波大学とソフトイーサ株式会社との共同研究契約の一環として広く公開されているものです。Unite Gaming Game ソフトウェアは学術実験目的で開発・公開されております。Unite Gaming Game ソフトウェアに含まれる不具合等についてのサポート等は提供されておらず、利用者がすべての責任を負うことになります。本ソフトウェアの開発者・配布者は、Unite Gaming Game ソフトウェアの利用の結果、利用者に生じる損失等について、一切責任を負いません。\r\n\r\nこれらのことに合意いただいた上で、Unite Gaming Game Server を用いた通信をお楽しみください。\r\n\r\nUnite Gaming Game について詳しくは http://www.softether.org/ をご参照ください。\r\n\r\n
+OSS_MSG					はじめに - GAMING LAUNCHER Server について\r\n\r\nこの Game Server は、筑波大学において学術実験目的で開発され Unite Gaming プロジェクト http://www.softether.org/ で無償配布されているオープンソースのフリーソフトです。\r\nUnite Gaming Game ソフトウェアは国立大学法人筑波大学とソフトイーサ株式会社との共同研究契約の一環として広く公開されているものです。Unite Gaming Game ソフトウェアは学術実験目的で開発・公開されております。Unite Gaming Game ソフトウェアに含まれる不具合等についてのサポート等は提供されておらず、利用者がすべての責任を負うことになります。本ソフトウェアの開発者・配布者は、Unite Gaming Game ソフトウェアの利用の結果、利用者に生じる損失等について、一切責任を負いません。\r\n\r\nこれらのことに合意いただいた上で、GAMING LAUNCHER Server を用いた通信をお楽しみください。\r\n\r\nUnite Gaming Game について詳しくは http://www.softether.org/ をご参照ください。\r\n\r\n
 
 
 # NAT Traversal に関する警告
@@ -779,7 +779,7 @@ REMOTE_DEF_TITLE		リモート接続先のコンピュータを指定してく�
 
 
 # クライアント通知サービス関係
-CN_TITLE				Unite Gaming Game Client 
+CN_TITLE				GAMING LAUNCHER Client 
 
 
 # 接続マネージャ関係
@@ -790,7 +790,7 @@ CM_CONNECT_FAILED		%s で動作している Game Client サービスに接続で
 CM_BAD_PASSWORD			パスワードが誤っています。再度入力してください。パスワードを入力するときは大文字と小文字に注意してください。
 CM_NUM_CONN_COUNT		Game 接続中: %u アカウント
 CM_CONN_NO				未接続
-CM_PRODUCT_NAME			Unite Gaming Game Client Build %u
+CM_PRODUCT_NAME			GAMING LAUNCHER Client Build %u
 CM_ACCOUNT_COLUMN_1		接続設定名
 CM_ACCOUNT_COLUMN_2		状態
 CM_ACCOUNT_COLUMN_3		接続先 Game サーバー
@@ -1043,7 +1043,7 @@ VGC_UDP_AVAILABLE		UDP OK
 
 VGC_TITLE				Game Gate プラグインに関するメッセージ
 
-VGC_VER_DIFF			この Game Gate Client プラグインのバージョンが Unite Gaming Game Client のバージョンと異なっています。\r\n\r\n現在の Game Gate プラグイン: ビルド %u\r\n現在の Unite Gaming Game Client: ビルド %u\r\n\r\nVPN Gate プラグインの最新版 (ビルド %u) をダウンロードしてインストールすることをお勧めします。最新版にアップデートしない場合、VPN 通信エラーやリスト更新エラーが発生する場合があります。もし何度も Game サーバーリストの更新に失敗する場合は Game Gate プラグインのバージョンをアップデートしてください。\r\n\r\n最新版の Game Gate プラグインの入手: http://www.vpngate.net/\r\n(もし上記サイトに直接アクセスできない場合はミラーサイトを経由してアクセスしてください。)\r\n\r\n
+VGC_VER_DIFF			この Game Gate Client プラグインのバージョンが GAMING LAUNCHER Client のバージョンと異なっています。\r\n\r\n現在の Game Gate プラグイン: ビルド %u\r\n現在の GAMING LAUNCHER Client: ビルド %u\r\n\r\nVPN Gate プラグインの最新版 (ビルド %u) をダウンロードしてインストールすることをお勧めします。最新版にアップデートしない場合、VPN 通信エラーやリスト更新エラーが発生する場合があります。もし何度も Game サーバーリストの更新に失敗する場合は Game Gate プラグインのバージョンをアップデートしてください。\r\n\r\n最新版の Game Gate プラグインの入手: http://www.vpngate.net/\r\n(もし上記サイトに直接アクセスできない場合はミラーサイトを経由してアクセスしてください。)\r\n\r\n
 
 VGC_LIST_STR_OK			地球上に %S 台の公開 Game 中継サーバー (%S に更新)
 VGC_LIST_STR_OK_2		%S 台のサーバー (%S に更新) - リスト取得失敗。最新版の Game Gate Client をダウンロードしてください。
@@ -1053,7 +1053,7 @@ VGC_PROXY_TITLE			プロキシサーバーに関するご注意
 
 VGS_NO_HUB_YET			メッセージを設定するには、最初にまず Game Gate サービス コントロールパネルで Game Gate サービスを有効にして [OK] をクリックしてから、再度このウインドウを開いてください。
 
-VGS_STOP				Game Gate サービスを停止します。\r\n\r\nVPN Gate サービスを停止すると、このコンピュータは新たな Game 接続を受付けなくなりますが、現在アクティブな Game セッションは残る場合があります。\r\n(それらの Game セッションは列挙されない場合があります。)\r\n\r\nアクティブな Game セッションを削除するためには、VPN Gate サービスを停止した後は直ちに Unite Gaming Game Server または Unite Gaming Game Client サービスを再起動するか、コンピュータを再起動してください。
+VGS_STOP				Game Gate サービスを停止します。\r\n\r\nVPN Gate サービスを停止すると、このコンピュータは新たな Game 接続を受付けなくなりますが、現在アクティブな Game セッションは残る場合があります。\r\n(それらの Game セッションは列挙されない場合があります。)\r\n\r\nアクティブな Game セッションを削除するためには、VPN Gate サービスを停止した後は直ちに GAMING LAUNCHER Server または GAMING LAUNCHER Client サービスを再起動するか、コンピュータを再起動してください。
 
 VGS_START				Game Gate 中継サービス機能を有効にします。\r\nこのコンピュータで Game Gate 中継サービス機能を有効にすると、このコンピュータは、任意の Game Gate ユーザーからの Game 接続を受け付け、通信を中継することができるようになります。\r\n\r\nVPN Gate 中継サービス機能は、ユーザーの責任で有効にしてください。\r\n法令によって Game による暗号化通信が禁止されている国があります。\r\nVPN Gate 中継サービス機能について詳しくは http://www.vpngate.net/ja/join.aspx をお読みください。\r\n\r\nVPN Gate 学術実験サービスは、日本国に所在する筑波大学大学院における研究プロジェクトとして運営されているサービスです。本サービスは日本国の法令にのみ準拠して運用されており、日本国以外の国・地域の法令については一切関知しておりません。\r\n\r\nそもそも世界には 200 カ国近くの国が存在しており、それぞれの国における法律は互いに異なります。すべての国の法律を調査した上でそれらすべてに適合することを保証したソフトウェアを開発することは事実上不可能です。万一ユーザーが本サービスを特定の国・地域の領域内で利用したことによって公務員により法的なペナルティを科せられるなどの損害が発生した場合であっても、プロジェクト実施者は一切責任を負いません。\r\n本ソフトウェアまたはサービスを使用する際には、ユーザーが適用されるすべての法令をユーザーの責任により遵守してください。本ソフトウェアまたはサービスを日本国内・国外を問わず使用された場合に発生するすべての損害と責任は、ユーザーに帰責します。本学術実験の運営者およびソフトウェアの供給者は、一切責任を負いません。\r\nこれらの注意事項に同意いただけない場合は、VPN Gate 学術実験サービスに関連する機能を使用しないでください。
 
@@ -1098,40 +1098,40 @@ UNIX_SVC_ERROR_FORK		Failed to create child process for the %S service.\n
 UNIX_SVC_NONROOT		\nWarning: The current user context is non-root. It is recommended to run the Game service by the root user. Although the Game service may run under non-root users, some privilege-required functions (e.g. the local bridge function) need the root privilege.\n
 
 
-# サービス定義 (Unite Gaming Game Client)
+# サービス定義 (GAMING LAUNCHER Client)
 SVC_VPNCLIENT_NAME		vpnclient
-SVC_VPNCLIENT_TITLE		Unite Gaming Game Client
-SVC_VPNCLIENT_DESCRIPT	Unite Gaming Game Client の仮想 LAN カードデバイスドライバおよび接続サービスを管理します。このサービスが停止された場合は、このコンピュータの Unite Gaming Game Client を使用して Unite Gaming Game Server に接続することができなくなります。
+SVC_VPNCLIENT_TITLE		GAMING LAUNCHER Client
+SVC_VPNCLIENT_DESCRIPT	GAMING LAUNCHER Client の仮想 LAN カードデバイスドライバおよび接続サービスを管理します。このサービスが停止された場合は、このコンピュータの GAMING LAUNCHER Client を使用して GAMING LAUNCHER Server に接続することができなくなります。
 
 
-# サービス定義 (Unite Gaming Game Server)
+# サービス定義 (GAMING LAUNCHER Server)
 SVC_VPNSERVER_NAME		vpnserver
-SVC_VPNSERVER_TITLE		Unite Gaming Game Server
-SVC_VPNSERVER_DESCRIPT	Unite Gaming Game Server サーバー プロセスを管理します。Unite Gaming Game Server は高性能の Unite Gaming Game Server 機能を TCP/IP プロトコルを通じて提供します。このサービスが停止された場合は、このコンピュータの Unite Gaming Game Server は停止し、Unite Gaming Game Client はこのコンピュータに Game 接続することができなくなります。
+SVC_VPNSERVER_TITLE		GAMING LAUNCHER Server
+SVC_VPNSERVER_DESCRIPT	GAMING LAUNCHER Server サーバー プロセスを管理します。GAMING LAUNCHER Server は高性能の GAMING LAUNCHER Server 機能を TCP/IP プロトコルを通じて提供します。このサービスが停止された場合は、このコンピュータの GAMING LAUNCHER Server は停止し、GAMING LAUNCHER Client はこのコンピュータに Game 接続することができなくなります。
 
 
-# サービス定義 (Unite Gaming Game Bridge)
+# サービス定義 (GAMING LAUNCHER Bridge)
 SVC_VPNBRIDGE_NAME		vpnbridge
-SVC_VPNBRIDGE_TITLE		Unite Gaming Game Bridge
-SVC_VPNBRIDGE_DESCRIPT	Unite Gaming Game Bridge プロセスを管理します。Unite Gaming Game Bridge はこのコンピュータに接続されているネットワークと遠隔地にある Unite Gaming Game Server との間をブリッジ接続します。このサービスが停止された場合は、このコンピュータの Unite Gaming Game Bridge は停止し、ブリッジ接続を経由した通信ができなくなります。
+SVC_VPNBRIDGE_TITLE		GAMING LAUNCHER Bridge
+SVC_VPNBRIDGE_DESCRIPT	GAMING LAUNCHER Bridge プロセスを管理します。GAMING LAUNCHER Bridge はこのコンピュータに接続されているネットワークと遠隔地にある GAMING LAUNCHER Server との間をブリッジ接続します。このサービスが停止された場合は、このコンピュータの GAMING LAUNCHER Bridge は停止し、ブリッジ接続を経由した通信ができなくなります。
 
 
-# サービス定義 (Unite Gaming Game Client)
+# サービス定義 (GAMING LAUNCHER Client)
 SVC_SEVPNCLIENTDEV_NAME		sevpnclientdev
-SVC_SEVPNCLIENTDEV_TITLE		Unite Gaming Game Client 
-SVC_SEVPNCLIENTDEV_DESCRIPT	Unite Gaming Game Client の仮想 LAN カードデバイスドライバおよび接続サービスを管理します。このサービスが停止された場合は、このコンピュータの Unite Gaming Game Client を使用して Unite Gaming Game Server に接続することができなくなります。
+SVC_SEVPNCLIENTDEV_TITLE		GAMING LAUNCHER Client 
+SVC_SEVPNCLIENTDEV_DESCRIPT	GAMING LAUNCHER Client の仮想 LAN カードデバイスドライバおよび接続サービスを管理します。このサービスが停止された場合は、このコンピュータの GAMING LAUNCHER Client を使用して GAMING LAUNCHER Server に接続することができなくなります。
 
 
-# サービス定義 (Unite Gaming Game Server)
+# サービス定義 (GAMING LAUNCHER Server)
 SVC_SEVPNSERVERDEV_NAME		sevpnserverdev
-SVC_SEVPNSERVERDEV_TITLE		Unite Gaming Game Server 
-SVC_SEVPNSERVERDEV_DESCRIPT	Unite Gaming Game Server サーバー プロセスを管理します。Unite Gaming Game Server は高性能の Unite Gaming Game Server 機能を TCP/IP プロトコルを通じて提供します。このサービスが停止された場合は、このコンピュータの Unite Gaming Game Server は停止し、Unite Gaming Game Client はこのコンピュータに Game 接続することができなくなります。
+SVC_SEVPNSERVERDEV_TITLE		GAMING LAUNCHER Server 
+SVC_SEVPNSERVERDEV_DESCRIPT	GAMING LAUNCHER Server サーバー プロセスを管理します。GAMING LAUNCHER Server は高性能の GAMING LAUNCHER Server 機能を TCP/IP プロトコルを通じて提供します。このサービスが停止された場合は、このコンピュータの GAMING LAUNCHER Server は停止し、GAMING LAUNCHER Client はこのコンピュータに Game 接続することができなくなります。
 
 
-# サービス定義 (Unite Gaming Game Bridge)
+# サービス定義 (GAMING LAUNCHER Bridge)
 SVC_SEVPNBRIDGEDEV_NAME		sevpnbridgedev
-SVC_SEVPNBRIDGEDEV_TITLE		Unite Gaming Game Bridge 
-SVC_SEVPNBRIDGEDEV_DESCRIPT	Unite Gaming Game Bridge プロセスを管理します。Unite Gaming Game Bridge はこのコンピュータに接続されているネットワークと遠隔地にある Unite Gaming Game Server との間をブリッジ接続します。このサービスが停止された場合は、このコンピュータの Unite Gaming Game Bridge は停止し、ブリッジ接続を経由した通信ができなくなります。
+SVC_SEVPNBRIDGEDEV_TITLE		GAMING LAUNCHER Bridge 
+SVC_SEVPNBRIDGEDEV_DESCRIPT	GAMING LAUNCHER Bridge プロセスを管理します。GAMING LAUNCHER Bridge はこのコンピュータに接続されているネットワークと遠隔地にある GAMING LAUNCHER Server との間をブリッジ接続します。このサービスが停止された場合は、このコンピュータの GAMING LAUNCHER Bridge は停止し、ブリッジ接続を経由した通信ができなくなります。
 
 
 # サービス定義 (Unite Gaming Game User-mode Router)
@@ -1142,8 +1142,8 @@ SVC_VPNROUTER_DESCRIPT	Unite Gaming Game Router (サービスモード) のサ�
 
 # サービス定義 (EtherLogger)
 SVC_ELOGSVC_NAME		elogsvc
-SVC_ELOGSVC_TITLE		Unite Gaming EtherLogger 
-SVC_ELOGSVC_DESCRIPT	Unite Gaming EtherLogger は、コンピュータに接続されている LAN カードを流れるデータをキャプチャし、管理者が指定した種類のパケットのヘッダまたはすべてのデータをテキストファイルにログとして記録するサービスです。
+SVC_ELOGSVC_TITLE		GAMING LAUNCHER EtherLogger 
+SVC_ELOGSVC_DESCRIPT	GAMING LAUNCHER EtherLogger は、コンピュータに接続されている LAN カードを流れるデータをキャプチャし、管理者が指定した種類のパケットのヘッダまたはすべてのデータをテキストファイルにログとして記録するサービスです。
 
 
 # Unite Gaming Game サーバー管理マネージャ関係
@@ -1514,7 +1514,7 @@ SM_BRIDGE_WPCAP_REMOTE	この Game Server 上でローカルブリッジ機能�
 SM_BRIDGE_WPCAP_ROOT	この Game Server 上でローカルブリッジ機能を使用するためには、WinPcap ソフトウェアをインストールする必要があります。\r\n\r\nインストールを継続するには、このコンピュータ上で Administrators (管理者) 権限を持ったユーザーでログオンする必要があります。\r\nAdministrators 権限でログオンし、もう一度 Unite Gaming Game サーバー管理マネージャを起動してください。
 SM_BRIDGE_WPCAP_INSTALL	この Game Server 上でローカルブリッジ機能を使用するためには、WinPcap ソフトウェアをインストールする必要があります。現在、サーバー コンピュータ上には WinPcap ソフトウェアがインストールされていません。\r\n\r\nWinPcap はフリーソフトウェアであり、VPN Server の一部として同梱されているため、簡単にインストールすることができます。\r\n\r\nWinPcap のインストールを開始しますか?
 SM_BRIDGE_WPCAP_REBOOT1	WinPcap のインストールが完了した後にローカルブリッジ機能を使用する場合は、コンピュータを再起動する必要があります。\r\n\r\nコンピュータを手動で再起動し、VPN Server が起動した後、ローカルブリッジ機能の設定を行ってください。
-SM_BRIDGE_WPCAP_REBOOT2	WinPcap のインストールが完了した後にローカルブリッジ機能を使用する場合は、Unite Gaming Game Server サービスを再起動する必要があります。\r\n\r\nUnite Gaming Game Server サービスの再起動は短時間で完了しますが、現在この Game Server に接続しているセッションはすべて切断されます。\r\nこの管理セッションも切断されるため、続行するには再接続してください。\r\n\r\nUnite Gaming Game Server サービスを再起動しますか?
+SM_BRIDGE_WPCAP_REBOOT2	WinPcap のインストールが完了した後にローカルブリッジ機能を使用する場合は、GAMING LAUNCHER Server サービスを再起動する必要があります。\r\n\r\nGAMING LAUNCHER Server サービスの再起動は短時間で完了しますが、現在この Game Server に接続しているセッションはすべて切断されます。\r\nこの管理セッションも切断されるため、続行するには再接続してください。\r\n\r\nGAMING LAUNCHER Server サービスを再起動しますか?
 SM_BRIDGE_RESOURCE		WinPcap のドライバを読み込めませんでした。
 SM_BRIDGE_COLUMN_1		番号
 SM_BRIDGE_COLUMN_2		仮想 HUB 名
@@ -1619,7 +1619,7 @@ SM_SETUP_BRIDGE_ONLY	現在 Game Bridge に接続しているため、[拠点間
 SM_SETUP_BRIDGE_EDGE	各拠点に設置する Game Bridge (&E)
 SM_SETUP_WARNING		続行すると、この Game Server または Game Bridge の現在の設定内容は、簡易セットアップで指定した内容に初期化されます。\r\nよろしいですか?
 SM_SETUP_SELECT			ブリッジ接続する Ethernet デバイスを選択してください
-SM_SETUP_NO_LICENSE_KEY	この Unite Gaming Game Server には、有効なライセンスキーが登録されていません。\r\n\r\nUnite Gaming Game Server が Game サーバーとして動作するには、ライセンスキーの登録が必要です。\r\nライセンスの管理画面を表示しますか?\r\n\r\n(体験版として使用する場合は、ソフトイーサ株式会社の Web サイトにアクセスして体験版のライセンスキーを取得する必要があります。\r\n[はい] をクリックしてから [ライセンスの入手・更新] ボタンをクリックすると、体験版のライセンスキーを入手できます。)
+SM_SETUP_NO_LICENSE_KEY	この GAMING LAUNCHER Server には、有効なライセンスキーが登録されていません。\r\n\r\nGAMING LAUNCHER Server が Game サーバーとして動作するには、ライセンスキーの登録が必要です。\r\nライセンスの管理画面を表示しますか?\r\n\r\n(体験版として使用する場合は、ソフトイーサ株式会社の Web サイトにアクセスして体験版のライセンスキーを取得する必要があります。\r\n[はい] をクリックしてから [ライセンスの入手・更新] ボタンをクリックすると、体験版のライセンスキーを入手できます。)
 SM_HUBEXT_OPTION_TITLE	仮想 HUB 拡張オプション
 SM_HUBEXT_OPTION_STATIC1	仮想 HUB 拡張オプションを使用すると、この仮想 HUB に関するより詳細な設定を行うことができるようになります。
 SM_HUBEXT_OPTION_STATIC2	標準では、VPN Server 全体の管理者および仮想 HUB 管理者の両方とも、仮想 HUB 拡張オプションを編集することができます。\r\nただし、仮想 HUB 管理オプションの deny_hub_admin_change_ext_option が 1 に設定されている場合は、仮想 HUB の管理者は、拡張オプションを編集することができません (設定内容を表示することはできます)。
@@ -1669,7 +1669,7 @@ SM_FACTORY_DEFAULT_WARNING		Game Server / Bridge の設定をリセットしま�
 SM_FACTORY_DEFAULT_PERFORMED	設定のリセット処理はサーバー上で開始されました。\r\n\r\nOk をクリックすると現在の Game サーバー管理マネージャのセッションを終了します。\r\n終了した後に、VPN サーバー管理マネージャを再度起動して Game Server に再接続してください。\r\n再接続すると、設定がリセットされた後の Game Server が出現します。
 SM_AZURE_STATUS_CONNECTED		状態: クラウドに接続完了
 SM_AZURE_STATUS_NOT_CONNECTED	状態: クラウドに未接続
-SM_NO_BRIDGE_NICS				ローカルブリッジを作成することができる物理的な LAN カードが Game サーバーのコンピュータに 1 枚も見つかりませんでした。\r\n\r\nローカルブリッジを作成するには、物理的な LAN カードを 1 枚以上コンピュータにインストールする必要があります。\r\n無線 LAN カード、3G アダプタ等は使用できません。\r\n通常のケーブル接続の Ethernet に対応した LAN カードをインストールしてください。\r\n\r\n最近インストールした LAN カードが表示されない場合は、一度コンピュータを再起動してください。\r\n\r\nローカルブリッジを使用できない場合は、代わりに「SecureNAT 機能」の仮想 NAT 機能の使用を検討してください。\r\n\r\nなお、何らかの理由で物理的な LAN カード以外の LAN カード (無線 LAN、仮想 LAN など) を使用したい場合は、設定ファイルの "LocalBridgeList" ディレクティブ内の "ShowAllInterfaces" を "true" にして Game Server を再起動するとこれらのデバイスも表示されるようになります。(上級者向け、Windows のみ)\r\n\r\nWindows をアップグレードした後にこの問題が発生するようになった場合は、Unite Gaming Game Server または Unite Gaming Game Bridge を再インストールしてみてください。
+SM_NO_BRIDGE_NICS				ローカルブリッジを作成することができる物理的な LAN カードが Game サーバーのコンピュータに 1 枚も見つかりませんでした。\r\n\r\nローカルブリッジを作成するには、物理的な LAN カードを 1 枚以上コンピュータにインストールする必要があります。\r\n無線 LAN カード、3G アダプタ等は使用できません。\r\n通常のケーブル接続の Ethernet に対応した LAN カードをインストールしてください。\r\n\r\n最近インストールした LAN カードが表示されない場合は、一度コンピュータを再起動してください。\r\n\r\nローカルブリッジを使用できない場合は、代わりに「SecureNAT 機能」の仮想 NAT 機能の使用を検討してください。\r\n\r\nなお、何らかの理由で物理的な LAN カード以外の LAN カード (無線 LAN、仮想 LAN など) を使用したい場合は、設定ファイルの "LocalBridgeList" ディレクティブ内の "ShowAllInterfaces" を "true" にして Game Server を再起動するとこれらのデバイスも表示されるようになります。(上級者向け、Windows のみ)\r\n\r\nWindows をアップグレードした後にこの問題が発生するようになった場合は、GAMING LAUNCHER Server または GAMING LAUNCHER Bridge を再インストールしてみてください。
 SM_CERT_MESSAGE					現在サーバーに設定されている SSL 自己署名ルート証明書は古い形式です。\r\n\r\nOpenGame プロトコルを用いてこの Game Server に接続しているクライアントが存在する場合、現在のサーバー証明書の使用を継続すると、OpenGame Connect for Android で不具合が発生する可能性があります。\r\n\r\nOpenGame Connect for Android を使用してこの Game Server に Game 接続を行っている場合は、サーバー証明書を再作成して更新することをお勧めします。\r\n\r\nサーバー証明書を再作成して更新しますか?
 SM_CERT_MESSAGE_CLI				--- ご注意 ---\r\n\r\n現在サーバーに設定されている SSL 自己署名ルート証明書は古い形式です。\r\n\r\n現在のサーバー証明書の使用を継続した場合、OpenGame Connect for Android で不具合が発生する可能性があります。\r\n\r\nOpenGame Connect for Android を使用してこの Game Server に Game 接続を行っている場合は、サーバー証明書を再作成して更新することをお勧めします。\r\n\r\nサーバー証明書を再作成して更新するには、VPN Server を最新版にアップデートしてから、"ServerCertRegenerate" コマンドを実行してください。
 SM_CERT_NEED_ROOT				指定された SSL 証明書は、証明機関 (CA) によって発行された証明書です。\r\n\r\nこの Game Server に Microsoft SSTP または OpenGame プロトコルで Game 接続を行う場合は、ルート証明書および中間証明書 (存在する場合) を Game Server にインストールする必要があります。\r\n\r\nVPN Server にルート証明書および中間証明書をインストールするためには、X.509 証明書のルート証明書および中間証明書ファイルを Game Server がインストールされているディレクトリの中にある "chain_certs" サブディレクトリにコピーしてください。\r\n\r\nルート証明書および中間証明書ファイルの取得方法は、証明機関 (CA) が発行している Web サイトをお読みいただくか、証明機関 (CA) のサポートに問い合わせてください。
@@ -1738,10 +1738,10 @@ L_LINE					------------------------------------------------------
 
 # (サーバー ログ)
 LS_START_UTF8			Log Messages are written with UTF-8 Encoding Format.
-LS_START_1				Unite Gaming Game Server エンジンを起動しました。
+LS_START_1				GAMING LAUNCHER Server エンジンを起動しました。
 LS_START_2				%S %S
 LS_START_3				%S
-LS_END_1				Unite Gaming Game Server エンジンは正常にシャットダウンされました。
+LS_END_1				GAMING LAUNCHER Server エンジンは正常にシャットダウンされました。
 LS_END_2				サーバー エンジンのシャットダウン処理を開始しています。
 LS_STOP_ALL_LISTENER	すべての TCP リスナーを停止します。
 LS_STOP_ALL_LISTENER_2	すべての TCP リスナーの停止が完了しました。
@@ -2087,10 +2087,10 @@ LA_DDNS_HOSTNAME_CHANGED	ダイナミック DNS 機能のホスト名を "%S" �
 LA_SET_SPECIAL_LISTENER	特別なリスナの有効 / 無効状態を変更しました。
 
 # (Client ログ)
-LC_START_1				Unite Gaming Game Client エンジンを起動しました。
+LC_START_1				GAMING LAUNCHER Client エンジンを起動しました。
 LC_START_2				%S %S
 LC_START_3				%S
-LC_END					Unite Gaming Game Client エンジンをシャットダウンしました。
+LC_END					GAMING LAUNCHER Client エンジンをシャットダウンしました。
 LC_LOAD_CONFIG_1		設定ファイルを読み込んでいます。
 LC_LOAD_CONFIG_2		設定ファイルの読み込みが完了しました。
 LC_LOAD_CONFIG_3		設定ファイルが存在しません。初期設定を作成します。
@@ -2167,8 +2167,8 @@ UT_SM_ST_WINS_2			WINS サーバー 2
 
 
 # EtherLogger Manager 関係
-EM_TITLE				Unite Gaming EtherLogger Manager
-EM_REMOTE_TITLE			Unite Gaming EtherLogger サービスに接続し、管理することができます。\r\n管理する EtherLogger サービスが動作しているコンピュータのホスト名または IP アドレスを入力してください。":" (コロン) に続けてポート番号を指定することもできます。
+EM_TITLE				GAMING LAUNCHER EtherLogger Manager
+EM_REMOTE_TITLE			GAMING LAUNCHER EtherLogger サービスに接続し、管理することができます。\r\n管理する EtherLogger サービスが動作しているコンピュータのホスト名または IP アドレスを入力してください。":" (コロン) に続けてポート番号を指定することもできます。
 EM_MAIN_COLUMN_1		LAN カード名
 EM_MAIN_COLUMN_2		状態
 EM_MAIN_OK				動作中
@@ -2177,14 +2177,14 @@ EM_ADD_NEW				新しいキャプチャデバイスの追加
 EM_ADD_EDIT				キャプチャ設定の編集
 EM_DELETE_CONFIRM		キャプチャ設定 "%S" を削除しますか?
 EM_NO_LICENSE_COLUMN	ご注意: 
-EM_NO_LICENSE			製品ライセンスが 1 つも登録されていないため、この Unite Gaming EtherLogger は動作しません。
+EM_NO_LICENSE			製品ライセンスが 1 つも登録されていないため、この GAMING LAUNCHER EtherLogger は動作しません。
 
-EM_UNSUPPORTED	この Unite Gaming EtherLogger が動作しているオペレーティングシステム上では、Unite Gaming EtherLogger を使用することはできません。Unite Gaming EtherLogger が使用できるオペレーティングシステムの一覧については、Unite Gaming EtherLogger のオンラインドキュメントを参照してください。
-EM_WPCAP_REMOTE	この Unite Gaming EtherLogger を使用するためには、WinPcap ソフトウェアをインストールする必要があります。現在、サーバー コンピュータ上には WinPcap ソフトウェアがインストールされていません。\r\n\r\nWinPcap ソフトウェアのインストールを続行するためには、VPN Server が動作しているサーバー コンピュータ上で Unite Gaming EtherLogger Managerを起動し、localhost (自分自身) に対して接続した状態で、ローカルブリッジ機能設定画面を表示する必要があります。\r\n続行するには、一旦この管理セッションを終了し、サーバー コンピュータ上で Unite Gaming EtherLogger Manager を起動してから、localhost に対して接続して、設定を続行してください。
-EM_WPCAP_ROOT	この Unite Gaming EtherLogger を使用するためには、WinPcap ソフトウェアをインストールする必要があります。\r\n\r\nインストールを継続するには、このコンピュータ上で Administrators (管理者) 権限を持ったユーザーでログオンする必要があります。\r\nAdministrators 権限でログオンし、もう一度 Unite Gaming Game サーバー管理マネージャを起動してください。
-EM_WPCAP_INSTALL	この Unite Gaming EtherLogger を使用するためには、WinPcap ソフトウェアをインストールする必要があります。現在、サーバー コンピュータ上には WinPcap ソフトウェアがインストールされていません。\r\n\r\nWinPcap はフリーソフトウェアであり、VPN Server の一部として同梱されているため、簡単にインストールすることができます。\r\n\r\nWinPcap のインストールを開始しますか?
-EM_WPCAP_REBOOT1	WinPcap のインストールが完了した後に Unite Gaming EtherLogger を使用する場合は、コンピュータを再起動する必要があります。\r\n\r\nコンピュータを手動で再起動し、Unite Gaming EtherLogger が起動した後で、もう一度設定を行ってください。
-EM_WPCAP_REBOOT2	WinPcap のインストールが完了した後に、Unite Gaming EtherLogger サービスを再起動する必要があります。\r\n\r\nUnite Gaming EtherLogger サービスの再起動は短時間で完了しますが、現在この Unite Gaming EtherLogger に接続している管理セッションはすべて切断されます。\r\nこの管理セッションも切断されるため、続行するには再接続してください。\r\n\r\nUnite Gaming EtherLogger サービスを再起動しますか?
+EM_UNSUPPORTED	この GAMING LAUNCHER EtherLogger が動作しているオペレーティングシステム上では、GAMING LAUNCHER EtherLogger を使用することはできません。GAMING LAUNCHER EtherLogger が使用できるオペレーティングシステムの一覧については、GAMING LAUNCHER EtherLogger のオンラインドキュメントを参照してください。
+EM_WPCAP_REMOTE	この GAMING LAUNCHER EtherLogger を使用するためには、WinPcap ソフトウェアをインストールする必要があります。現在、サーバー コンピュータ上には WinPcap ソフトウェアがインストールされていません。\r\n\r\nWinPcap ソフトウェアのインストールを続行するためには、VPN Server が動作しているサーバー コンピュータ上で GAMING LAUNCHER EtherLogger Managerを起動し、localhost (自分自身) に対して接続した状態で、ローカルブリッジ機能設定画面を表示する必要があります。\r\n続行するには、一旦この管理セッションを終了し、サーバー コンピュータ上で GAMING LAUNCHER EtherLogger Manager を起動してから、localhost に対して接続して、設定を続行してください。
+EM_WPCAP_ROOT	この GAMING LAUNCHER EtherLogger を使用するためには、WinPcap ソフトウェアをインストールする必要があります。\r\n\r\nインストールを継続するには、このコンピュータ上で Administrators (管理者) 権限を持ったユーザーでログオンする必要があります。\r\nAdministrators 権限でログオンし、もう一度 Unite Gaming Game サーバー管理マネージャを起動してください。
+EM_WPCAP_INSTALL	この GAMING LAUNCHER EtherLogger を使用するためには、WinPcap ソフトウェアをインストールする必要があります。現在、サーバー コンピュータ上には WinPcap ソフトウェアがインストールされていません。\r\n\r\nWinPcap はフリーソフトウェアであり、VPN Server の一部として同梱されているため、簡単にインストールすることができます。\r\n\r\nWinPcap のインストールを開始しますか?
+EM_WPCAP_REBOOT1	WinPcap のインストールが完了した後に GAMING LAUNCHER EtherLogger を使用する場合は、コンピュータを再起動する必要があります。\r\n\r\nコンピュータを手動で再起動し、GAMING LAUNCHER EtherLogger が起動した後で、もう一度設定を行ってください。
+EM_WPCAP_REBOOT2	WinPcap のインストールが完了した後に、GAMING LAUNCHER EtherLogger サービスを再起動する必要があります。\r\n\r\nGAMING LAUNCHER EtherLogger サービスの再起動は短時間で完了しますが、現在この GAMING LAUNCHER EtherLogger に接続している管理セッションはすべて切断されます。\r\nこの管理セッションも切断されるため、続行するには再接続してください。\r\n\r\nGAMING LAUNCHER EtherLogger サービスを再起動しますか?
 EM_RESOURCE		WinPcap のドライバを読み込めませんでした。
 
 
@@ -2449,7 +2449,7 @@ B_DELETE				削除(&D)
 
 PREFIX					D_CM_PASSWORD
 CAPTION					パスワードの設定 - Game クライアント接続マネージャ
-S_TITLE					この Unite Gaming Game Client サービスの制御を行うためのパスワードを設定することができます。\r\nパスワードを設定すると、次回 Game クライアント接続マネージャで Unite Gaming Game Client サービスに接続する際にパスワードの入力が求められます。
+S_TITLE					この GAMING LAUNCHER Client サービスの制御を行うためのパスワードを設定することができます。\r\nパスワードを設定すると、次回 Game クライアント接続マネージャで GAMING LAUNCHER Client サービスに接続する際にパスワードの入力が求められます。
 STATIC1					クライアント管理パスワードの設定:
 R_USE_PASSWORD			パスワードを設定する(&U)
 R_REMOTE_ONLY			パスワードはリモートから操作を行う場合のみ要求する(&R)
@@ -2531,7 +2531,7 @@ S_STATIC				※ [RADIUS または NT ドメイン認証] を使用して認証�
 
 PREFIX					D_SM_MAIN
 CAPTION					Unite Gaming Game  サーバー管理マネージャ
-STATIC1					Unite Gaming Game Server への接続設定(&P):
+STATIC1					GAMING LAUNCHER Server への接続設定(&P):
 STATIC2					以下の Game Server または Game Bridge への接続設定が登録されています。名前をダブルクリックすると、サーバーに接続できます。\r\n新しい接続を追加するには [新しい接続設定] をクリックしてください。
 B_NEW_SETTING			新しい接続設定(&N)
 B_EDIT_SETTING			接続設定の編集(&E)
@@ -2595,7 +2595,7 @@ B_APPLY					適用
 STATIC3					サーバー情報の参照および設定(&N)
 B_SSL					暗号化と通信関係の設定(&W)
 B_STATUS				サーバー状態の表示(&V)
-B_INFO					Unite Gaming Game Server\r\nに関する情報(&Q)
+B_INFO					GAMING LAUNCHER Server\r\nに関する情報(&Q)
 B_LICENSE				ライセンスの追加と削除(&L)
 B_FARM					クラスタリング構成(&M)
 B_FARM_STATUS			クラスタリング状態(&Z)
@@ -3258,8 +3258,8 @@ STATIC1					Game Client の仮想 LAN カードのインストールを行いま
 
 
 PREFIX					D_EM_MAIN
-CAPTION					Unite Gaming EtherLogger Manager
-STATIC1					Unite Gaming EtherLogger は、コンピュータに接続されている LAN カードを流れるデータをキャプチャし、管理者が指定した種類のパケットのヘッダまたはすべてのデータをテキストファイルにログとして記録するサービスです。\r\n\r\n現在、以下のキャプチャデバイスでパケットロギングを実行しています。
+CAPTION					GAMING LAUNCHER EtherLogger Manager
+STATIC1					GAMING LAUNCHER EtherLogger は、コンピュータに接続されている LAN カードを流れるデータをキャプチャし、管理者が指定した種類のパケットのヘッダまたはすべてのデータをテキストファイルにログとして記録するサービスです。\r\n\r\n現在、以下のキャプチャデバイスでパケットロギングを実行しています。
 B_PASSWORD				管理パスワード(&P)
 B_LICENSE				ライセンス(&L)
 B_ADD					追加(&A)
@@ -3321,7 +3321,7 @@ IDCANCEL				キャンセル
 
 PREFIX					D_EM_LICENSE
 CAPTION					ライセンスの追加と削除
-STATIC1					Unite Gaming EtherLogger を使用するには、有効なライセンスを取得し、ライセンスキーを登録する必要があります。この画面では、新しいライセンスキーを登録したり、登録済みのライセンスキーを削除したり、現在のライセンス一覧や Unite Gaming EtherLogger のライセンスモードを表示したりすることができます。
+STATIC1					GAMING LAUNCHER EtherLogger を使用するには、有効なライセンスを取得し、ライセンスキーを登録する必要があります。この画面では、新しいライセンスキーを登録したり、登録済みのライセンスキーを削除したり、現在のライセンス一覧や GAMING LAUNCHER EtherLogger のライセンスモードを表示したりすることができます。
 S_BOLD					現在登録されているライセンスの一覧(&L):
 B_OBTAIN				ライセンスの入手・更新(&O)
 STATIC2					[ライセンスの入手・更新] をクリックすると、ライセンスの入手・更新方法に関する説明が記載された Web サイトを表示します。
@@ -3329,13 +3329,13 @@ B_ADD					新しいライセンスキーの登録(&A)
 B_DEL					削除(&D)
 IDOK					ライセンスに関する情報(&I)
 STATIC3					ライセンスを選択し、[ライセンスに関する情報] をクリックすると、ソフトイーサ株式会社の Web サイト (softether.com) に接続し、そのライセンスに関する登録情報を表示します。
-S_BOLD2					現在の Unite Gaming EtherLogger のライセンスモード(&M):
+S_BOLD2					現在の GAMING LAUNCHER EtherLogger のライセンスモード(&M):
 IDCANCEL				閉じる(&X)
 
 
 PREFIX					D_EM_LICENSE_ADD
 CAPTION					新しいライセンスキーの登録
-S_INFO					Unite Gaming EtherLogger の製品ライセンスのライセンスキーを登録することができます。
+S_INFO					GAMING LAUNCHER EtherLogger の製品ライセンスのライセンスキーを登録することができます。
 STATIC1					ライセンスキーは、36 桁の英数字およびハイフン ( '-' ) で構成されている、ライセンスの所有を証明するキーコードです。\r\n\r\nライセンスキーは、本ソフトウェアと共にライセンス証書を受け取った場合はライセンス証書に印刷されています。本ソフトウェアのライセンスをオンラインで購入した場合は、購入時の Web サイトの画面やメールなどにライセンスキーが記載されていることがあります。その他の方法でライセンスキーが記載されている場合もあります。不明な場合は、ライセンスの購入元にお問い合わせください。
 STATIC2					ライセンスキーを正確に入力してください(&I):
 STATIC3					ライセンスキーは 6 桁ごとに区切って入力してください。ハイフンは入力する必要はありません。コピー && ペーストで入力することも可能です。
@@ -3732,7 +3732,7 @@ IDCANCEL				閉じる(&C)
 
 PREFIX					D_SM_LICENSE
 CAPTION					ライセンスの追加と削除
-STATIC1					Unite Gaming Game Server を使用するには、有効なライセンスを取得し、ライセンスキーを登録する必要があります。この画面では、新しいライセンスキーを登録したり、登録済みのライセンスキーを削除したり、現在のライセンス一覧や Game Server のライセンスモードを表示したりすることができます。
+STATIC1					GAMING LAUNCHER Server を使用するには、有効なライセンスを取得し、ライセンスキーを登録する必要があります。この画面では、新しいライセンスキーを登録したり、登録済みのライセンスキーを削除したり、現在のライセンス一覧や Game Server のライセンスモードを表示したりすることができます。
 S_BOLD					現在登録されているライセンスの一覧(&L):
 B_OBTAIN				ライセンスの入手・更新(&O)
 STATIC2					[ライセンスの入手・更新] をクリックすると、ライセンスの入手・更新方法に関する説明が記載された Web サイトを表示します。
@@ -3740,13 +3740,13 @@ B_ADD					新しいライセンスキーの登録(&A)
 B_DEL					削除(&D)
 IDOK					ライセンスに関する情報(&I)
 STATIC3					ライセンスを選択し、[ライセンスに関する情報] をクリックすると、ソフトイーサ株式会社の Web サイト (softether.com) に接続し、そのライセンスに関する登録情報を表示します。
-S_BOLD2					現在の Unite Gaming Game Server のライセンスモード(&M):
+S_BOLD2					現在の GAMING LAUNCHER Server のライセンスモード(&M):
 IDCANCEL				閉じる(&X)
 
 
 PREFIX					D_SM_LICENSE_ADD
 CAPTION					新しいライセンスキーの登録
-S_INFO					Unite Gaming Game Server の製品ライセンスまたは接続ライセンスのライセンスキーを登録することができます。
+S_INFO					GAMING LAUNCHER Server の製品ライセンスまたは接続ライセンスのライセンスキーを登録することができます。
 STATIC1					ライセンスキーは、36 桁の英数字およびハイフン ( '-' ) で構成されている、ライセンスの所有を証明するキーコードです。\r\n\r\nライセンスキーは、本ソフトウェアと共にライセンス証書を受け取った場合はライセンス証書に印刷されています。本ソフトウェアのライセンスをオンラインで購入した場合は、購入時の Web サイトの画面やメールなどにライセンスキーが記載されていることがあります。その他の方法でライセンスキーが記載されている場合もあります。不明な場合は、ライセンスの購入元にお問い合わせください。
 STATIC2					ライセンスキーを正確に入力してください(&I):
 STATIC3					ライセンスキーは 6 桁ごとに区切って入力してください。ハイフンは入力する必要はありません。コピー && ペーストで入力することも可能です。
@@ -3756,23 +3756,23 @@ IDCANCEL				キャンセル
 
 
 PREFIX					D_FREEINFO
-CAPTION					Unite Gaming Game Server Free Edition について
-S_INFO_1				Unite Gaming Game Server Free Edition をご利用いただきありがとうございます。
-S_INFO_2				接続先のサーバー "%S" で稼動している Unite Gaming Game Server は個人利用を目的とした Free Edition です。\r\nFree Edition では Unite Gaming Game Server のすべての機能が使用できますが、下記の利用方法は使用権許諾契約によって禁止されています。
+CAPTION					GAMING LAUNCHER Server Free Edition について
+S_INFO_1				GAMING LAUNCHER Server Free Edition をご利用いただきありがとうございます。
+S_INFO_2				接続先のサーバー "%S" で稼動している GAMING LAUNCHER Server は個人利用を目的とした Free Edition です。\r\nFree Edition では GAMING LAUNCHER Server のすべての機能が使用できますが、下記の利用方法は使用権許諾契約によって禁止されています。
 S_INFO_3				・ Game Server を経由して、業務のための通信が行われるような使用方法。 
-S_INFO_4				上記の禁止されている使用方法で使用した場合は、Unite Gaming Game Server 使用権許諾契約違反となりますのでご注意ください。Unite Gaming Game Server の通常製品版のライセンスを入手していただくことにより、上記のような制限は無くなります。 通常製品版については、www.softether.com をご覧ください。\r\n\r\nもし、このサーバーを上記のような使用方法で使用されている場合は、www.softether.com までご連絡いただきますようお願いいたします。\r\n\r\n※ この画面は、Free Edition の Game Server に接続した際に表示されます。Free Edition 以外のエディション製品では表示されません。\r\n※ Free Edition のソフトウェアは、製品版と比較してこのお知らせ画面が表示される以外の違いは全くありません。
+S_INFO_4				上記の禁止されている使用方法で使用した場合は、GAMING LAUNCHER Server 使用権許諾契約違反となりますのでご注意ください。GAMING LAUNCHER Server の通常製品版のライセンスを入手していただくことにより、上記のような制限は無くなります。 通常製品版については、www.softether.com をご覧ください。\r\n\r\nもし、このサーバーを上記のような使用方法で使用されている場合は、www.softether.com までご連絡いただきますようお願いいたします。\r\n\r\n※ この画面は、Free Edition の Game Server に接続した際に表示されます。Free Edition 以外のエディション製品では表示されません。\r\n※ Free Edition のソフトウェアは、製品版と比較してこのお知らせ画面が表示される以外の違いは全くありません。
 B_HIDE					次回からこのお知らせを表示しない(&H)
 IDCANCEL				&OK
 
 
 PREFIX					D_CM_SETTING
-CAPTION					Unite Gaming Game Client 動作モード変更
-STATIC1					Unite Gaming Game Client は「通常モード」または「簡易モード」で使用することができます。使用するモードを切り替えるには、下記のチェックボックスを選択してください。
+CAPTION					GAMING LAUNCHER Client 動作モード変更
+STATIC1					GAMING LAUNCHER Client は「通常モード」または「簡易モード」で使用することができます。使用するモードを切り替えるには、下記のチェックボックスを選択してください。
 R_NORMAL				通常モード(&N)
 R_EASY					簡易モード(&E)
-STATIC2					[通常モード] は Unite Gaming Game Client ソフトウェアのすべての操作を行うことができる動作モードです。一般的なユーザーやシステム管理者にお勧めします。
+STATIC2					[通常モード] は GAMING LAUNCHER Client ソフトウェアのすべての操作を行うことができる動作モードです。一般的なユーザーやシステム管理者にお勧めします。
 STATIC3					[簡易モード] は Game Server への接続などの最もよく使用する操作しかできない動作モードです。VPN について詳しい知識をお持ちでないユーザーにお勧めします。
-STATIC4					[設定ロック機能] を使用すると、Unite Gaming Game Client に登録されている接続設定を使って Game Server に接続することはできますが、接続設定の内容を変更したり、新しく接続設定を作成したり、削除したりすることができなくなります。
+STATIC4					[設定ロック機能] を使用すると、GAMING LAUNCHER Client に登録されている接続設定を使って Game Server に接続することはできますが、接続設定の内容を変更したり、新しく接続設定を作成したり、削除したりすることができなくなります。
 R_LOCK					設定ロック機能を使う(&L)
 S_PASSWORD1				パスワードを指定することができます。パスワードを指定すると、後から設定ロック機能を無効にする際にパスワードの入力が必要になります。
 S_PASSWORD2				パスワード(&P):
@@ -3792,9 +3792,9 @@ B_VGC					Game Gate 学術実験
 
 
 PREFIX					D_SM_SETUP
-CAPTION					Unite Gaming Game Server / Bridge 簡易セットアップ ()
-S_TITLE					Unite Gaming Game Server / Bridge 簡易セットアップ ()
-IDC_STATIC_1			このセットアッププログラムを使用すると、Unite Gaming Game Server または Game Bridge を以下の用途や目的のために簡単にセットアップすることができます。セットアップ終了後は、VPN サーバー管理マネージャを用いて、より詳細な設定を自由に行うことができます。
+CAPTION					GAMING LAUNCHER Server / Bridge 簡易セットアップ ()
+S_TITLE					GAMING LAUNCHER Server / Bridge 簡易セットアップ ()
+IDC_STATIC_1			このセットアッププログラムを使用すると、GAMING LAUNCHER Server または Game Bridge を以下の用途や目的のために簡単にセットアップすることができます。セットアップ終了後は、VPN サーバー管理マネージャを用いて、より詳細な設定を自由に行うことができます。
 S_BOLD					構築しようとしている Game サーバーの種類を選択してください。複数の用途のための Game サーバーを構築しようとしている場合は、複数の種類を選択することができます。
 C_REMOTE				リモートアクセス Game サーバー(&R)
 S_REMOTE_1				リモートアクセス Game は、たとえば社内 LAN などの既存の Ethernet セグメントに対して、インターネットなどを経由して遠隔地の Game クライアントコンピュータが Game 接続することができる形態の Game 構成です。\r\nVPN Server に接続した Game クライアントコンピュータは、社内の Ethernet に対して直接 LAN ケーブルで接続しているのと同等の状態でネットワークにアクセスできるようになります。
@@ -4056,7 +4056,7 @@ S_TITLE					%s のアンインストール
 PREFIX					D_SW_EASY1
 CAPTION					D_SW_EASY1
 S_WELCOME				企業内の多くの数のユーザーのコンピュータに Game Client をインストールする際に、1 台ずつ Game 接続設定を実施するのは大変です。
-S_TITLE					Unite Gaming Game Client 簡易インストーラとは
+S_TITLE					GAMING LAUNCHER Client 簡易インストーラとは
 S_WELCOME2				「簡易インストーラ作成ウィザード」は、企業のシステム管理者向けのツールです。「簡易インストーラ作成ウィザード」を使用すれば、あらかじめ指定した接続設定ファイルを埋め込んだ Game Client のインストーラを作成できます。もちろん、個人のユーザーも使用できます。
 S_WELCOME3				作成したインストーラは、社内のファイルサーバーやメールなどを用いて社員に配布できます。インストーラを実行すると Game Client がインストールされ、自動的に接続設定がインポートされてその接続設定を用いた Game 接続が開始されます。
 
@@ -4077,9 +4077,9 @@ B_EASYMODE				Game クライアント接続マネージャを簡易モードに�
 
 PREFIX					D_SW_WEB1
 CAPTION					D_SW_WEB1
-S_WELCOME				Unite Gaming Game Client Web インストーラを作成すると、Web ブラウザを開き特定のページにアクセスすることにより、Unite Gaming Game Client を自動的にインストールすることができます。この際に、予め設定しておいた接続設定ファイルをインポートして Game 接続を開始させることもできます。
-S_TITLE					Unite Gaming Game Client Web インストーラとは
-S_WELCOME2				作成した Web インストーラは、社内向けの Web サーバーなどに HTML ファイルとして設置できます。設置された HTML ファイルの URL に社員がアクセスすると、Unite Gaming Game Client のインストーラが起動します。
+S_WELCOME				GAMING LAUNCHER Client Web インストーラを作成すると、Web ブラウザを開き特定のページにアクセスすることにより、GAMING LAUNCHER Client を自動的にインストールすることができます。この際に、予め設定しておいた接続設定ファイルをインポートして Game 接続を開始させることもできます。
+S_TITLE					GAMING LAUNCHER Client Web インストーラとは
+S_WELCOME2				作成した Web インストーラは、社内向けの Web サーバーなどに HTML ファイルとして設置できます。設置された HTML ファイルの URL に社員がアクセスすると、GAMING LAUNCHER Client のインストーラが起動します。
 S_WELCOME3				ActiveX コントロールを使用しています。クライアントブラウザは Internet Explorer 5.0 以降、オペレーティングシステムは Windows 2000 以降がサポートされています。IE 以外のブラウザや Windows 98 などの古い OS はサポートされません。
 
 
@@ -4133,7 +4133,7 @@ CAPTION					Game Azure サービスの設定
 S_TITLE					Game Azure クラウド型 Game サービス (無料)
 S_1						Game Azure により、会社のパソコンに自宅や外出先のパソコンから非常に簡単に Game 接続できるようになります。VPN 接続中は会社のパソコンを経由して、社内 LAN の他のサーバーにもアクセスできます。
 S_2						会社のパソコン (Game Server) にはグローバル IP アドレスは不要です。ファイアウォールや NAT の内側であっても動作し、ネットワーク管理者による設定は一切必要ありません。VPN クライアントとなる自宅のパソコンでは、Windows に標準付属の SSTP Game クライアントを使用できます。
-S_3						Game Azure は、Unite Gaming Game Server をお使いの方はどなたでも無料で利用できるクラウド Game サービスです。ソフトイーサ株式会社によって運営されています。使い方を表示するには、右のボタンをクリックしてください。
+S_3						Game Azure は、GAMING LAUNCHER Server をお使いの方はどなたでも無料で利用できるクラウド Game サービスです。ソフトイーサ株式会社によって運営されています。使い方を表示するには、右のボタンをクリックしてください。
 B_BOLD					Game Azure 設定
 R_ENABLE				Game Azure を有効にする(&E)
 R_DISABLE				Game Azure を無効にする(&D)
@@ -4158,7 +4158,7 @@ IDCANCEL				キャンセル
 
 
 PREFIX					D_VGC_LIST
-CAPTION					Game Gate 学術実験プロジェクト プラグイン for Unite Gaming Game Client
+CAPTION					Game Gate 学術実験プロジェクト プラグイン for GAMING LAUNCHER Client
 S_TITLE					Game Gate 公開 Game 中継サーバー一覧
 S_INFO1					世界中のボランティアによって無償提供されている Game サーバーに Game 接続すると、その Game サーバーを経由してインターネットに自由にアクセスできます。ローカルのファイアウォールの制約を回避したり、自分の IP アドレスを秘匿したりできます。
 IDOK					選択した Game サーバーに接続(&C)
@@ -4233,7 +4233,7 @@ S_BOLD					Game 通信が禁止されている国・地域では Game Gate を�
 PREFIX					D_NM_PUSH
 CAPTION					プッシュする静的ルーティングテーブルの編集
 S1						Game クライアントに対してこの仮想 DHCP サーバーから DHCP 応答を送信する際に、クラスレス静的ルート (RFC 3442) を併せて送信することができます。
-S2						Game クライアントがクラスレス静的ルート (RFC 3442) を認識できるかどうかは、VPN クライアントソフトウェアによって異なります。Unite Gaming Game Client および OpenGame Client はクラスレス静的ルートに対応しています。L2TP/IPsec および MS-SSTP においては、利用の可否はクライアントソフトウェアに依存します。
+S2						Game クライアントがクラスレス静的ルート (RFC 3442) を認識できるかどうかは、VPN クライアントソフトウェアによって異なります。GAMING LAUNCHER Client および OpenGame Client はクラスレス静的ルートに対応しています。L2TP/IPsec および MS-SSTP においては、利用の可否はクライアントソフトウェアに依存します。
 S3						仮想 DHCP サーバーのオプションでデフォルトゲートウェイを空欄に設定することで、スプリットトンネリングが実現できます。L2TP/IPsec および MS-SSTP クライアントを使用している場合は、IPv4 の設定画面でデフォルトゲートウェイを Game サーバーに向けないようにする設定が必要です。
 S4						ローカルブリッジ経由で外部に DHCP サーバーがある場合は、その DHCP サーバーでクラスレス静的ルート (RFC 3442) をプッシュするよう設定することもできます。その場合は、SecureNAT の仮想 DHCP サーバー機能は無効にしてください。また、この画面での設定は必要ありません。
 S5						プッシュする静的ルーティングテーブルの編集
@@ -6185,7 +6185,7 @@ CMD_DhcpSet_DNS			クライアントに対して通知する DNS サーバー (�
 CMD_DhcpSet_DNS2		クライアントに対して通知する DNS サーバー (セカンダリ) の IP アドレスを指定します。SecureNAT 機能の仮想 NAT 機能と共に有効にして使用する場合は、SecureNAT の仮想ホストの IP アドレスを指定することもできます。0 または none を指定すると、DNS サーバー アドレスをクライアントに対して通知しません。
 CMD_DhcpSet_DOMAIN		クライアントに対して通知するドメイン名を指定します。none を指定すると、ドメイン名をクライアントに対して通知しません。
 CMD_DhcpSet_LOG			仮想 DHCP サーバーの動作を仮想 HUB のセキュリティログに保存するかどうかを指定します。"yes" を指定すると保存します。この値は、仮想 NAT 機能のログ保存設定と連動しています。
-CMD_DhcpSet_PUSHROUTE	プッシュする静的ルーティングテーブルを指定します。\n例: "192.168.5.0/255.255.255.0/192.168.4.254, 10.0.0.0/255.0.0.0/192.168.4.253"\n複数のエントリ (最大 64 個) はカンマまたはスペースで区切ります。各エントリは、"IP ネットワークアドレス/サブネットマスク/ゲートウェイ IP アドレス" の書式で記述します。\nVPN クライアントに対してこの仮想 DHCP サーバーから DHCP 応答を送信する際に、クラスレス静的ルート (RFC 3442) を併せて送信することができます。\nVPN クライアントがクラスレス静的ルート (RFC 3442) を認識できるかどうかは、VPN クライアントソフトウェアによって異なります。Unite Gaming Game Client および OpenGame Client はクラスレス静的ルートに対応しています。L2TP/IPsec および MS-SSTP においては、利用の可否はクライアントソフトウェアに依存します。\n仮想 DHCP サーバーのオプションでデフォルトゲートウェイを空欄に設定することで、スプリットトンネリングが実現できます。L2TP/IPsec および MS-SSTP クライアントを使用している場合は、IPv4 の設定画面でデフォルトゲートウェイを Game サーバーに向けないようにする設定が必要です。\nローカルブリッジ経由で外部に DHCP サーバーがある場合は、その DHCP サーバーでクラスレス静的ルート (RFC 3442) をプッシュするよう設定することもできます。その場合は、SecureNAT の仮想 DHCP サーバー機能は無効にしてください。また、このコマンドでの設定は必要ありません。\nクラスレス静的ルートについては、RFC 3442 をお読みください。
+CMD_DhcpSet_PUSHROUTE	プッシュする静的ルーティングテーブルを指定します。\n例: "192.168.5.0/255.255.255.0/192.168.4.254, 10.0.0.0/255.0.0.0/192.168.4.253"\n複数のエントリ (最大 64 個) はカンマまたはスペースで区切ります。各エントリは、"IP ネットワークアドレス/サブネットマスク/ゲートウェイ IP アドレス" の書式で記述します。\nVPN クライアントに対してこの仮想 DHCP サーバーから DHCP 応答を送信する際に、クラスレス静的ルート (RFC 3442) を併せて送信することができます。\nVPN クライアントがクラスレス静的ルート (RFC 3442) を認識できるかどうかは、VPN クライアントソフトウェアによって異なります。GAMING LAUNCHER Client および OpenGame Client はクラスレス静的ルートに対応しています。L2TP/IPsec および MS-SSTP においては、利用の可否はクライアントソフトウェアに依存します。\n仮想 DHCP サーバーのオプションでデフォルトゲートウェイを空欄に設定することで、スプリットトンネリングが実現できます。L2TP/IPsec および MS-SSTP クライアントを使用している場合は、IPv4 の設定画面でデフォルトゲートウェイを Game サーバーに向けないようにする設定が必要です。\nローカルブリッジ経由で外部に DHCP サーバーがある場合は、その DHCP サーバーでクラスレス静的ルート (RFC 3442) をプッシュするよう設定することもできます。その場合は、SecureNAT の仮想 DHCP サーバー機能は無効にしてください。また、このコマンドでの設定は必要ありません。\nクラスレス静的ルートについては、RFC 3442 をお読みください。
 CMD_DhcpSet_Prompt_START	配布するアドレス帯の開始点: 
 CMD_DhcpSet_Prompt_END		配布するアドレス帯の終了点: 
 CMD_DhcpSet_Prompt_MASK		サブネットマスク: 
@@ -6321,7 +6321,7 @@ CMD_AcDel_Prompt_ID		削除するルールの ID:
 
 # LicenseAdd コマンド
 CMD_LicenseAdd			新しいライセンスキーの登録
-CMD_LicenseAdd_Help		Unite Gaming Game Server に、新しいライセンスキーを登録します。\nUnite Gaming Game Server を使用するには、有効なライセンスを取得し、ライセンスキーを登録する必要があります。ライセンスキーは、36 桁の英数字およびハイフン ( '-' ) で構成されている、ライセンスの所有を証明するキーコードです。\nライセンスキーは、本ソフトウェアと共にライセンス証書を受け取った場合は、ライセンス証書に印刷されています。本ソフトウェアのライセンスをオンラインで購入した場合は、購入時の Web サイトの画面やメールなどにライセンスキーが記載されていることがあります。また、その他の方法で、ライセンスキーが記載されている場合もあります。不明な場合は、ライセンスの購入元にお問い合わせください。\n\n現在登録されているライセンスの一覧を取得するには、LicenseList コマンドを使用します。\n現在の Game Server のライセンス状態を表示するには、LicenseStatus コマンドを使用します。\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
+CMD_LicenseAdd_Help		GAMING LAUNCHER Server に、新しいライセンスキーを登録します。\nGAMING LAUNCHER Server を使用するには、有効なライセンスを取得し、ライセンスキーを登録する必要があります。ライセンスキーは、36 桁の英数字およびハイフン ( '-' ) で構成されている、ライセンスの所有を証明するキーコードです。\nライセンスキーは、本ソフトウェアと共にライセンス証書を受け取った場合は、ライセンス証書に印刷されています。本ソフトウェアのライセンスをオンラインで購入した場合は、購入時の Web サイトの画面やメールなどにライセンスキーが記載されていることがあります。また、その他の方法で、ライセンスキーが記載されている場合もあります。不明な場合は、ライセンスの購入元にお問い合わせください。\n\n現在登録されているライセンスの一覧を取得するには、LicenseList コマンドを使用します。\n現在の Game Server のライセンス状態を表示するには、LicenseStatus コマンドを使用します。\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
 CMD_LicenseAdd_Args		LicenseAdd [key]
 CMD_LicenseAdd_[key]	登録するライセンスキーを指定します。36 桁の英数字を、6 桁ごとにハイフンで区切って指定してください。
 CMD_LicenseAdd_Prompt_Key	ライセンスキー: 
@@ -6329,7 +6329,7 @@ CMD_LicenseAdd_Prompt_Key	ライセンスキー:
 
 # LicenseDel コマンド
 CMD_LicenseDel			登録されているライセンスの削除
-CMD_LicenseDel_Help		Unite Gaming Game Server に、現在登録されているライセンス一覧から、指定されたライセンスを削除します。\n\n現在登録されているライセンスの一覧を取得するには、LicenseList コマンドを使用します。\n現在の Game Server のライセンス状態を表示するには、LicenseStatus コマンドを使用します。\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
+CMD_LicenseDel_Help		GAMING LAUNCHER Server に、現在登録されているライセンス一覧から、指定されたライセンスを削除します。\n\n現在登録されているライセンスの一覧を取得するには、LicenseList コマンドを使用します。\n現在の Game Server のライセンス状態を表示するには、LicenseStatus コマンドを使用します。\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
 CMD_LicenseDel_Args		LicenseDel [id]
 CMD_LicenseDel_[id]		削除するライセンスの番号を指定します。
 CMD_LicenseDel_Prompt_ID	削除するライセンスの番号: 
@@ -6337,13 +6337,13 @@ CMD_LicenseDel_Prompt_ID	削除するライセンスの番号:
 
 # LicenseList コマンド
 CMD_LicenseList			登録されているライセンス一覧の取得
-CMD_LicenseList_Help	Unite Gaming Game Server に、現在登録されているライセンスのライセンスキー、ライセンス種類名、状態、有効期限、ライセンス ID、ライセンス種類 ID、サーバー ID およびシリアル ID の一覧を表示します。\n\n現在の Game Server のライセンス状態を表示するには、LicenseStatus コマンドを使用します。\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
+CMD_LicenseList_Help	GAMING LAUNCHER Server に、現在登録されているライセンスのライセンスキー、ライセンス種類名、状態、有効期限、ライセンス ID、ライセンス種類 ID、サーバー ID およびシリアル ID の一覧を表示します。\n\n現在の Game Server のライセンス状態を表示するには、LicenseStatus コマンドを使用します。\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
 CMD_LicenseList_Args	LicenseList
 
 
 # LicenseStatus コマンド
 CMD_LicenseStatus		現在の Game Server のライセンス状態の取得
-CMD_LicenseStatus_Help	現在の Unite Gaming Game Server のライセンス状態を取得して表示します。\nUnite Gaming Game Server の現在の製品エディション名、サーバー ID、製品ライセンスの有効期限、および利用可能なクライアント接続ライセンス数とブリッジ接続ライセンス数が表示されます。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
+CMD_LicenseStatus_Help	現在の GAMING LAUNCHER Server のライセンス状態を取得して表示します。\nGAMING LAUNCHER Server の現在の製品エディション名、サーバー ID、製品ライセンスの有効期限、および利用可能なクライアント接続ライセンス数とブリッジ接続ライセンス数が表示されます。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
 CMD_LicenseStatus_Args	LicenseStatus
 
 
@@ -6351,7 +6351,7 @@ CMD_LicenseStatus_Args	LicenseStatus
 
 # IPsecEnable コマンド
 CMD_IPsecEnable			IPsec Game サーバー機能の有効化 / 無効化
-CMD_IPsecEnable_Help	Unite Gaming Game Server の IPsec Game サーバー機能を有効化 / 無効化します。\nIPsec Game サーバー機能を有効にすると、VPN Server 上の仮想 HUB は、IPsec / L2TP / EtherIP / L2TPv3 に対応した PC や Mac OS X、スマートフォン、ルータ等からの Game 接続を受付けることができるようになります。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。\nこのコマンドは、クラスタとして動作している Game Server の仮想 HUB では実行できません。
+CMD_IPsecEnable_Help	GAMING LAUNCHER Server の IPsec Game サーバー機能を有効化 / 無効化します。\nIPsec Game サーバー機能を有効にすると、VPN Server 上の仮想 HUB は、IPsec / L2TP / EtherIP / L2TPv3 に対応した PC や Mac OS X、スマートフォン、ルータ等からの Game 接続を受付けることができるようになります。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。\nこのコマンドは、クラスタとして動作している Game Server の仮想 HUB では実行できません。
 CMD_IPsecEnable_Args	IPsecEnable [/L2TP:yes|no] [/L2TPRAW:yes|no] [/ETHERIP:yes|no] [/PSK:pre-shared-key] [/DEFAULTHUB:default_hub]
 CMD_IPsecEnable_L2TP	L2TP over IPsec サーバー機能を有効または無効に設定します。iPhone、iPad、Android、Windows、Mac OS X からの Game 接続を受付けるにはこの機能を有効にしてください。
 CMD_IPsecEnable_L2TPRAW	IPsec を用いない L2TP サーバー機能を有効または無効に設定します。特殊なクライアントからの接続を受付ける場合のみ有効にしてください。
@@ -6367,7 +6367,7 @@ CMD_IPsecEnable_Prompt_DEFAULTHUB	Game 接続時に仮想 HUB 名が省略され
 
 # IPsecGet コマンド
 CMD_IPsecGet			IPsec Game サーバー機能の現在の設定の取得
-CMD_IPsecGet_Help		Unite Gaming Game Server の IPsec Game サーバー機能の現在の設定を取得して表示します。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。\nこのコマンドは、クラスタとして動作している Game Server の仮想 HUB では実行できません。
+CMD_IPsecGet_Help		GAMING LAUNCHER Server の IPsec Game サーバー機能の現在の設定を取得して表示します。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。\nこのコマンドは、クラスタとして動作している Game Server の仮想 HUB では実行できません。
 CMD_IPsecGet_Args		IPsecGet
 CMD_IPsecGet_PRINT_L2TP		L2TP over IPsec サーバー機能は有効
 CMD_IPsecGet_PRINT_L2TPRAW	Raw L2TP サーバー機能は有効
@@ -6416,7 +6416,7 @@ CMD_OpenVpnMakeConfig_ERROR			サンプル設定ファイルを "%s" ファイ�
 
 # ServerCertRegenerate コマンド
 CMD_ServerCertRegenerate	指定された CN (Common Name) を持つ自己署名証明書を新たに作成し Game Server に登録
-CMD_ServerCertRegenerate_Help	Unite Gaming Game Server の SSL-Game 機能で提示されるサーバー証明書を、新たに作成する証明書に置き換えます。新たな証明書は自己署名証明書として生成され、CN (Common Name) の値を任意の文字列に設定することができます。\n\nこのコマンドは、Microsoft SSTP Game 互換サーバー機能を使用しようとする場合に便利です。なぜならば、SSTP Game クライアント (Windows Vista / 7 / 8 / RT / 10 に標準搭載) は接続先の Game Server の提示する SSL 証明書の CN (Common Name) の値が接続先として指定されているホスト名文字列と完全に一致するかどうかを検証し、もし一致しない場合は接続をキャンセルするためです。\n\nこのコマンドは、既存の Game Server の SSL 証明書を削除します。ServerCertGet コマンドおよび ServerKeyGet コマンドを用いて、現在の証明書と秘密鍵をバックアップしておくことを推奨します。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
+CMD_ServerCertRegenerate_Help	GAMING LAUNCHER Server の SSL-Game 機能で提示されるサーバー証明書を、新たに作成する証明書に置き換えます。新たな証明書は自己署名証明書として生成され、CN (Common Name) の値を任意の文字列に設定することができます。\n\nこのコマンドは、Microsoft SSTP Game 互換サーバー機能を使用しようとする場合に便利です。なぜならば、SSTP Game クライアント (Windows Vista / 7 / 8 / RT / 10 に標準搭載) は接続先の Game Server の提示する SSL 証明書の CN (Common Name) の値が接続先として指定されているホスト名文字列と完全に一致するかどうかを検証し、もし一致しない場合は接続をキャンセルするためです。\n\nこのコマンドは、既存の Game Server の SSL 証明書を削除します。ServerCertGet コマンドおよび ServerKeyGet コマンドを用いて、現在の証明書と秘密鍵をバックアップしておくことを推奨します。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。
 CMD_ServerCertRegenerate_Args	ServerCertRegenerate [CN]
 CMD_ServerCertRegenerate_[CN]	新たに生成する自己署名証明書の Common Name (CN) の値を指定します。
 CMD_ServerCertRegenerate_Prompt_CN	Common Name (CN) の値: 
@@ -6461,7 +6461,7 @@ CMD_DynamicDnsSetHostname_Prompt_hostname	ダイナミック DNS ホスト名 (3
 
 # VpnAzureGetStatus コマンド
 CMD_VpnAzureGetStatus			Game Azure 機能の現在の状態の取得
-CMD_VpnAzureGetStatus_Help		Game Azure 機能の現在の状態を取得します。\n\nVPN Azure により、会社のパソコンに自宅や外出先のパソコンから非常に簡単に Game 接続できるようになります。VPN 接続中は会社のパソコンを経由して、社内 LAN の他のサーバーにもアクセスできます。\n会社のパソコン (Game Server) にはグローバル IP アドレスは不要です。ファイアウォールや NAT の内側であっても動作し、ネットワーク管理者による設定は一切必要ありません。VPN クライアントとなる自宅のパソコンでは、Windows に標準付属の SSTP Game クライアントを使用できます。\nVPN Azure は、Unite Gaming Game Server をお使いの方はどなたでも無料で利用できるクラウド Game サービスです。ソフトイーサ株式会社によって運営されています。使い方は http://www.vpnazure.net/ に掲載されています。\n\nVPN Azure ホスト名はダイナミック DNS サービスのホスト名のドメイン部分を "vpnazure.net" に変更したものが使用されます。ホスト名を変更するには DynamicDnsSetHostname コマンドを使用してください。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。\nこのコマンドは、クラスタとして動作している Game Server の仮想 HUB では実行できません。
+CMD_VpnAzureGetStatus_Help		Game Azure 機能の現在の状態を取得します。\n\nVPN Azure により、会社のパソコンに自宅や外出先のパソコンから非常に簡単に Game 接続できるようになります。VPN 接続中は会社のパソコンを経由して、社内 LAN の他のサーバーにもアクセスできます。\n会社のパソコン (Game Server) にはグローバル IP アドレスは不要です。ファイアウォールや NAT の内側であっても動作し、ネットワーク管理者による設定は一切必要ありません。VPN クライアントとなる自宅のパソコンでは、Windows に標準付属の SSTP Game クライアントを使用できます。\nVPN Azure は、GAMING LAUNCHER Server をお使いの方はどなたでも無料で利用できるクラウド Game サービスです。ソフトイーサ株式会社によって運営されています。使い方は http://www.vpnazure.net/ に掲載されています。\n\nVPN Azure ホスト名はダイナミック DNS サービスのホスト名のドメイン部分を "vpnazure.net" に変更したものが使用されます。ホスト名を変更するには DynamicDnsSetHostname コマンドを使用してください。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。\nこのコマンドは、クラスタとして動作している Game Server の仮想 HUB では実行できません。
 CMD_VpnAzureGetStatus_Args		VpnAzureGetStatus
 CMD_VpnAzureGetStatus_PRINT_ENABLED	Game Azure 機能が有効
 CMD_VpnAzureGetStatus_PRINT_CONNECTED	Game Azure クラウドサーバーへ接続完了
@@ -6470,7 +6470,7 @@ CMD_VpnAzureGetStatus_PRINT_HOSTNAME	Game Azure サービス上でのホスト�
 
 # VpnAzureSetStatus コマンド
 CMD_VpnAzureSetEnable			Game Azure 機能の有効化 / 無効化
-CMD_VpnAzureSetEnable_Help		Game Azure 機能を有効または無効にします。\n\nVPN Azure により、会社のパソコンに自宅や外出先のパソコンから非常に簡単に Game 接続できるようになります。VPN 接続中は会社のパソコンを経由して、社内 LAN の他のサーバーにもアクセスできます。\n会社のパソコン (Game Server) にはグローバル IP アドレスは不要です。ファイアウォールや NAT の内側であっても動作し、ネットワーク管理者による設定は一切必要ありません。VPN クライアントとなる自宅のパソコンでは、Windows に標準付属の SSTP Game クライアントを使用できます。\nVPN Azure は、Unite Gaming Game Server をお使いの方はどなたでも無料で利用できるクラウド Game サービスです。ソフトイーサ株式会社によって運営されています。使い方は http://www.vpnazure.net/ に掲載されています。\n\nVPN Azure ホスト名はダイナミック DNS サービスのホスト名のドメイン部分を "vpnazure.net" に変更したものが使用されます。ホスト名を変更するには DynamicDnsSetHostname コマンドを使用してください。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。\nこのコマンドは、クラスタとして動作している Game Server の仮想 HUB では実行できません。
+CMD_VpnAzureSetEnable_Help		Game Azure 機能を有効または無効にします。\n\nVPN Azure により、会社のパソコンに自宅や外出先のパソコンから非常に簡単に Game 接続できるようになります。VPN 接続中は会社のパソコンを経由して、社内 LAN の他のサーバーにもアクセスできます。\n会社のパソコン (Game Server) にはグローバル IP アドレスは不要です。ファイアウォールや NAT の内側であっても動作し、ネットワーク管理者による設定は一切必要ありません。VPN クライアントとなる自宅のパソコンでは、Windows に標準付属の SSTP Game クライアントを使用できます。\nVPN Azure は、GAMING LAUNCHER Server をお使いの方はどなたでも無料で利用できるクラウド Game サービスです。ソフトイーサ株式会社によって運営されています。使い方は http://www.vpnazure.net/ に掲載されています。\n\nVPN Azure ホスト名はダイナミック DNS サービスのホスト名のドメイン部分を "vpnazure.net" に変更したものが使用されます。ホスト名を変更するには DynamicDnsSetHostname コマンドを使用してください。\n\nこのコマンドを実行するには、VPN Server の管理者権限が必要です。\nこのコマンドは、VPN Bridge では実行できません。\nこのコマンドは、クラスタとして動作している Game Server の仮想 HUB では実行できません。
 CMD_VpnAzureSetEnable_Args		VpnAzureSetEnable [yes|no]
 CMD_VpnAzureSetEnable_[yes|no]	Game Azure 機能を有効にするには yes、無効にするには no を指定します。
 CMD_VpnAzureSetEnable_PROMPT	Game Azure 機能を有効 (yes / no): 
@@ -7186,7 +7186,7 @@ TTC_RES_BPS_TOTAL		合計平均スループット
 
 # Check コマンド
 CMD_Check				Unite Gaming Game の動作が可能かどうかチェックする
-CMD_Check_Help			現在 vpncmd を動作させているコンピュータが、Unite Gaming Game Server / Bridge の動作プラットフォームとして適切であるかどうかをチェックします。\nこのチェックを通過したシステム上では、Unite Gaming Game ソフトウェアが正しく動作する可能性が高いと思われます。\nまた、このチェックを通過できないシステム上では、Unite Gaming Game ソフトウェアを使用した場合に、何らかの問題が発生する可能性があります。
+CMD_Check_Help			現在 vpncmd を動作させているコンピュータが、GAMING LAUNCHER Server / Bridge の動作プラットフォームとして適切であるかどうかをチェックします。\nこのチェックを通過したシステム上では、Unite Gaming Game ソフトウェアが正しく動作する可能性が高いと思われます。\nまた、このチェックを通過できないシステム上では、Unite Gaming Game ソフトウェアを使用した場合に、何らかの問題が発生する可能性があります。
 CMD_Check_Args			Check
 
 
@@ -7197,8 +7197,8 @@ CHECK_NOTE				この動作環境チェックツールを実行したシステム
 CHECK_EXEC_TAG			'%s' のチェック中...\n
 CHECK_PASS				[合格] ○
 CHECK_FAIL				[不合格] ×
-CHECK_RESULT_1			すべてのチェックに合格しました。このシステム上で Unite Gaming Game Server / Bridge が正しく動作する可能性が高いと思われます。
-CHECK_RESULT_2			一部のチェック結果は不合格でした。システムの動作環境を確認してください。このシステム上で Unite Gaming Game Server / Bridge を実行した場合、問題が発生する可能性があります。
+CHECK_RESULT_1			すべてのチェックに合格しました。このシステム上で GAMING LAUNCHER Server / Bridge が正しく動作する可能性が高いと思われます。
+CHECK_RESULT_2			一部のチェック結果は不合格でした。システムの動作環境を確認してください。このシステム上で GAMING LAUNCHER Server / Bridge を実行した場合、問題が発生する可能性があります。
 CHECK_TEST_123456789	123456789
 
 
@@ -7225,13 +7225,13 @@ SW_EXIT_CONFIRM								Unite Gaming Game のセットアップは完了してい
 SW_UNINSTALL_CONFIRM						%s のアンインストール処理を開始します。\r\n\r\nよろしいですか?
 
 
-SW_COMPONENT_VPNSERVER_TITLE				Unite Gaming Game Server
+SW_COMPONENT_VPNSERVER_TITLE				GAMING LAUNCHER Server
 SW_COMPONENT_VPNSERVER_DESCRIPTION			センター拠点にインストールします。VPN を構築する際にセンター側となる拠点のコンピュータにインストールしてください。管理ツールもインストールされます。
 
-SW_COMPONENT_VPNCLIENT_TITLE				Unite Gaming Game Client
+SW_COMPONENT_VPNCLIENT_TITLE				GAMING LAUNCHER Client
 SW_COMPONENT_VPNCLIENT_DESCRIPTION			Game クライアントとなる PC にインストールします。センター拠点で稼働している Game Server に対してこのコンピュータを Game 接続するためにインストールしてください。管理ツールもインストールされます。
 
-SW_COMPONENT_VPNBRIDGE_TITLE				Unite Gaming Game Bridge
+SW_COMPONENT_VPNBRIDGE_TITLE				GAMING LAUNCHER Bridge
 SW_COMPONENT_VPNBRIDGE_DESCRIPTION			ブランチ拠点にインストールします。この拠点の物理的な LAN にあるコンピュータすべてをセンター拠点にある Game Server を経由して通信できるようにするためにインストールしてください。管理ツールもインストールされます。
 
 SW_COMPONENT_VPNSMGR_TITLE					Unite Gaming Game サーバー管理マネージャ (管理ツールのみ)
@@ -7253,9 +7253,9 @@ SW_ERROR_TITLE								セットアップの結果
 SW_FINISH_TITLE								セットアップが完了しました
 SW_UNINST1_TITLE							アンインストールの開始
 SW_LANG1_TITLE								Unite Gaming Game: Configure the Display Language (言語設定の変更)
-SW_EASY1_TITLE								Unite Gaming Game Client 簡易インストーラ作成ウィザードへようこそ
+SW_EASY1_TITLE								GAMING LAUNCHER Client 簡易インストーラ作成ウィザードへようこそ
 SW_EASY2_TITLE								ファイルの指定
-SW_WEB1_TITLE								Unite Gaming Game Client Web インストーラ作成ウィザードへようこそ
+SW_WEB1_TITLE								GAMING LAUNCHER Client Web インストーラ作成ウィザードへようこそ
 SW_WEB2_TITLE								ファイルの指定
 
 
@@ -7285,8 +7285,8 @@ SW_SYSTEM_MODE_ALREADY_INSTALLED			ソフトウェア 「%s」 はすでにこ�
 SW_SETUPLOG_CORRUPTED						setuplog.dat ファイルが破損しています。
 SW_MSI_UNINSTALL_FAILED						%s の古いバージョン (製品コード: "%S") を Windows Installer でアンインストールしようとしましたが、アンインストールに失敗しました。\r\n\r\nこのバージョンを手動でアンインストールしてから、再度このインストーラを起動してください。
 SW_MSI_UNINSTALL_REBOOT_REQUIRED			%s の古いバージョンを Windows Installer でアンインストールしました。コンピュータの再起動が必要です。\r\n\r\n「完了」をクリックしてから手動でコンピュータを再起動し、その後もう一度このインストーラを起動してください。
-SW_NOTICE_VPNSERVER_IS_INSTALLED			コンポーネントとして Unite Gaming Game Bridge が選択されましたが、このコンピュータにはすでに Unite Gaming Game Server がインストールされています。\r\n\r\n通常、同一のコンピュータに Unite Gaming Game Server と Unite Gaming Game Bridge の両方をインストールする必要はありません。\r\n両方をインストールするとポート番号の競合などが発生し、不具合の原因となります。\r\nもし Unite Gaming Game Server を Unite Gaming Game Bridge に入れ替える場合は、一端このインストーラを終了し、Unite Gaming Game Server をアンインストールしてから再度このインストーラを起動してください。\r\n\r\nUnite Gaming Game Bridge のインストールを続行しますか?
-SW_NOTICE_VPNBRIDGE_IS_INSTALLED			コンポーネントとして Unite Gaming Game Server が選択されましたが、このコンピュータにはすでに Unite Gaming Game Bridge がインストールされています。\r\n\r\n通常、同一のコンピュータに Unite Gaming Game Server と Unite Gaming Game Bridge の両方をインストールする必要はありません。\r\n両方をインストールするとポート番号の競合などが発生し、不具合の原因となります。\r\nもし Unite Gaming Game Bridge を Unite Gaming Game Server に入れ替える場合は、一端このインストーラを終了し、Unite Gaming Game Bridge をアンインストールしてから再度このインストーラを起動してください。\r\n\r\nUnite Gaming Game Server のインストールを続行しますか?
+SW_NOTICE_VPNSERVER_IS_INSTALLED			コンポーネントとして GAMING LAUNCHER Bridge が選択されましたが、このコンピュータにはすでに GAMING LAUNCHER Server がインストールされています。\r\n\r\n通常、同一のコンピュータに GAMING LAUNCHER Server と GAMING LAUNCHER Bridge の両方をインストールする必要はありません。\r\n両方をインストールするとポート番号の競合などが発生し、不具合の原因となります。\r\nもし GAMING LAUNCHER Server を GAMING LAUNCHER Bridge に入れ替える場合は、一端このインストーラを終了し、GAMING LAUNCHER Server をアンインストールしてから再度このインストーラを起動してください。\r\n\r\nGAMING LAUNCHER Bridge のインストールを続行しますか?
+SW_NOTICE_VPNBRIDGE_IS_INSTALLED			コンポーネントとして GAMING LAUNCHER Server が選択されましたが、このコンピュータにはすでに GAMING LAUNCHER Bridge がインストールされています。\r\n\r\n通常、同一のコンピュータに GAMING LAUNCHER Server と GAMING LAUNCHER Bridge の両方をインストールする必要はありません。\r\n両方をインストールするとポート番号の競合などが発生し、不具合の原因となります。\r\nもし GAMING LAUNCHER Bridge を GAMING LAUNCHER Server に入れ替える場合は、一端このインストーラを終了し、GAMING LAUNCHER Bridge をアンインストールしてから再度このインストーラを起動してください。\r\n\r\nGAMING LAUNCHER Server のインストールを続行しますか?
 SW_OS_FAILED								%s はこのオペレーティングシステムにはインストールできません。
 SW_LANG_NOT_CHANGED							%s の言語設定は変更されませんでした。
 SW_LANG_LIST_LOAD_FAILED					言語一覧データの読み込みに失敗しました。
@@ -7301,11 +7301,11 @@ SW_EASY_ERROR_MSG							Game Client の簡易インストーラの生成に失�
 SW_OTHER_INSTANCE_EXISTS					すでに他の Unite Gaming Game セットアップウィザードが起動しています。\r\n\r\n他に起動しているセットアップウィザードを確認し、そのウィザードを終了させてから続行してください。
 SW_PERFORM_MSG_WEB_INFO						Game Client の Web インストーラをコンパイル中...
 SW_WEB_ERROR_MSG							Game Client の Web インストーラの生成に失敗しました。
-SW_INSTALLER_CACHE_IS_NOT_SIGNED			現在のコンピュータにインストールされている Unite Gaming Game Client は、Unite Gaming Game Project の有効な Authenticode デジタル証明書で署名されたパッケージからインストールされていません。\r\nカスタマイズされたバージョンのインストーラからインストールされた可能性があります。\r\nたとえば、「簡易インストーラ作成キット」によってカスタマイズされたインストーラを用いてインストールされた可能性があります。\r\n\r\nこのままの状態で Web インストーラを作成すると、作成したインストーラをロードしようとした際にセキュリティの警告メッセージが表示されます。\r\n警告メッセージを表示しないようにするためには、一端 Web インストーラの作成をキャンセルし、ソフトイーサ社の Web サイトから最新の Unite Gaming Game Client パッケージをダウンロードして再インストールしてから再度 Web インストーラを作成してください。\r\n\r\nこのまま続行しますか?
+SW_INSTALLER_CACHE_IS_NOT_SIGNED			現在のコンピュータにインストールされている GAMING LAUNCHER Client は、Unite Gaming Game Project の有効な Authenticode デジタル証明書で署名されたパッケージからインストールされていません。\r\nカスタマイズされたバージョンのインストーラからインストールされた可能性があります。\r\nたとえば、「簡易インストーラ作成キット」によってカスタマイズされたインストーラを用いてインストールされた可能性があります。\r\n\r\nこのままの状態で Web インストーラを作成すると、作成したインストーラをロードしようとした際にセキュリティの警告メッセージが表示されます。\r\n警告メッセージを表示しないようにするためには、一端 Web インストーラの作成をキャンセルし、ソフトイーサ社の Web サイトから最新の GAMING LAUNCHER Client パッケージをダウンロードして再インストールしてから再度 Web インストーラを作成してください。\r\n\r\nこのまま続行しますか?
 SW_FILE_NOT_FOUNT							ファイル "%s" が見つかりません。
 SW_WEB_FINISHED								生成された Web インストーラを格納したファイル "%s" を保存しました。\r\n\r\nこの ZIP ファイルを展開し、中身のファイルを Web サーバーに設置して HTML ファイルや inf ファイル内の URL を適切に書き換えてください。\r\n\r\nWeb インストーラの配置方法に関する説明は ZIP ファイル内に記載されています。
 
-SW_VG_CONFIRM_MSG							Unite Gaming Game Client に組み込まれた Game Gate P2P 中継機能プラグインモジュール をインストールし有効化します。よろしいですか?\r\n\r\n本プラグインは、政府の検閲用ファイアウォールを回避するための通信の安定化を実現します。しかしながら、VPN Gate のためのネットワーク帯域の消費量が増加します。したがって、モバイル回線において Game Gate 機能を使用することは推奨されていません。\r\n\r\n政府の検閲用ファイアウォールを回避する目的で暗号化された通信を行うことは、いくつかの国および地域では禁止されています。そのような場合は、VPN Gate 機能をコンピュータで使用してはいけません。VPN Gate は専ら日本国内における使用を想定し開発されています。VPN Gate は学術目的の研究プロジェクトです。VPN Gate は日本国の法令に基づいて提供されます。その他の国の法律については、VPN Gate Project は一切関知しておりません。本ソフトウェアおよびサービスを使用するにあたり、ユーザーはユーザー自身の責任において、適用されるすべての法令を遵守しなければなりません。使用場所が日本国内または国外のいずれであるかに係わらず、本ソフトウェアおよびサービスを使用したことによるすべての損害および責任はユーザーが負うこととなります。
+SW_VG_CONFIRM_MSG							GAMING LAUNCHER Client に組み込まれた Game Gate P2P 中継機能プラグインモジュール をインストールし有効化します。よろしいですか?\r\n\r\n本プラグインは、政府の検閲用ファイアウォールを回避するための通信の安定化を実現します。しかしながら、VPN Gate のためのネットワーク帯域の消費量が増加します。したがって、モバイル回線において Game Gate 機能を使用することは推奨されていません。\r\n\r\n政府の検閲用ファイアウォールを回避する目的で暗号化された通信を行うことは、いくつかの国および地域では禁止されています。そのような場合は、VPN Gate 機能をコンピュータで使用してはいけません。VPN Gate は専ら日本国内における使用を想定し開発されています。VPN Gate は学術目的の研究プロジェクトです。VPN Gate は日本国の法令に基づいて提供されます。その他の国の法律については、VPN Gate Project は一切関知しておりません。本ソフトウェアおよびサービスを使用するにあたり、ユーザーはユーザー自身の責任において、適用されるすべての法令を遵守しなければなりません。使用場所が日本国内または国外のいずれであるかに係わらず、本ソフトウェアおよびサービスを使用したことによるすべての損害および責任はユーザーが負うこととなります。
 
 
 
@@ -7358,17 +7358,17 @@ SW_DIRNAME_LANGUAGE_TOOLS					Language Settings
 SW_RUN_TEXT_VPNSMGR							Unite Gaming Game サーバー管理マネージャを起動します。
 SW_RUN_TEXT_VPNCMGR							Unite Gaming Game クライアント接続マネージャを起動します。
 
-SW_NIC_UNINSTALL							Unite Gaming Game Client の仮想 LAN カードが作成されています。\r\nこれらの仮想 LAN カードを削除しますか?
+SW_NIC_UNINSTALL							GAMING LAUNCHER Client の仮想 LAN カードが作成されています。\r\nこれらの仮想 LAN カードを削除しますか?
 
 # Do not translate this section !!!
 SW_TAG_USERNAME_ENGLISH						\ (User-Mode)
-SW_LINK_NAME_VPNSERVER_SVC					Unite Gaming Game Server Developer User-mode Service
-SW_LINK_NAME_VPNBRIDGE_SVC					Unite Gaming Game Bridge Developer User-mode Service
-SW_LONG_VPNSERVER							Unite Gaming Game Server 
-SW_LONG_VPNCLIENT							Unite Gaming Game Client 
-SW_LONG_VPNBRIDGE							Unite Gaming Game Bridge 
-SW_LONG_VPNSMGR								Unite Gaming Game Server Manager 
-SW_LONG_VPNCMGR								Unite Gaming Game Client Manager 
+SW_LINK_NAME_VPNSERVER_SVC					GAMING LAUNCHER Server Developer User-mode Service
+SW_LINK_NAME_VPNBRIDGE_SVC					GAMING LAUNCHER Bridge Developer User-mode Service
+SW_LONG_VPNSERVER							GAMING LAUNCHER Server 
+SW_LONG_VPNCLIENT							GAMING LAUNCHER Client 
+SW_LONG_VPNBRIDGE							GAMING LAUNCHER Bridge 
+SW_LONG_VPNSMGR								GAMING LAUNCHER Server Manager 
+SW_LONG_VPNCMGR								GAMING LAUNCHER Client Manager 
 SW_LANG_SET_FAILED							Failed to write the new language setting on lang.config file.
 # --- end of "Do not translate this section" ---
 
@@ -7378,38 +7378,38 @@ SW_LINK_NAME_VPNSMGR_SHORT_UM				SE-Game サーバー管理 (Dev・ユーザー)
 SW_LINK_NAME_VPNSMGR_SHORT_TOOLSONLY		SE-Game サーバー管理 (Dev・ツール)
 SW_LINK_NAME_VPNSMGR_SHORT_TOOLSONLY_UM	SE-Game サーバー管理 (Dev・ツール・ユーザー)
 SW_LINK_NAME_VPNSMGR_FULL					Unite Gaming Game サーバー管理マネージャ 
-SW_LINK_NAME_VPNSMGR_COMMENT				ローカルまたはリモート コンピュータ上で動作している Unite Gaming Game Server および Unite Gaming Game Bridge を管理するための管理ツールです。
+SW_LINK_NAME_VPNSMGR_COMMENT				ローカルまたはリモート コンピュータ上で動作している GAMING LAUNCHER Server および GAMING LAUNCHER Bridge を管理するための管理ツールです。
 
 SW_LINK_NAME_VPNCMGR_SHORT					Unite Gaming Game クライアント接続 (Dev)
 SW_LINK_NAME_VPNCMGR_FULL					Unite Gaming Game クライアント接続マネージャ 
-SW_LINK_NAME_VPNCMGR_COMMENT				Unite Gaming Game Client  を使用して Game サーバーに接続することができます。
+SW_LINK_NAME_VPNCMGR_COMMENT				GAMING LAUNCHER Client  を使用して Game サーバーに接続することができます。
 
 SW_LINK_NAME_VPNCMGRTOOLS_SHORT				Unite Gaming Game クライアント リモート管理 (Dev)
 SW_LINK_NAME_VPNCMGRTOOLS_SHORT_UM			SE-Game クライアント リモート管理 (Dev・ユーザー)
 SW_LINK_NAME_VPNCMGRTOOLS_FULL				Unite Gaming Game クライアント リモート管理 
 
-SW_LINK_NAME_VPNCMGR2_FULL					別のコンピュータの Unite Gaming Game Client の管理
-SW_LINK_NAME_VPNCMGR2_COMMENT				別のコンピュータ上の Unite Gaming Game Client プログラムにリモート接続して管理することができます。
+SW_LINK_NAME_VPNCMGR2_FULL					別のコンピュータの GAMING LAUNCHER Client の管理
+SW_LINK_NAME_VPNCMGR2_COMMENT				別のコンピュータ上の GAMING LAUNCHER Client プログラムにリモート接続して管理することができます。
 
-SW_LINK_NAME_VPNCMGRTRAY_FULL				Unite Gaming Game Client Manager  Startup
-SW_LINK_NAME_VPNCMGRTRAY_COMMENT			Unite Gaming Game Client  のアイコンをタスクバーの通知領域に表示します。
+SW_LINK_NAME_VPNCMGRTRAY_FULL				GAMING LAUNCHER Client Manager  Startup
+SW_LINK_NAME_VPNCMGRTRAY_COMMENT			GAMING LAUNCHER Client  のアイコンをタスクバーの通知領域に表示します。
 
 SW_LINK_NAME_EASYINSTALLER					簡易インストーラ作成ウィザード
-SW_LINK_NAME_EASYINSTALLER_COMMENT			自動的に特定の接続先に Game 接続を開始する機能を搭載した Unite Gaming Game Client の簡易インストーラを作成する管理者向けのツールです。
+SW_LINK_NAME_EASYINSTALLER_COMMENT			自動的に特定の接続先に Game 接続を開始する機能を搭載した GAMING LAUNCHER Client の簡易インストーラを作成する管理者向けのツールです。
 
 SW_LINK_NAME_WEBINSTALLER					Web インストーラ作成ウィザード
-SW_LINK_NAME_WEBINSTALLER_COMMENT			自動的に特定の接続先に Game 接続を開始する機能を搭載した Unite Gaming Game Client の Web インストーラ (ActiveX インストーラ)を作成する管理者向けのツールです。
+SW_LINK_NAME_WEBINSTALLER_COMMENT			自動的に特定の接続先に Game 接続を開始する機能を搭載した GAMING LAUNCHER Client の Web インストーラ (ActiveX インストーラ)を作成する管理者向けのツールです。
 
 SW_LINK_NAME_VPNCMD							Unite Gaming Game コマンドライン管理ユーティリティ (vpncmd)
-SW_LINK_NAME_VPNCMD_COMMENT					vpncmd を使用して、Unite Gaming Game Server, Unite Gaming Game Bridge および Unite Gaming Game Client をコマンドライン・インターフェイスで管理します。
+SW_LINK_NAME_VPNCMD_COMMENT					vpncmd を使用して、GAMING LAUNCHER Server, GAMING LAUNCHER Bridge および GAMING LAUNCHER Client をコマンドライン・インターフェイスで管理します。
 SW_LINK_NAME_TRAFFIC						通信スループット測定ツール
 SW_LINK_NAME_TRAFFIC_COMMENT				通信スループット測定ツールを使用して、IP ネットワーク上にある 2 台のコンピュータ間で最大限に通信を行い、通信速度を簡単に測定することができます。
 SW_LINK_NAME_TCP							TCP 通信設定最適化ユーティリティ
 SW_LINK_NAME_TCP_COMMENT					TCP/IP 通信設定を調整して、このコンピュータの TCP/IP プロトコルを使用した通信速度を向上させることができます。
 SW_LINK_NAME_SERVICES						このコンピュータで動作中のサービス一覧
 SW_LINK_NAME_SERVICES_COMMENT				現在 Windows 上で動作しているサービス一覧を表示します。Unite Gaming Game 関係のサービスの動作を開始または停止することができます。
-SW_LINK_NAME_VPNSERVER_SVC_COMMENT			Unite Gaming Game Server サービスをユーザーモードで起動します。
-SW_LINK_NAME_VPNBRIDGE_SVC_COMMENT			Unite Gaming Game Bridge サービスをユーザーモードで起動します。
+SW_LINK_NAME_VPNSERVER_SVC_COMMENT			GAMING LAUNCHER Server サービスをユーザーモードで起動します。
+SW_LINK_NAME_VPNBRIDGE_SVC_COMMENT			GAMING LAUNCHER Bridge サービスをユーザーモードで起動します。
 
 SW_LINK_NAME_UNINSTALL						%s のアンインストール
 SW_LINK_NAME_UNINSTALL_COMMENT				インストールされている %s をアンインストールします。

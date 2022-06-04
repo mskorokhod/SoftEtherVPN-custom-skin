@@ -31,17 +31,17 @@ STRTABLE_ID				SE_VPN_20121007
 
 
 # Strings for Japanese version only (not required for other language versions.)
-CM_JAPANESE_ONLY_OLD_STARTUP	%s\\Unite Gaming Game Client 2.0 タスクトレイ.lnk
+CM_JAPANESE_ONLY_OLD_STARTUP	%s\\GAMING LAUNCHER Client 2.0 タスクトレイ.lnk
 
 
 # Software information
-PRODUCT_NAME_VPN_CLI	Unite Gaming Game Client 
-PRODUCT_NAME_VPN_CMGR	Unite Gaming Game Client Manager 
-PRODUCT_NAME_VPN_SVR	Unite Gaming Game Server 
-PRODUCT_NAME_VPN_BRIDGE	Unite Gaming Game Bridge 
-PRODUCT_NAME_VPN_SMGR	Unite Gaming Game Server Manager 
-PRODUCT_NAME_ELOGSVC	Unite Gaming EtherLogger 
-PRODUCT_NAME_ELOGMGR	Unite Gaming EtherLogger 
+PRODUCT_NAME_VPN_CLI	GAMING LAUNCHER Client
+PRODUCT_NAME_VPN_CMGR	GAMING LAUNCHER Client Manager
+PRODUCT_NAME_VPN_SVR	GAMING LAUNCHER Server
+PRODUCT_NAME_VPN_BRIDGE	GAMING LAUNCHER Bridge
+PRODUCT_NAME_VPN_SMGR	GAMING LAUNCHER Server Manager
+PRODUCT_NAME_ELOGSVC	GAMING LAUNCHER EtherLogger
+PRODUCT_NAME_ELOGMGR	GAMING LAUNCHER EtherLogger
 
 # Branding String for Limited Connection
 # BRANDED_C_TO_S		Branded_VPN
@@ -185,7 +185,7 @@ ERR_118					The license key is incorrect.
 ERR_119					No valid product license is registered on the Game Server. Contact the Game Server's administrator.
 ERR_120					The product license required for the Game Server to operate as a cluster is not registered. Contact the Game Server's administrator.
 ERR_121					This Game Connection Setting has been installed using the "Web Installer Creation Kit" or "Simple Installer Creation Kit". The destination server is not an edition that supports the Unite Gaming Game 2.0 Administration Pack. Contact the system administrator or person who created the installer.
-ERR_122					With the Game Server SDK for .NET, it is only possible to connect to the Unite Gaming Game Server edition that supports the Unite Gaming Game 2.0 Administration Pack. The destination Game Server is not an edition that supports the Unite Gaming Game 2.0 Administration Pack. Contact the system administrator.
+ERR_122					With the Game Server SDK for .NET, it is only possible to connect to the GAMING LAUNCHER Server edition that supports the Unite Gaming Game 2.0 Administration Pack. The destination Game Server is not an edition that supports the Unite Gaming Game 2.0 Administration Pack. Contact the system administrator.
 ERR_123					Beta Version Software on the destination server is expired. Contact to system administrator of the server to download a new beta version or full version from http://selinks.org/.
 ERR_124					The Game connection to Game Server is refused at server side.
 ERR_125					The Game connection to Game Server is refused at client side.
@@ -457,7 +457,7 @@ WINVER_ERROR_PC_REMOTE	the remote server
 
 
 # Warning for Open-source Version
-OSS_MSG					Welcome to the Unite Gaming Game Server Academic Version!\r\n\r\n\r\nThis Game Server is open-source free software developed as academic research at University of Tsukuba, Japan, and distributed from the Unite Gaming Game Project (http://www.softether.org/), for free of charge for the public interests.\r\n\r\nUnite Gaming Game software is distributed to public as a part of the joint-research contract between University of Tsukuba and Unite Gaming Game Project. Unite Gaming Game software is developed and published for JUST AN ACADEMIC RESEARCH PURPOSE. Therefore no support service are provided about Unite Gaming Game software even if it contains bugs or vulnerabilities. A user will be liable for the result of use Unite Gaming Game. The developers and publishers of Unite Gaming Game will never be liable for either any consequences or damages.\r\n\r\nEnjoy using Game with Unite Gaming Game Server.\r\n\r\nFor more details of Unite Gaming Game, visit http://www.softether.org/.\r\n\r\n
+OSS_MSG					Welcome to the GAMING LAUNCHER Server Academic Version!\r\n\r\n\r\nThis Game Server is open-source free software developed as academic research at University of Tsukuba, Japan, and distributed from the Unite Gaming Game Project (http://www.softether.org/), for free of charge for the public interests.\r\n\r\nUnite Gaming Game software is distributed to public as a part of the joint-research contract between University of Tsukuba and Unite Gaming Game Project. Unite Gaming Game software is developed and published for JUST AN ACADEMIC RESEARCH PURPOSE. Therefore no support service are provided about Unite Gaming Game software even if it contains bugs or vulnerabilities. A user will be liable for the result of use Unite Gaming Game. The developers and publishers of Unite Gaming Game will never be liable for either any consequences or damages.\r\n\r\nEnjoy using Game with GAMING LAUNCHER Server.\r\n\r\nFor more details of Unite Gaming Game, visit http://www.softether.org/.\r\n\r\n
 NATT_MSG				** Connected with NAT traversal - might be unstable **\r\n\r\nThis Game Client is connected to the Game Server '%S' by using the NAT Traversal (UDP Hole Punching) technology.\r\n\r\nNAT Traversal allows the Game Server behind the NAT-box to accept Game connections from Game Client without any port-forwarding setting on the NAT-box.\r\n\r\nHowever, NAT Traversal-based Game sessions sometimes become unstable, because NAT Traversal uses UDP-based protocol. For example, the Game tunnel disconnects every 5 minutes if there is a poor NAT-box between the Game Server and the Game Client. Some large-scale NAT gateways in cheap ISPs sometimes cause the same problem on NAT Traversal. This is a problem of routers or ISPs. This is not a problem of Unite Gaming Game software.\r\n\r\nTo solve the unstable tunnel problem, you should connect to the Game Server's TCP listener port directly, instead of using NAT Traversal. To connect to the Game Server directly by using TCP, a listener port of the Game Server must be exposed to the Internet by a port-forward setting on the NAT-box. Ask the administrator of the NAT-box, or refer to the manual of the NAT-box to add a port-forwarding setting on the NAT-box.\r\n\r\nIf this message still remains despite the Game Server is exposing a TCP port to the Internet, check the "Disable NAT-T" checkbox on the Game Client connection setting screen.\r\n\r\n
 
 
@@ -778,18 +778,18 @@ REMOTE_DEF_TITLE		Specify the computer you want to remotely connect to.
 
 
 # Concerning client notification service
-CN_TITLE				Unite Gaming Game Client 
+CN_TITLE				GAMING LAUNCHER Client
 
 
 # Concerning Connection Manager
-CM_TITLE				Unite Gaming Game Client  Manager
+CM_TITLE				GAMING LAUNCHER Client Manager
 CM_PW_LOCALMACHINE		Local Computer
 CM_NO_REMOTE			The Game Client service running on %s disallows remote connections.
 CM_CONNECT_FAILED		Unable to connect to the Game Client service operating on %s. \r\nMake sure the Game Client service has started and is running normally.
 CM_BAD_PASSWORD			The password is incorrect. Re-enter password. The password is case-sensitive so be sure to discern between upper and lower case letters.
 CM_NUM_CONN_COUNT		%u Game Sessions
 CM_CONN_NO				Not Connected
-CM_PRODUCT_NAME			Unite Gaming Game Client Build %u
+CM_PRODUCT_NAME			GAMING LAUNCHER Client Build %u
 CM_ACCOUNT_COLUMN_1		Game Connection Setting Name
 CM_ACCOUNT_COLUMN_2		Status
 CM_ACCOUNT_COLUMN_3		Game Server Hostname
@@ -969,44 +969,44 @@ CM_VPN_FILE_IMPORT_NG	Unable to import the Game Connection Setting File. Because
 CM_VLAN_INSTALLING		Please Wait a While
 CM_SECURE_MUST_LOCAL	It is currently not possible to configure smart card settings because you are connected to and managing a Game Client on a remote computer.
 CM_DETAIL_MODE_LINK_STR	With a Cascade Connection, Connect by Bridge / Router mode is always enabled.
-CM_TRAY_INITING			Unite Gaming Game
+CM_TRAY_INITING			GAMING LAUNCHER Game
 CM_TRAY_NOT_CONNECTED	\r\nNot connected
 CM_TRAY_CONNECTING		\r\nConnecting
 CM_TRAY_CONNECTED		\r\nConnected
-CM_TRAY_MENU_1_SHOW		&Show Game Client Manager
-CM_TRAY_MENU_1_HIDE		Cl&ose Game Client Manager
-CM_TRAY_MENU_2_QUIT		E&xit Game Client Manager Program
-CM_TRAY_MENU_CONNECT	Start Game &Connection
-CM_TRAY_MENU_DISCONNECT	&Disconnect Game Connection
-CM_TRAY_MENU_STATUS		Show Game Connec&tion Status
-CM_TRAY_MENU_DISCONNECT_ALL	Disconnect &All Game Connections
-CM_TRAY_MENU_NEW		&New Game Connection Setting...
-CM_TRAY_MENU_RECENT		Recent Game Servers...
+CM_TRAY_MENU_1_SHOW		&Show GAMING LAUNCHER Client Manager
+CM_TRAY_MENU_1_HIDE		Cl&ose GAMING LAUNCHER Client Manager
+CM_TRAY_MENU_2_QUIT		E&xit GAMING LAUNCHER Client Manager Program
+CM_TRAY_MENU_CONNECT	Start GAMING LAUNCHER &Connection
+CM_TRAY_MENU_DISCONNECT	&Disconnect GAMING LAUNCHER Connection
+CM_TRAY_MENU_STATUS		Show GAMING LAUNCHER Connec&tion Status
+CM_TRAY_MENU_DISCONNECT_ALL	Disconnect &All GAMING LAUNCHER Connections
+CM_TRAY_MENU_NEW		&New GAMING LAUNCHER Connection Setting...
+CM_TRAY_MENU_RECENT		Recent GAMING LAUNCHER Servers...
 CM_TRAY_MENU_TRAFFIC	Network &Traffic Speed Test Tool...
 CM_TRAY_MENU_NETIF		Show Network &Device Status...
-CM_TRAY_MENU_ABOUT		&About Game Client Manager...
+CM_TRAY_MENU_ABOUT		&About GAMING LAUNCHER Client Manager...
 CM_TRAY_MENU_SETTING	Change Operation &Mode...
 CM_TRAY_MENU_CANCEL		Close this menu
-CM_EXIT_MESSAGE			This will exit the Game Client Manager program. \r\nDo you really want to do this?
-CM_IMPORT_MESSAGE		From file "%S", Game Connection Setting "%s" has been installed.
+CM_EXIT_MESSAGE			This will exit the GAMING LAUNCHER Client Manager program. \r\nDo you really want to do this?
+CM_IMPORT_MESSAGE		From file "%S", GAMING LAUNCHER Connection Setting "%s" has been installed.
 CM_VLAN_CREATING		Creating a new Virtual Network Adapter for Windows. \r\n\r\nThis process can take several seconds or over a minute. \r\nPlease wait...\r\n\r\n(Please do not perform other operations while the Virtual Network Adapter is being installed.)
 CM_SETTING_PASSWORD		The setting is locked. To remove the setting-locker, you must enter a password.
-CM_EASY_MODE_NOT_ON_REMOTE	Unable to connect because of the Game Client on the remote computer is running in Easy Mode.
-CM_EASY_CONNECT_BUTTON_1	Start Game &Connection
+CM_EASY_MODE_NOT_ON_REMOTE	Unable to connect because of the GAMING LAUNCHER Client on the remote computer is running in Easy Mode.
+CM_EASY_CONNECT_BUTTON_1	Start GAMING LAUNCHER &Connection
 CM_EASY_CONNECT_BUTTON_2	&Disconnect
 CM_EASY_ACCOUNT_WARNING	You can only modify Proxy Server Setting, User Authentication and Virtual Network Adapter Used because the setting has been locked.
-CM_EASY_INFO_1			Select a Game connection.
-CM_EASY_INFO_2			Click Start Game Connection to start a Game connection.
-CM_EASY_INFO_3			Game connection is active. You can disconnect by clicking Disconnect.
+CM_EASY_INFO_1			Select a GAMING LAUNCHER connection.
+CM_EASY_INFO_2			Click Start GAMING LAUNCHER Connection to start a Game connection.
+CM_EASY_INFO_3			GAMING LAUNCHER connection is active. You can disconnect by clicking Disconnect.
 CM_EXT_VOICE_MSG		It is possible that some of the voice message contents of the Extension Voice Guide has not been played normally. \r\nIs the Extension Voice Guide enabled?
-CM_EASY_TITLE			Game Client Easy Connection Manager
-CM_EASY_CONNECTED		Game connection is active.
-CM_EASY_CONNECTING		Establishing Game connection...
+CM_EASY_TITLE			GAMING LAUNCHER Connection Manager
+CM_EASY_CONNECTED		GAMING LAUNCHER connection is active.
+CM_EASY_CONNECTING		Establishing GAMING LAUNCHER connection...
 CM_PROXY_FROM_IE		Currently proxy setting from Internet Explorer has been loaded.
 CM_TRAY_ICON_RESTORE	The icon in the task tray has been deleted.\r\n\r\nTo restore the icon, run the Game Client Manager and click Show Task-tray Icon in the View menu.
 CM_WOULDYOULOAD_IE_PROXY	Currently the Internet Explorer on this computer is configured to use the proxy server "%S".\r\nDo you want to apply the current proxy settings on the new Game connection setting?\r\n\r\nClick Yes to use the proxy settings of Internet Explorer.\r\nClick No to use direct connection to the Game Server (does not a proxy server.)\r\nThis setting can be modified in the property screen of the connection settings any time later.
 CM_MSG_TITLE			Game Server "%S" (Virtual Hub: "%S")
-CM_JUMPLIST_RCCONNECT	Recent Game Servers
+CM_JUMPLIST_RCCONNECT	Recent GAMING LAUNCHER Servers
 CM_VPNGATE_MESSAGE		There is the list of Public Game Relay Servers on the GAMING LAUNCHING Project Web Site.\r\nAnyone on the Internet can connect a Game connection to any Game servers on the list.\r\n\r\nVPN Gate Academic Project is not a part of Unite Gaming Game.\r\nThis icon provides just a link to http://www.vpngate.net/.\r\nYou need to install Game Gate Plugin to connect Game Gate.\r\n\r\nDo you want to visit http://www.vpngate.net/ (provided by University of Tsukuba) ?
 CM_VLAN_REINSTALL_MSG	After reinstalling the Virtual Network Adapter driver, the current Virtual Network Adapter's MAC address will change. Also, all TCP/IP settings within the Virtual Network Adapter will reset.\r\n\r\nIn case the reinstalled Virtual Network Adapter fails to work, delete it and create a new one. If it still doesn't work properly, please create a new Virtual Network Adapter with a different name.
 
@@ -1041,7 +1041,7 @@ VGC_UDP_AVAILABLE		UDP OK
 
 VGC_TITLE				Game Gate Plug-in Message
 
-VGC_VER_DIFF			The version of Game Gate Client Plug-in is different from Unite Gaming Game Client.\r\n\r\n- Current Game Gate Plug-in: Build %u\r\n- Current Unite Gaming Game Client: Build %u\r\n\r\nIt is recommended to download and install Game Gate Plug-in Build %u. Otherwise, communication errors or list-update errors might be occur. If the Game Server List updating fails many times, update the Game Gate Plug-in version.\r\n\r\nThe latest Game Gate Plug-in is available at http://www.vpngate.net/.\r\n(Use a mirror-site if you cannot visit the above web-site directly.)\r\n\r\n
+VGC_VER_DIFF			The version of Game Gate Client Plug-in is different from GAMING LAUNCHER Client.\r\n\r\n- Current Game Gate Plug-in: Build %u\r\n- Current GAMING LAUNCHER Client: Build %u\r\n\r\nIt is recommended to download and install Game Gate Plug-in Build %u. Otherwise, communication errors or list-update errors might be occur. If the Game Server List updating fails many times, update the Game Gate Plug-in version.\r\n\r\nThe latest Game Gate Plug-in is available at http://www.vpngate.net/.\r\n(Use a mirror-site if you cannot visit the above web-site directly.)\r\n\r\n
 
 VGC_LIST_STR_OK			%S Public Game Relay Servers on the Earth! (Updated at %S)
 VGC_LIST_STR_OK_2		%S Servers (at %S) - List update failed. Try again. If fails again, download the latest Game Gate Client.
@@ -1051,7 +1051,7 @@ VGC_PROXY_TITLE			Notice for Proxy Server Users
 
 VGS_NO_HUB_YET			In order to set the message, first you have to commit enabling the Game Gate service. After the service will be enabled, re-open this window and set the message.
 
-VGS_STOP				Game Gate Service will stop after you click the OK button.\r\n\r\nAfter Game Gate Service will be stopped, this computer will never accept new Game connection requests, however, still-alive Game Sessions might remain.\r\n (Such Game sessions sometimes hidden from the enumeration.) \r\n\r\nTo terminate all of still-alive Game Sessions completely, restart Unite Gaming Game Server or Unite Gaming Game Client service, or reboot the computer.
+VGS_STOP				Game Gate Service will stop after you click the OK button.\r\n\r\nAfter Game Gate Service will be stopped, this computer will never accept new Game connection requests, however, still-alive Game Sessions might remain.\r\n (Such Game sessions sometimes hidden from the enumeration.) \r\n\r\nTo terminate all of still-alive Game Sessions completely, restart GAMING LAUNCHER Server or GAMING LAUNCHER Client service, or reboot the computer.
 
 VGS_START				This will activate the Game Gate Relay Service function.\r\n\r\nVPN Gate Relay Service function must be activated by your own risk.\r\nSome countries prohibit using of encrypted Game by laws.\r\nFor more details about Game Gate Relay Service please visit http://www.vpngate.net/en/join.aspx.\r\n\r\nThe Game Gate Academic Experiment Service is operated as a research project at the graduate school on University of Tsukuba, Japan. The service is governed under the Japanese laws. Other countries' laws are none of our concerns nor responsibilities.\r\n\r\nBy nature, there are almost 200 countries in the World, with different laws. It is impossible to verify every countries' laws and regulations and make the software comply with all countries' laws in advance to release the software. If a user uses Game Gate service in a specific country, and damaged by public servants of the authority, the developer of either the service or software will never be liable to recover or compensate such damages or criminal responsibilities.\r\nBy using this software and service, the user must observe all concerned laws and rules with user's own responsibility. The user will be completely liable to any damages and responsibilities which are results of using this software and service, regardless of either inside or outside of Japan's territory.\r\nIf you don't agree nor understand the above warnings, do not use any of Game Gate Academic Experiment Service functions.
 
@@ -1096,56 +1096,56 @@ UNIX_SVC_ERROR_FORK		Failed to create child process for the %S service.\n
 UNIX_SVC_NONROOT		\nWarning: The current user context is non-root. It is recommended to run the Game service by the root user. Although the Game service may run under non-root users, some privilege-required functions (e.g. the local bridge function) need the root privilege.\n
 
 
-# Service definition (Unite Gaming Game Client)
+# Service definition (GAMING LAUNCHER Client)
 SVC_VPNCLIENT_NAME		vpnclient
-SVC_VPNCLIENT_TITLE		Unite Gaming Game Client
-SVC_VPNCLIENT_DESCRIPT	This manages the Virtual Network Adapter device driver and connection service for the Unite Gaming Game Client. When this service is stopped, it will not be possible to use Unite Gaming Game Client on this computer to connect to a Unite Gaming Game Server.
+SVC_VPNCLIENT_TITLE		GAMING LAUNCHER Client
+SVC_VPNCLIENT_DESCRIPT	This manages the Virtual Network Adapter device driver and connection service for the GAMING LAUNCHER Client. When this service is stopped, it will not be possible to use GAMING LAUNCHER Client on this computer to connect to a GAMING LAUNCHER Server.
 
 
-# Service Definition (Unite Gaming Game Server)
+# Service Definition (GAMING LAUNCHER Server)
 SVC_VPNSERVER_NAME		vpnserver
-SVC_VPNSERVER_TITLE		Unite Gaming Game Server
-SVC_VPNSERVER_DESCRIPT	This manages the server processes of Unite Gaming Game Server. Unite Gaming Game Server provides high-performance Unite Gaming Game Server functions via TCP/IP protocol. When this service is stopped, Unite Gaming Game Server on this computer will stop and Unite Gaming Game Client will be unable to establish a Game connection with this computer.
+SVC_VPNSERVER_TITLE		GAMING LAUNCHER Server
+SVC_VPNSERVER_DESCRIPT	This manages the server processes of GAMING LAUNCHER Server. GAMING LAUNCHER Server provides high-performance GAMING LAUNCHER Server functions via TCP/IP protocol. When this service is stopped, GAMING LAUNCHER Server on this computer will stop and GAMING LAUNCHER Client will be unable to establish a Game connection with this computer.
 
 
-# Service Definition (Unite Gaming Game Bridge)
+# Service Definition (GAMING LAUNCHER Bridge)
 SVC_VPNBRIDGE_NAME		vpnbridge
-SVC_VPNBRIDGE_TITLE		Unite Gaming Game Bridge
-SVC_VPNBRIDGE_DESCRIPT	This manages the processes of Unite Gaming Game Bridge. Unite Gaming Game Bridge provides a bridging connection between the network this computer is connected to and a Unite Gaming Game Server that is remotely located. When this service is stopped, Unite Gaming Game Bridge on this computer will stop and it will no longer be possible to communicate via the bridge connection.
+SVC_VPNBRIDGE_TITLE		GAMING LAUNCHER Bridge
+SVC_VPNBRIDGE_DESCRIPT	This manages the processes of GAMING LAUNCHER Bridge. GAMING LAUNCHER Bridge provides a bridging connection between the network this computer is connected to and a GAMING LAUNCHER Server that is remotely located. When this service is stopped, GAMING LAUNCHER Bridge on this computer will stop and it will no longer be possible to communicate via the bridge connection.
 
 
-# Service definition (Unite Gaming Game Client)
+# Service definition (GAMING LAUNCHER Client)
 SVC_SEVPNCLIENTDEV_NAME		sevpnclientdev
-SVC_SEVPNCLIENTDEV_TITLE		Unite Gaming Game Client 
-SVC_SEVPNCLIENTDEV_DESCRIPT	This manages the Virtual Network Adapter device driver and connection service for the Unite Gaming Game Client. When this service is stopped, it will not be possible to use Unite Gaming Game Client on this computer to connect to a Unite Gaming Game Server.
+SVC_SEVPNCLIENTDEV_TITLE		GAMING LAUNCHER Client
+SVC_SEVPNCLIENTDEV_DESCRIPT	This manages the Virtual Network Adapter device driver and connection service for the GAMING LAUNCHER Client. When this service is stopped, it will not be possible to use GAMING LAUNCHER Client on this computer to connect to a GAMING LAUNCHER Server.
 
 
-# Service Definition (Unite Gaming Game Server)
+# Service Definition (GAMING LAUNCHER Server)
 SVC_SEVPNSERVERDEV_NAME		sevpnserverdev
-SVC_SEVPNSERVERDEV_TITLE		Unite Gaming Game Server 
-SVC_SEVPNSERVERDEV_DESCRIPT	This manages the server processes of Unite Gaming Game Server. Unite Gaming Game Server provides high-performance Unite Gaming Game Server functions via TCP/IP protocol. When this service is stopped, Unite Gaming Game Server on this computer will stop and Unite Gaming Game Client will be unable to establish a Game connection with this computer.
+SVC_SEVPNSERVERDEV_TITLE		GAMING LAUNCHER Server 
+SVC_SEVPNSERVERDEV_DESCRIPT	This manages the server processes of GAMING LAUNCHER Server. GAMING LAUNCHER Server provides high-performance GAMING LAUNCHER Server functions via TCP/IP protocol. When this service is stopped, GAMING LAUNCHER Server on this computer will stop and GAMING LAUNCHER Client will be unable to establish a Game connection with this computer.
 
 
-# Service Definition (Unite Gaming Game Bridge)
+# Service Definition (GAMING LAUNCHER Bridge)
 SVC_SEVPNBRIDGEDEV_NAME		sevpnbridgedev
-SVC_SEVPNBRIDGEDEV_TITLE		Unite Gaming Game Bridge 
-SVC_SEVPNBRIDGEDEV_DESCRIPT	This manages the processes of Unite Gaming Game Bridge. Unite Gaming Game Bridge provides a bridging connection between the network this computer is connected to and a Unite Gaming Game Server that is remotely located. When this service is stopped, Unite Gaming Game Bridge on this computer will stop and it will no longer be possible to communicate via the bridge connection.
+SVC_SEVPNBRIDGEDEV_TITLE		GAMING LAUNCHER Bridge 
+SVC_SEVPNBRIDGEDEV_DESCRIPT	This manages the processes of GAMING LAUNCHER Bridge. GAMING LAUNCHER Bridge provides a bridging connection between the network this computer is connected to and a GAMING LAUNCHER Server that is remotely located. When this service is stopped, GAMING LAUNCHER Bridge on this computer will stop and it will no longer be possible to communicate via the bridge connection.
 
 
 # Service definition (Unite Gaming Game User-mode Router)
 SVC_VPNROUTER_NAME		vpnrouter
 SVC_VPNROUTER_TITLE		Unite Gaming Game Router 
-SVC_VPNROUTER_DESCRIPT	This manages the server processes of Unite Gaming Game Router (service mode). Unite Gaming Game Router is a program that provides a virtual NAT and DHCP server that operates in user mode and by using simple operations it is possible to establish a safe connection between a virtual IP network and a physical IP network. When this service is stopped, Unite Gaming Game Router on this computer will stop and Unite Gaming Game Client will be unable to use the routing service on this computer.
+SVC_VPNROUTER_DESCRIPT	This manages the server processes of Unite Gaming Game Router (service mode). Unite Gaming Game Router is a program that provides a virtual NAT and DHCP server that operates in user mode and by using simple operations it is possible to establish a safe connection between a virtual IP network and a physical IP network. When this service is stopped, Unite Gaming Game Router on this computer will stop and GAMING LAUNCHER Client will be unable to use the routing service on this computer.
 
 
 # Service Definition (EtherLogger)
 SVC_ELOGSVC_NAME		elogsvc
-SVC_ELOGSVC_TITLE		Unite Gaming EtherLogger 
-SVC_ELOGSVC_DESCRIPT	Unite Gaming EtherLogger is a service that captures data flowing through LAN cards connected to the computer and keeps a log of the headers of the packet types specified by the administrator and all data in text file format.
+SVC_ELOGSVC_TITLE		GAMING LAUNCHER EtherLogger 
+SVC_ELOGSVC_DESCRIPT	GAMING LAUNCHER EtherLogger is a service that captures data flowing through LAN cards connected to the computer and keeps a log of the headers of the packet types specified by the administrator and all data in text file format.
 
 
-# Concerning Unite Gaming Game Server Manager
-SM_TITLE				Unite Gaming Game Server Manager 
+# Concerning GAMING LAUNCHER Server Manager
+SM_TITLE				GAMING LAUNCHER Server Manager 
 SM_LOCALHOST			localhost (This server)
 SM_SERVER_BRIDGE_TITLE	Manage Game Bridge "%S"
 SM_S_VHUB_BRIDGE		When using Game Bridge, you manage Virtual Hub "BRIDGE" to operate management of Game Bridge.
@@ -1508,11 +1508,11 @@ SM_SNAT_IS_KERNEL		Kernel-mode NAT is Active
 SM_SNAT_IS_RAW			Raw IP mode NAT is Active
 SM_BRIDGE_TOO_OLD_VER	The Local Bridge function is not supported by the version of the Game Server that is currently connected. \r\nTry update to a new version.
 SM_BRIDGE_UNSUPPORTED	Unable to use the Local Bridge function with the operating system that this Game Server is operating on. For the list of operating system that the Local Bridge function can be used on, refer to the online documentation of the Game Server.
-SM_BRIDGE_WPCAP_REMOTE	In order to use the Local Bridge function on this Game Server, you must install the WinPcap software. The software WinPcap is currently not installed on the server computer. \r\n\r\nTo continue the installation of the WinPcap software, you must start Unite Gaming Game Server Manager on the server computer that is running Game Server and then while connected to localhost (location of your own computer), have the Local Bridge Function Setting window displayed. \r\nTo continue, first exit this management session, and then, after starting Unite Gaming Game Server Manager on the server computer, connect to localhost and continue the setting process. 
-SM_BRIDGE_WPCAP_ROOT	In order to use the Local Bridge function on this Game Server, you must install the WinPcap software. \r\n\r\nTo continue the installation you must log in to this computer as a user with administrator privileges. \r\nLog on as an administrator and start the Unite Gaming Game Server Manager again.
+SM_BRIDGE_WPCAP_REMOTE	In order to use the Local Bridge function on this Game Server, you must install the WinPcap software. The software WinPcap is currently not installed on the server computer. \r\n\r\nTo continue the installation of the WinPcap software, you must start GAMING LAUNCHER Server Manager on the server computer that is running Game Server and then while connected to localhost (location of your own computer), have the Local Bridge Function Setting window displayed. \r\nTo continue, first exit this management session, and then, after starting GAMING LAUNCHER Server Manager on the server computer, connect to localhost and continue the setting process. 
+SM_BRIDGE_WPCAP_ROOT	In order to use the Local Bridge function on this Game Server, you must install the WinPcap software. \r\n\r\nTo continue the installation you must log in to this computer as a user with administrator privileges. \r\nLog on as an administrator and start the GAMING LAUNCHER Server Manager again.
 SM_BRIDGE_WPCAP_INSTALL	In order to use the Local Bridge function on this Game Server, you must install the WinPcap software. The software WinPcap is currently not installed on the server computer. \r\n\r\nWinPcap is an easy-to-install free software that is bundled together with the Game Server. \r\n\r\nDo you want to begin the installation of WinPcap?
 SM_BRIDGE_WPCAP_REBOOT1	After WinPcap installation has completed, you must restart the computer before you use the Local Bridge function again. \r\n\r\nAfter you restart the computer manually and start Game Server, configure the settings for the Local Bridge function.
-SM_BRIDGE_WPCAP_REBOOT2	After WinPcap installation has completed, you must restart the Unite Gaming Game Server service before you use the Local Bridge function again. \r\n\r\nIt only takes a short time to restart the Unite Gaming Game Server service, however all sessions that are currently connected to the Game Server will be disconnected. \r\nThis management session will also be disconnected, so you will need to reconnect to continue. \r\n\r\nDo you want to restart the Unite Gaming Game Server service?
+SM_BRIDGE_WPCAP_REBOOT2	After WinPcap installation has completed, you must restart the GAMING LAUNCHER Server service before you use the Local Bridge function again. \r\n\r\nIt only takes a short time to restart the GAMING LAUNCHER Server service, however all sessions that are currently connected to the Game Server will be disconnected. \r\nThis management session will also be disconnected, so you will need to reconnect to continue. \r\n\r\nDo you want to restart the GAMING LAUNCHER Server service?
 SM_BRIDGE_RESOURCE		Unable to load the WinPcap driver.
 SM_BRIDGE_COLUMN_1		Number
 SM_BRIDGE_COLUMN_2		Virtual Hub Name
@@ -1617,7 +1617,7 @@ SM_SETUP_BRIDGE_ONLY	You are currently connected to Game Bridge. You can only cr
 SM_SETUP_BRIDGE_EDGE	Game Bridge at &Each Site
 SM_SETUP_WARNING		The current settings of this Game Server or Game Bridge will be initialized. \r\nDo you really want to do this?
 SM_SETUP_SELECT			Select the Ethernet device to establish the bridge connection.
-SM_SETUP_NO_LICENSE_KEY	Currently there is no licenses registered for this Unite Gaming Game Server. \r\n\r\nFor Unite Gaming Game Server to operate as a Game server, you must enter a license key. \r\nDo you want to display the License Manager?\r\n\r\n(To use the Game Server as a Trial Version, you have to obtain a trial key from the Unite Gaming Game Project web site.\r\nClick Yes and click Obtain or Extend of License button to obtain a trial key.
+SM_SETUP_NO_LICENSE_KEY	Currently there is no licenses registered for this GAMING LAUNCHER Server. \r\n\r\nFor GAMING LAUNCHER Server to operate as a Game server, you must enter a license key. \r\nDo you want to display the License Manager?\r\n\r\n(To use the Game Server as a Trial Version, you have to obtain a trial key from the Unite Gaming Game Project web site.\r\nClick Yes and click Obtain or Extend of License button to obtain a trial key.
 SM_HUBEXT_OPTION_TITLE	Virtual Hub Extended Options
 SM_HUBEXT_OPTION_STATIC1	Virtual Hub Extended Options allows you to configure more detailed parameters of this Virtual Hub.
 SM_HUBEXT_OPTION_STATIC2	By default, both Game Server's global administrators and individual Virtual Hub's administrators can modify the Virtual Hub Extended Options.\nHowever, if the deny_hub_admin_change_ext_option is set to 1 on the Virtual Hub Admin Options, the individual Virtual Hub's administrators cannot modify the Virtual Hub Extended Options. (View only.)
@@ -1667,7 +1667,7 @@ SM_FACTORY_DEFAULT_WARNING		This will perform a factory-reset on the Game Server
 SM_FACTORY_DEFAULT_PERFORMED	The factory-reset operation is performing on the server.\r\n\r\nPress OK to exit the current session of Game Server Manager.\r\nAfter exiting, please re-start the Game Server Manager and connect to the Game Server again.\r\nThen you will see the Game Server is reset.
 SM_AZURE_STATUS_CONNECTED		Status: Connected
 SM_AZURE_STATUS_NOT_CONNECTED	Status: Not Connected
-SM_NO_BRIDGE_NICS				No physical network adapters suitable for Local Bridge were found on the Game server computer.\r\nIn order to create a Local Bridge, you have to install at least one physical network adapters on the computer.\r\nYou cannot use Wi-Fi adapters or 3G adapters for Local Bridge.\r\nPlease install a physical network adapter which is compatible to wired Ethernet.\r\n\r\nIf a recently-installed network adapter doesn't appear, once reboot the computer.\r\n\r\nIf the Local Bridge cannot be used anyway, you can use "SecureNAT Function" instead.\r\n\r\nIf you have a certain reason to use unusual network adapters (i.e. Wi-Fi adapters, 3G adapters or virtual adapters), set the "ShowAllInterfaces" variable on the "LocalBridgeList" directive to "true" and restart the Game Server. Then such devices will appear on the list. (For advanced Windows users only.)\r\n\r\nIf this error occurs after you upgraded Windows, please re-install Unite Gaming Game Server or Unite Gaming Game Bridge>
+SM_NO_BRIDGE_NICS				No physical network adapters suitable for Local Bridge were found on the Game server computer.\r\nIn order to create a Local Bridge, you have to install at least one physical network adapters on the computer.\r\nYou cannot use Wi-Fi adapters or 3G adapters for Local Bridge.\r\nPlease install a physical network adapter which is compatible to wired Ethernet.\r\n\r\nIf a recently-installed network adapter doesn't appear, once reboot the computer.\r\n\r\nIf the Local Bridge cannot be used anyway, you can use "SecureNAT Function" instead.\r\n\r\nIf you have a certain reason to use unusual network adapters (i.e. Wi-Fi adapters, 3G adapters or virtual adapters), set the "ShowAllInterfaces" variable on the "LocalBridgeList" directive to "true" and restart the Game Server. Then such devices will appear on the list. (For advanced Windows users only.)\r\n\r\nIf this error occurs after you upgraded Windows, please re-install GAMING LAUNCHER Server or GAMING LAUNCHER Bridge>
 SM_CERT_MESSAGE					The current SSL self-signed root certificate on this Game Server is in the old format.\r\n\r\nSome versions of OpenGame Connect for Android have a bug to misinterpret SSL certificates in the old format. It might cause the connection problem from OpenGame Connect for Android to this Game Server.\r\n\r\nIf you are planning to use OpenGame Connect for Android as a Game client, it is recommended to regenerate the SSL server certificate.\r\n\r\nDo you want to regenerate the server certificate now?
 SM_CERT_MESSAGE_CLI				--- Caution ---\r\n\r\nThe current SSL self-signed root certificate on this Game Server is in the old format.\r\n\r\nSome versions of OpenGame Connect for Android have a bug to misinterpret SSL certificates in the old format. It might cause the connection problem from OpenGame Connect for Android to this Game Server.\r\n\r\nIf you are planning to use OpenGame Connect for Android as a Game client, it is recommended to regenerate the SSL server certificate.\r\n\r\nTo regenerate and update the server certificate, execute the "ServerCertRegenerate" command after updating the Game Server to the latest version.
 SM_CERT_NEED_ROOT				The specified SSL certificate is a sub-certificate which was issued by a CA (Certificate Authority).\r\n\r\nIf you are planning to support either Microsoft SSTP or OpenGame protocol on this Game server, you have to install the root certificate and all intermediate certificates (if exists) on this Game Server.\r\n\r\nTo install these certificates, copy the root certificate and all intermediate certificate files (in the X.509 format) into the "chain_certs" subdirectory on the directory which is Game Server has been installed on.\r\n\r\nIf you don't know how to obtain root and intermediate certificate files for your certificate authority (CA), please refer to the CA's web site or contact technical support staffs of the CA.
@@ -1736,10 +1736,10 @@ L_LINE					------------------------------------------------------
 
 # (Server log)
 LS_START_UTF8			Log Messages are written with UTF-8 Encoding Format.
-LS_START_1				The Unite Gaming Game Server has been started.
+LS_START_1				The GAMING LAUNCHER Server has been started.
 LS_START_2				%S %S
 LS_START_3				%S
-LS_END_1				The Unite Gaming Game Server Engine has been successfully shutdown.
+LS_END_1				The GAMING LAUNCHER Server Engine has been successfully shutdown.
 LS_END_2				The Server Engine shutdown processing has started.
 LS_STOP_ALL_LISTENER	All TCP listeners will be stopped.
 LS_STOP_ALL_LISTENER_2	All TCP listeners have been stopped.
@@ -1781,7 +1781,7 @@ LS_HUB_NOT_FOUND		Connection "%S": Virtual Hub "%S" that the client is trying to
 LS_WG_KEY_NOT_FOUND		Connection "%S": The WireGuard key is not associated with a user on the server.
 LS_IP_DENIED			Connection "%S": The source IP address "%S" of the client has refused based on the Source IP Address Limit List defined for the Virtual Hub.
 LS_LICENSE_ERROR		Connection "%S": Because a license-related error has been occurred, the client is unable to connect to the server.
-LS_BETA_EXPIRES			This beta version of Unite Gaming Game Server is expired. The beta version period of use has expired. Download a new beta version or full version from http://selinks.org/.
+LS_BETA_EXPIRES			This beta version of GAMING LAUNCHER Server is expired. The beta version period of use has expired. Download a new beta version or full version from http://selinks.org/.
 LS_TICKET_1				A new client authentication ticket has been issued for cluster member "%S". Virtual Hub "%S", User name "%S" ("%S"), Session name "%S", Ticket "%S"
 LS_TICKET_2				A new client authentication ticket has been received from the cluster controller. Virtual Hub "%S", User name "%S" ("%S"), Session name "%S", Ticket "%S", Expiration %u seconds
 LS_ENUM_HUB				Connection "%S": %u Virtual Hub servers have been enumerated on this server.
@@ -2085,10 +2085,10 @@ LA_DDNS_HOSTNAME_CHANGED	The hostname of Dynamic DNS Function has been changed t
 LA_SET_SPECIAL_LISTENER	Special Listener enable / disable status has been changed.
 
 # (Client log)
-LC_START_1				The Unite Gaming Game Client Engine has been started.
+LC_START_1				The GAMING LAUNCHER Client Engine has been started.
 LC_START_2				%S %S
 LC_START_3				%S
-LC_END					The Unite Gaming Game Client Engine has been shut down.
+LC_END					The GAMING LAUNCHER Client Engine has been shut down.
 LC_LOAD_CONFIG_1		Loading configuration file...
 LC_LOAD_CONFIG_2		The configuration file has been loaded.
 LC_LOAD_CONFIG_3		Configuration file does not exist. Applying the initial settings.
@@ -2165,8 +2165,8 @@ UT_SM_ST_WINS_2			WINS Server 2
 
 
 # Concerning EtherLogger Manager
-EM_TITLE				Unite Gaming EtherLogger Manager
-EM_REMOTE_TITLE			You can connect to and manage the Unite Gaming EtherLogger service. \r\nEnter the host name and IP address of the computer on which the EtherLogger service to be managed is operating. You can also concatenate the port number by using the ":" (colon).
+EM_TITLE				GAMING LAUNCHER EtherLogger Manager
+EM_REMOTE_TITLE			You can connect to and manage the GAMING LAUNCHER EtherLogger service. \r\nEnter the host name and IP address of the computer on which the EtherLogger service to be managed is operating. You can also concatenate the port number by using the ":" (colon).
 EM_MAIN_COLUMN_1		Network adapter name
 EM_MAIN_COLUMN_2		Status
 EM_MAIN_OK				Operating
@@ -2175,14 +2175,14 @@ EM_ADD_NEW				Add new capture device
 EM_ADD_EDIT				Edit capture settings
 EM_DELETE_CONFIRM		Are you sure you want to delete capture setting "%S"?
 EM_NO_LICENSE_COLUMN	Note: 
-EM_NO_LICENSE			Because not even one product license is registered, this Unite Gaming EtherLogger will not operate.
+EM_NO_LICENSE			Because not even one product license is registered, this GAMING LAUNCHER EtherLogger will not operate.
 
-EM_UNSUPPORTED	Unable to use Unite Gaming EtherLogger on the operating system that this Unite Gaming EtherLogger is operating on. For the list of operating system that the Unite Gaming EtherLogger can be used on, please refer to the online documentation of the Unite Gaming EtherLogger.
-EM_WPCAP_REMOTE	In order to use this Unite Gaming EtherLogger, you need to install WinPcap software. The software WinPcap is currently not installed on the server computer. \r\n\r\nTo continue the installation of the WinPcap software, you must start Unite Gaming EtherLogger Manager on the server computer that is running Game Server and then while connected to localhost (location of your own computer), have the Local Bridge Function Setting window displayed. \r\nTo continue, first exit this management session, and then, after starting Unite Gaming EtherLogger Manager on the server computer, connect to localhost and continue the setting process. 
-EM_WPCAP_ROOT	In order to use this Unite Gaming EtherLogger, you need to install WinPcap software. \r\n\r\nTo continue the installation you must log in to this computer as a user with administrator privileges. \r\nLog on as an administrator and start the Unite Gaming Game Server Manager again.
-EM_WPCAP_INSTALL	In order to use this Unite Gaming EtherLogger, you need to install WinPcap software. The software WinPcap is currently not installed on the server computer. \r\n\r\nWinPcap is an easy-to-install free software that is bundled together with the Game Server. \r\n\r\nDo you want to begin the installation of WinPcap?
-EM_WPCAP_REBOOT1	After WinPcap installation has completed, you must restart the computer before you use the Unite Gaming EtherLogger. \r\n\r\nAfter you restart the computer manually and start Unite Gaming EtherLogger, configure the settings again.
-EM_WPCAP_REBOOT2	After WinPcap is installed, you must restart the Unite Gaming EtherLogger service. \r\n\r\nIt only takes a short time to restart the Unite Gaming EtherLogger service, however all management sessions that are currently connected to the Unite Gaming EtherLogger will be disconnected. \r\nThis management session will also be disconnected, so you will need to reconnect to continue. \r\n\r\nDo you want to restart the Unite Gaming Ether Logger service?
+EM_UNSUPPORTED	Unable to use GAMING LAUNCHER EtherLogger on the operating system that this GAMING LAUNCHER EtherLogger is operating on. For the list of operating system that the GAMING LAUNCHER EtherLogger can be used on, please refer to the online documentation of the GAMING LAUNCHER EtherLogger.
+EM_WPCAP_REMOTE	In order to use this GAMING LAUNCHER EtherLogger, you need to install WinPcap software. The software WinPcap is currently not installed on the server computer. \r\n\r\nTo continue the installation of the WinPcap software, you must start GAMING LAUNCHER EtherLogger Manager on the server computer that is running Game Server and then while connected to localhost (location of your own computer), have the Local Bridge Function Setting window displayed. \r\nTo continue, first exit this management session, and then, after starting GAMING LAUNCHER EtherLogger Manager on the server computer, connect to localhost and continue the setting process. 
+EM_WPCAP_ROOT	In order to use this GAMING LAUNCHER EtherLogger, you need to install WinPcap software. \r\n\r\nTo continue the installation you must log in to this computer as a user with administrator privileges. \r\nLog on as an administrator and start the GAMING LAUNCHER Server Manager again.
+EM_WPCAP_INSTALL	In order to use this GAMING LAUNCHER EtherLogger, you need to install WinPcap software. The software WinPcap is currently not installed on the server computer. \r\n\r\nWinPcap is an easy-to-install free software that is bundled together with the Game Server. \r\n\r\nDo you want to begin the installation of WinPcap?
+EM_WPCAP_REBOOT1	After WinPcap installation has completed, you must restart the computer before you use the GAMING LAUNCHER EtherLogger. \r\n\r\nAfter you restart the computer manually and start GAMING LAUNCHER EtherLogger, configure the settings again.
+EM_WPCAP_REBOOT2	After WinPcap is installed, you must restart the GAMING LAUNCHER EtherLogger service. \r\n\r\nIt only takes a short time to restart the GAMING LAUNCHER EtherLogger service, however all management sessions that are currently connected to the GAMING LAUNCHER EtherLogger will be disconnected. \r\nThis management session will also be disconnected, so you will need to reconnect to continue. \r\n\r\nDo you want to restart the Unite Gaming Ether Logger service?
 EM_RESOURCE		Unable to read the WinPcap driver.
 
 
@@ -2446,7 +2446,7 @@ B_DELETE				&Delete
 
 PREFIX					D_CM_PASSWORD
 CAPTION					Set Password - Game Client Manager
-S_TITLE					You can set the password to limit the Unite Gaming Game Client Service.\r\nAfter setting a password, you will be asked to enter a password the next time you use the Game Client Connect Manager to connect to the Unite Gaming Game Client service.
+S_TITLE					You can set the password to limit the GAMING LAUNCHER Client Service.\r\nAfter setting a password, you will be asked to enter a password the next time you use the Game Client Connect Manager to connect to the GAMING LAUNCHER Client service.
 STATIC1					Set Client Administration Password: 
 R_USE_PASSWORD			&Use Password
 R_REMOTE_ONLY			Only &Request Password for Remote Operation
@@ -2527,7 +2527,7 @@ S_STATIC				Note: If authentication type is RADIUS or NT Domain Authentication, 
 
 
 PREFIX					D_SM_MAIN
-CAPTION					Unite Gaming Game Server Manager 
+CAPTION					GAMING LAUNCHER Server Manager 
 STATIC1					Connection &Settings for Game Server:
 STATIC2					Connection Settings for Game Server or Game Bridge are defined as follows. Double-click the item to connect to the server.\r\nTo add a new connection, click New Setting.
 B_NEW_SETTING			&New Setting
@@ -2537,7 +2537,7 @@ IDOK					&Connect
 B_SECURE_MANAGER		&Smart Card Manager...
 B_SELECT_SECURE			Select S&mart card...
 B_ABOUT					&About Unite Gaming Game...
-IDCANCEL				E&xit Unite Gaming Game Server Manager
+IDCANCEL				E&xit GAMING LAUNCHER Server Manager
 B_CERT_TOOL				Make a Certificate
 
 
@@ -2571,7 +2571,7 @@ IDCANCEL				Cancel
 
 
 PREFIX					D_SM_SERVER
-CAPTION					%s - Unite Gaming Game Server Manager
+CAPTION					%s - GAMING LAUNCHER Server Manager
 S_TITLE					Manage Game Server "%S"
 S_VHUB_BRIDGE			Virtual Hubs Hosted by this Game Server:
 IDOK					M&anage Virtual Hub
@@ -3254,8 +3254,8 @@ STATIC1					The Game Client Virtual Network Adapter has been installed. \r\nIt i
 
 
 PREFIX					D_EM_MAIN
-CAPTION					Unite Gaming EtherLogger Manager
-STATIC1					Unite Gaming EtherLogger is a service that captures data flowing through LAN cards connected to the computer and keeps a log of the headers of the packet types specified by the administrator and all data in text file format. \r\n\r\nCurrently, the following capture devices are performing capture logging.
+CAPTION					GAMING LAUNCHER EtherLogger Manager
+STATIC1					GAMING LAUNCHER EtherLogger is a service that captures data flowing through LAN cards connected to the computer and keeps a log of the headers of the packet types specified by the administrator and all data in text file format. \r\n\r\nCurrently, the following capture devices are performing capture logging.
 B_PASSWORD				Administration &Password
 B_LICENSE				&License
 B_ADD					&Add
@@ -3317,7 +3317,7 @@ IDCANCEL				Cancel
 
 PREFIX					D_EM_LICENSE
 CAPTION					Add or Delete License
-STATIC1					To use Unite Gaming EtherLogger you must acquire a valid license and register the license key. Using this window, you can register a new license key, delete a registered license key and display the current license list and the license mode of the Unite Gaming EtherLogger.
+STATIC1					To use GAMING LAUNCHER EtherLogger you must acquire a valid license and register the license key. Using this window, you can register a new license key, delete a registered license key and display the current license list and the license mode of the GAMING LAUNCHER EtherLogger.
 S_BOLD					&List of Currently Registered Licenses: 
 B_OBTAIN				&Obtain License
 STATIC2					Click Obtain License to display the website that will provide instructions on how to obtain a license.
@@ -3325,13 +3325,13 @@ B_ADD					&Add License Key Registration
 B_DEL					&Delete
 IDOK					&Information About License
 STATIC3					Select a license and click Information About License to connect to Unite Gaming Game Project's website (softether.com) and view the registered information relating to the selected license.
-S_BOLD2					Current License &Mode of Unite Gaming EtherLogger: 
+S_BOLD2					Current License &Mode of GAMING LAUNCHER EtherLogger: 
 IDCANCEL				E&xit
 
 
 PREFIX					D_EM_LICENSE_ADD
 CAPTION					Add License Key Registration
-S_INFO					You can register a license key of a Unite Gaming EtherLogger product license.
+S_INFO					You can register a license key of a GAMING LAUNCHER EtherLogger product license.
 STATIC1					The license keys are 36 alphanumeric characters in length plus hyphens. They are key codes that certify the ownership of a license. \r\n\r\nWhen a license certificate is received together with this software, the license key is printed on this license certificate. If the license for this software has been purchased online, the license key is provided by email and on the website window at the time the license is purchased. The license key may also be written down by some other method. If you don't know where the license key is written down, ask the vendor who sold you the license.
 STATIC2					&Input the License Key Correctly: 
 STATIC3					Enter the license key by separating the input into 6-digit groups. You don't need to input the hyphens. It is also possible to copy && paste the license key.
@@ -3728,7 +3728,7 @@ IDCANCEL				&Close
 
 PREFIX					D_SM_LICENSE
 CAPTION					Add or Remove License
-STATIC1					To use Unite Gaming Game Server you must acquire a valid license and register the license key. You can register a new license key, delete a registered license key and display the current license list and the license mode of the Game Server here.
+STATIC1					To use GAMING LAUNCHER Server you must acquire a valid license and register the license key. You can register a new license key, delete a registered license key and display the current license list and the license mode of the Game Server here.
 S_BOLD					Currently Registered &License Keys:
 B_OBTAIN				&Obtain or Extend a License
 STATIC2					Click Obtain or Extend License to visit the website that will provide instructions on how to obtain a license.
@@ -3736,13 +3736,13 @@ B_ADD					&Add a License Key
 B_DEL					&Delete
 IDOK					&Information About License
 STATIC3					Select a license and click Information About License to connect to Unite Gaming Game Project's website (softether.com) and view the registered information relating to the selected license.
-S_BOLD2					Current License &Mode of Unite Gaming Game Server: 
+S_BOLD2					Current License &Mode of GAMING LAUNCHER Server: 
 IDCANCEL				E&xit
 
 
 PREFIX					D_SM_LICENSE_ADD
 CAPTION					Add License Keys
-S_INFO					You can register a Unite Gaming Game Server product license or a connection license.
+S_INFO					You can register a GAMING LAUNCHER Server product license or a connection license.
 STATIC1					The license keys are 36 alphanumeric characters in length plus dashes. They are key codes that certify the ownership of a license. \r\n\r\nWhen a license certificate is received together with this software, the license key is printed on this license certificate. If the license for this software has been purchased online, the license key is provided by email and on the website window at the time the license is purchased. The license key may also be written down by some other method. If you don't know where the license key is written down, ask the vendor who sold you the license.
 STATIC2					&Input the License Key Accurately:
 STATIC3					Enter the license key by separating the input into 6-digit groups. You don't need to input the dashes. It is also possible to copy && paste the license key.
@@ -3752,23 +3752,23 @@ IDCANCEL				Cancel
 
 
 PREFIX					D_FREEINFO
-CAPTION					About Unite Gaming Game Server Free Edition
-S_INFO_1				Thank you for trying out the Unite Gaming Game Server Free Edition.
-S_INFO_2				The Unite Gaming Game Server operating on destination server "%S" is the Free Edition intended for personal use. \r\nWhen using the Free Edition, you can use all the Unite Gaming Game Server functions but the User Agreement prohibits the following usage.
+CAPTION					About GAMING LAUNCHER Server Free Edition
+S_INFO_1				Thank you for trying out the GAMING LAUNCHER Server Free Edition.
+S_INFO_2				The GAMING LAUNCHER Server operating on destination server "%S" is the Free Edition intended for personal use. \r\nWhen using the Free Edition, you can use all the GAMING LAUNCHER Server functions but the User Agreement prohibits the following usage.
 S_INFO_3				Use where communication for commercial purposes travels via the Game Server. 
-S_INFO_4				Note that if the software is used based on the above mentioned prohibited usage, it is a breach of the Unite Gaming Game Server user agreement. The above restriction is lifted once you obtain a regular product license for Unite Gaming Game Server. For details on the regular product version, please visit www.softether.com. \r\n\r\nIf this server is being used under the usage described above, please contact us via our website at www.softether.com. \r\n\r\nNote: This window will appear when connected to a Free Edition of Game Server. This window does not appear when Editions other than the Free Editions of the software product are used. \r\nNote: Apart from this notification window, there are absolutely no differences between the Free Edition software and the product version.
+S_INFO_4				Note that if the software is used based on the above mentioned prohibited usage, it is a breach of the GAMING LAUNCHER Server user agreement. The above restriction is lifted once you obtain a regular product license for GAMING LAUNCHER Server. For details on the regular product version, please visit www.softether.com. \r\n\r\nIf this server is being used under the usage described above, please contact us via our website at www.softether.com. \r\n\r\nNote: This window will appear when connected to a Free Edition of Game Server. This window does not appear when Editions other than the Free Editions of the software product are used. \r\nNote: Apart from this notification window, there are absolutely no differences between the Free Edition software and the product version.
 B_HIDE					&Hide this window next time.
 IDCANCEL				&OK
 
 
 PREFIX					D_CM_SETTING
-CAPTION					Switch Unite Gaming Game Client Operating Mode
-STATIC1					You can use Unite Gaming Game Client in either Normal Mode or Easy Mode. To switch to the other mode, check the respective checkbox below.
+CAPTION					Switch GAMING LAUNCHER Client Operating Mode
+STATIC1					You can use GAMING LAUNCHER Client in either Normal Mode or Easy Mode. To switch to the other mode, check the respective checkbox below.
 R_NORMAL				&Normal Mode
 R_EASY					&Easy Mode
-STATIC2					When using Normal Mode, you can perform all the operations that the Unite Gaming Game Client software provides. We recommend that general users and system administrators use this mode.
+STATIC2					When using Normal Mode, you can perform all the operations that the GAMING LAUNCHER Client software provides. We recommend that general users and system administrators use this mode.
 STATIC3					Easy Mode only allows the most frequently used operations such as connecting to the Game Server. We recommend this mode to beginner users.
-STATIC4					By using the Setting Locker, you can connect to a Game Server by using a Connection Setting registered in Unite Gaming Game Client, but by doing so, you are prevented from changing the parameters of Connection Settings, creating a new Connection Setting or deleting a Connection Setting.
+STATIC4					By using the Setting Locker, you can connect to a Game Server by using a Connection Setting registered in GAMING LAUNCHER Client, but by doing so, you are prevented from changing the parameters of Connection Settings, creating a new Connection Setting or deleting a Connection Setting.
 R_LOCK					Enable Setting &Locker
 S_PASSWORD1				You can specify a password. The input of that password will be required next time to disable the Setting Locker.
 S_PASSWORD2				&Password:
@@ -3789,9 +3789,9 @@ B_VGC					GAMING LAUNCHING Project
 
 
 PREFIX					D_SM_SETUP
-CAPTION					Unite Gaming Game Server / Bridge Easy Setup ()
-S_TITLE					Unite Gaming Game Server / Bridge Easy Setup ()
-IDC_STATIC_1			By using this setup you can easily setup a Unite Gaming Game Server or Game Bridge for the following use and purpose. After exiting the setup, you can use the Game Server Manager to freely configure more advanced settings.
+CAPTION					GAMING LAUNCHER Server / Bridge Easy Setup ()
+S_TITLE					GAMING LAUNCHER Server / Bridge Easy Setup ()
+IDC_STATIC_1			By using this setup you can easily setup a GAMING LAUNCHER Server or Game Bridge for the following use and purpose. After exiting the setup, you can use the Game Server Manager to freely configure more advanced settings.
 S_BOLD					Select the type of Game server you want to build. Multiple types can be selected together.
 C_REMOTE				&Remote Access Game Server
 S_REMOTE_1				The Remote Access Game Server allows Game Client computers in remote locations to access to the existing Ethernet segments, for example company LAN.\r\nAny Game Clients who is connecting to the Game Server will be able to access to the network as if they are connected directly and physically to the network.
@@ -4051,7 +4051,7 @@ S_TITLE					%s Uninstall Wizard
 PREFIX					D_SW_EASY1
 CAPTION					D_SW_EASY1
 S_WELCOME				Installing and setting up the Game Clients to a lot of computers in the enterprise is a hard work.
-S_TITLE					What is Unite Gaming Game Client Easy Installer?
+S_TITLE					What is GAMING LAUNCHER Client Easy Installer?
 S_WELCOME2				Easy Installer Creator is a tool for enterprise administrators. You can create a Game Client installer with embedding a specific Game connection setting by using Easy Installer Creator. Personal users can also exploit this tool.
 S_WELCOME3				A created Easy Installer can be distributed to employees in the enterprise by using file servers or e-mails. If a user runs the Easy Installer, Game Client will be installed and the Game connection setting will be imported, and then the Game connection will be started automatically.
 
@@ -4072,9 +4072,9 @@ B_EASYMODE				Set the Game Client Manager to &Easy Mode when Installation
 
 PREFIX					D_SW_WEB1
 CAPTION					D_SW_WEB1
-S_WELCOME				You can create a Unite Gaming Game Client Web Installer and upload it on the Web server in the enterprise. A user opens that web page and can install the Unite Gaming Game Client automatically. You can also setup the automatic import and kick-start of a built-in Game connection setting.
+S_WELCOME				You can create a GAMING LAUNCHER Client Web Installer and upload it on the Web server in the enterprise. A user opens that web page and can install the GAMING LAUNCHER Client automatically. You can also setup the automatic import and kick-start of a built-in Game connection setting.
 S_TITLE					What is Unite Gaming Game Web Installer?
-S_WELCOME2				The generated Web Installer can be placed as HTML files on the intranet Web server. If an employee accesses to the URL of that HTML files, the Unite Gaming Game Client Installer will be executed.
+S_WELCOME2				The generated Web Installer can be placed as HTML files on the intranet Web server. If an employee accesses to the URL of that HTML files, the GAMING LAUNCHER Client Installer will be executed.
 S_WELCOME3				Using ActiveX Control. Internet Explorer 5.0, greater on Windows 2000 or greater are supported. Other web browsers or older operating systems (for example Windows 98) are not supported.
 
 
@@ -4153,7 +4153,7 @@ IDCANCEL				Cancel
 
 
 PREFIX					D_VGC_LIST
-CAPTION					Game Gate Academic Experimental Project Plugin for Unite Gaming Game Client
+CAPTION					Game Gate Academic Experimental Project Plugin for GAMING LAUNCHER Client
 S_TITLE					Game Gate Public Game Relay Servers
 S_INFO1					Gain freedom access to Internet by using Game connection via Public Game Servers provided by volunteers abound the world. Bypass your local malfunctioning firewall's packet blocking, and hide your IP address safely.
 IDOK					&Connect to the Game Server
@@ -4228,7 +4228,7 @@ S_BOLD					Caution! Do Not Use the Game Gate Services in Countries where Game Co
 PREFIX					D_NM_PUSH
 CAPTION					Edit the static routing table to push
 S1						This Virtual DHCP Server can push the classless static routes (RFC 3442) with DHCP reply messages to Game clients.
-S2						Whether or not a Game client can recognize the classless static routes (RFC 3442) depends on the target Game client software. Unite Gaming Game Client and OpenGame Client are supporting the classless static routes. On L2TP/IPsec and MS-SSTP protocols, the compatibility depends on the implementation of the client software.
+S2						Whether or not a Game client can recognize the classless static routes (RFC 3442) depends on the target Game client software. GAMING LAUNCHER Client and OpenGame Client are supporting the classless static routes. On L2TP/IPsec and MS-SSTP protocols, the compatibility depends on the implementation of the client software.
 S3						You can realize the split tunneling if you clear the default gateway field on the Virtual DHCP Server options. On the client side, L2TP/IPsec and MS-SSTP clients need to be configured not to set up the default gateway for the split tunneling usage.
 S4						You can also push the classless static routes (RFC 3442) by your existing external DHCP server. In that case, disable the Virtual DHCP Server function on SecureNAT, and you need not to set up the classless routes on this screen.
 S5						Edit the static routing table to push
@@ -6178,7 +6178,7 @@ CMD_DhcpSet_DNS			Specify the IP address of the primary DNS Server to be notifie
 CMD_DhcpSet_DNS2		Specify the IP address of the secondary DNS Server to be notified to the client. You can specify a SecureNAT Virtual Host IP address for this when the SecureNAT Function's Virtual NAT Function has been enabled and is being used also. If you specify 0 or none, then the client will not be notified of the DNS Server address.
 CMD_DhcpSet_DOMAIN		Specify the domain name to be notified to the client. If you specify none, then the client will not be notified of the domain name.
 CMD_DhcpSet_LOG			Specify whether or not to save the Virtual DHCP Server operation in the Virtual Hub security log. Specify "yes" to save it. This value is interlinked with the Virtual NAT Function log save setting.
-CMD_DhcpSet_PUSHROUTE	Specify the static routing table to push.\nExample: "192.168.5.0/255.255.255.0/192.168.4.254, 10.0.0.0/255.0.0.0/192.168.4.253"\nSplit multiple entries (maximum: 64 entries) by comma or space characters. Each entry must be specified in the "IP network address/subnet mask/gateway IP address" format.\nThis Virtual DHCP Server can push the classless static routes (RFC 3442) with DHCP reply messages to Game clients.\nWhether or not a Game client can recognize the classless static routes (RFC 3442) depends on the target Game client software. Unite Gaming Game Client and OpenGame Client are supporting the classless static routes. On L2TP/IPsec and MS-SSTP protocols, the compatibility depends on the implementation of the client software. You can realize the split tunneling if you clear the default gateway field on the Virtual DHCP Server options. On the client side, L2TP/IPsec and MS-SSTP clients need to be configured not to set up the default gateway for the split tunneling usage.\nYou can also push the classless static routes (RFC 3442) by your existing external DHCP server. In that case, disable the Virtual DHCP Server function on SecureNAT, and you need not to set up the classless routes on this command.\nSee the RFC 3442 to understand the classless routes.
+CMD_DhcpSet_PUSHROUTE	Specify the static routing table to push.\nExample: "192.168.5.0/255.255.255.0/192.168.4.254, 10.0.0.0/255.0.0.0/192.168.4.253"\nSplit multiple entries (maximum: 64 entries) by comma or space characters. Each entry must be specified in the "IP network address/subnet mask/gateway IP address" format.\nThis Virtual DHCP Server can push the classless static routes (RFC 3442) with DHCP reply messages to Game clients.\nWhether or not a Game client can recognize the classless static routes (RFC 3442) depends on the target Game client software. GAMING LAUNCHER Client and OpenGame Client are supporting the classless static routes. On L2TP/IPsec and MS-SSTP protocols, the compatibility depends on the implementation of the client software. You can realize the split tunneling if you clear the default gateway field on the Virtual DHCP Server options. On the client side, L2TP/IPsec and MS-SSTP clients need to be configured not to set up the default gateway for the split tunneling usage.\nYou can also push the classless static routes (RFC 3442) by your existing external DHCP server. In that case, disable the Virtual DHCP Server function on SecureNAT, and you need not to set up the classless routes on this command.\nSee the RFC 3442 to understand the classless routes.
 CMD_DhcpSet_Prompt_START	Start Point for Distributed Address Band: 
 CMD_DhcpSet_Prompt_END		End Point for Distributed Address Band: 
 CMD_DhcpSet_Prompt_MASK		Subnet Mask: 
@@ -6315,7 +6315,7 @@ CMD_AcDel_Prompt_ID		ID of Rule to Delete:
 
 # LicenseAdd command
 CMD_LicenseAdd			Add License Key Registration
-CMD_LicenseAdd_Help		Use this to register a new license key on the Unite Gaming Game Server. \nTo use Unite Gaming Game Server you must acquire a valid license and register the license key. The license keys are 36 alphanumeric characters in length plus hyphens. They are key codes that certify the ownership of a license. \nWhen a license certificate is received together with this software, the license key is printed on this license certificate. If the license for this software has been purchased online, the license key is provided by email and on the website window at the time the license is purchased. The license key may also be written down by some other method. If you don't know where the license key is written down, ask the vendor who sold you the license. \n\nTo get the list of currently registered licenses, use the LicenseList command. \nTo display the license status of the current Game Server, use the LicenseStatus command. \nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.
+CMD_LicenseAdd_Help		Use this to register a new license key on the GAMING LAUNCHER Server. \nTo use GAMING LAUNCHER Server you must acquire a valid license and register the license key. The license keys are 36 alphanumeric characters in length plus hyphens. They are key codes that certify the ownership of a license. \nWhen a license certificate is received together with this software, the license key is printed on this license certificate. If the license for this software has been purchased online, the license key is provided by email and on the website window at the time the license is purchased. The license key may also be written down by some other method. If you don't know where the license key is written down, ask the vendor who sold you the license. \n\nTo get the list of currently registered licenses, use the LicenseList command. \nTo display the license status of the current Game Server, use the LicenseStatus command. \nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.
 CMD_LicenseAdd_Args		LicenseAdd [key]
 CMD_LicenseAdd_[key]	Specify the license key to register. Specify 36 digits of alphanumeric characters and group the digits in groups of 6 separating them by hyphen. 
 CMD_LicenseAdd_Prompt_Key	License Key: 
@@ -6323,7 +6323,7 @@ CMD_LicenseAdd_Prompt_Key	License Key:
 
 # LicenseDel command
 CMD_LicenseDel			Delete Registered License
-CMD_LicenseDel_Help		Use this to delete a specified license from the license list that is currently registered on the Unite Gaming Game Server. \n\nTo get the list of currently registered licenses, use the LicenseList command. \nTo display the license status of the current Game Server, use the LicenseStatus command. \nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.
+CMD_LicenseDel_Help		Use this to delete a specified license from the license list that is currently registered on the GAMING LAUNCHER Server. \n\nTo get the list of currently registered licenses, use the LicenseList command. \nTo display the license status of the current Game Server, use the LicenseStatus command. \nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.
 CMD_LicenseDel_Args		LicenseDel [id]
 CMD_LicenseDel_[id]		Specify the license number to delete.
 CMD_LicenseDel_Prompt_ID	License Number to Delete: 
@@ -6331,20 +6331,20 @@ CMD_LicenseDel_Prompt_ID	License Number to Delete:
 
 # LicenseList command
 CMD_LicenseList			Get List of Registered Licenses
-CMD_LicenseList_Help	Use this to display a list of license information currently registered on the Unite Gaming Game Server including: license key, license type name, status, expiration date, license ID, license type ID, server ID and serial ID. \n\nTo display the license status of the current Game Server, use the LicenseStatus command. \nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.
+CMD_LicenseList_Help	Use this to display a list of license information currently registered on the GAMING LAUNCHER Server including: license key, license type name, status, expiration date, license ID, license type ID, server ID and serial ID. \n\nTo display the license status of the current Game Server, use the LicenseStatus command. \nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.
 CMD_LicenseList_Args	LicenseList
 
 
 # LicenseStatus command
 CMD_LicenseStatus		Get License Status of Current Game Server
-CMD_LicenseStatus_Help	Use this to get and display the license status of the current Unite Gaming Game Server. \nThe following current information on the Unite Gaming Game Server will be displayed: product edition, server ID, product license expiration date, number of usable Client Connection Licenses and number of Bridge Connection Licenses. \n\nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.
+CMD_LicenseStatus_Help	Use this to get and display the license status of the current GAMING LAUNCHER Server. \nThe following current information on the GAMING LAUNCHER Server will be displayed: product edition, server ID, product license expiration date, number of usable Client Connection Licenses and number of Bridge Connection Licenses. \n\nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.
 CMD_LicenseStatus_Args	LicenseStatus
 
 
 # Commands added after Unite Gaming Game 4.0
 # IPsecEnable command
 CMD_IPsecEnable			Enable or Disable IPsec Game Server Function
-CMD_IPsecEnable_Help	Enable or Disable IPsec Game Server Function on Unite Gaming Game Server.\nIf you enable this function, Virtual Hubs on the Game Server will be able to accept Remote-Access Game connections from L2TP-compatible PCs, Mac OS X and Smartphones, and also can accept EtherIP Site-to-Site Game Connection. Game Connections from Smartphones suchlike iPhone, iPad and Android, and also from native Game Clients on Mac OS X and Windows can be accepted.\n\nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.\nYou cannot execute this command for Virtual Hubs of Game Servers operating as a cluster.
+CMD_IPsecEnable_Help	Enable or Disable IPsec Game Server Function on GAMING LAUNCHER Server.\nIf you enable this function, Virtual Hubs on the Game Server will be able to accept Remote-Access Game connections from L2TP-compatible PCs, Mac OS X and Smartphones, and also can accept EtherIP Site-to-Site Game Connection. Game Connections from Smartphones suchlike iPhone, iPad and Android, and also from native Game Clients on Mac OS X and Windows can be accepted.\n\nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.\nYou cannot execute this command for Virtual Hubs of Game Servers operating as a cluster.
 CMD_IPsecEnable_Args	IPsecEnable [/L2TP:yes|no] [/L2TPRAW:yes|no] [/ETHERIP:yes|no] [/PSK:pre-shared-key] [/DEFAULTHUB:default_hub]
 CMD_IPsecEnable_L2TP	Enable or Disable the L2TP over IPsec Server Function. To accept Game connections from iPhone, iPad, Android, Windows or Mac OS X, enable this option.
 CMD_IPsecEnable_L2TPRAW	Enable or Disable the L2TP Server Function (Raw L2TP with No Encryptions). To accept special Game clients, enable this option.
@@ -6360,7 +6360,7 @@ CMD_IPsecEnable_Prompt_DEFAULTHUB	Default Virtual HUB in a case of omitting the 
 
 # IPsecGet command
 CMD_IPsecGet			Get the Current IPsec Game Server Settings
-CMD_IPsecGet_Help		Get and view the current IPsec Game Server settings on the Unite Gaming Game Server.\n\nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.\nYou cannot execute this command for Virtual Hubs of Game Servers operating as a cluster.
+CMD_IPsecGet_Help		Get and view the current IPsec Game Server settings on the GAMING LAUNCHER Server.\n\nTo execute this command, you must have Game Server administrator privileges. \nThis command cannot be run on Game Bridge.\nYou cannot execute this command for Virtual Hubs of Game Servers operating as a cluster.
 CMD_IPsecGet_Args		IPsecGet
 CMD_IPsecGet_PRINT_L2TP		L2TP over IPsec Server Function Enabled
 CMD_IPsecGet_PRINT_L2TPRAW	Raw L2TP Server Function Enabled
@@ -7181,7 +7181,7 @@ TTC_RES_BPS_TOTAL		Total Average Throughput
 
 # Check command
 CMD_Check				Check whether Unite Gaming Game Operation is Possible
-CMD_Check_Help			Use this to check if the current computer that is running vpncmd is a suitable operation platform for Unite Gaming Game Server / Bridge. \nIf this check passes on a system, it is most likely that Unite Gaming Game software will operate correctly on that system. \nAlso, if this check does not pass on a system, then this indicates that some type of trouble may arise if Unite Gaming Game software is used on that system.
+CMD_Check_Help			Use this to check if the current computer that is running vpncmd is a suitable operation platform for GAMING LAUNCHER Server / Bridge. \nIf this check passes on a system, it is most likely that Unite Gaming Game software will operate correctly on that system. \nAlso, if this check does not pass on a system, then this indicates that some type of trouble may arise if Unite Gaming Game software is used on that system.
 CMD_Check_Args			Check
 
 
@@ -7192,8 +7192,8 @@ CHECK_NOTE				If this operation environment check tool is run on a system and th
 CHECK_EXEC_TAG			Checking '%s'... \n
 CHECK_PASS				Pass
 CHECK_FAIL				Fail
-CHECK_RESULT_1			All checks passed. It is most likely that Unite Gaming Game Server / Bridge can operate normally on this system.
-CHECK_RESULT_2			Some checks failed. Please check the operation environment of this system. If Unite Gaming Game Server / Bridge were to be executed on this system, troubles may occur.
+CHECK_RESULT_1			All checks passed. It is most likely that GAMING LAUNCHER Server / Bridge can operate normally on this system.
+CHECK_RESULT_2			Some checks failed. Please check the operation environment of this system. If GAMING LAUNCHER Server / Bridge were to be executed on this system, troubles may occur.
 CHECK_TEST_123456789	123456789
 
 
@@ -7222,19 +7222,19 @@ SW_EXIT_CONFIRM								The setup process of Unite Gaming Game hasn't been finish
 SW_UNINSTALL_CONFIRM						Starting the uninstall process of %s.\r\n\r\nDo you want to continue?
 
 
-SW_COMPONENT_VPNSERVER_TITLE				Unite Gaming Game Server
+SW_COMPONENT_VPNSERVER_TITLE				GAMING LAUNCHER Server
 SW_COMPONENT_VPNSERVER_DESCRIPTION			Install it on a server computer at the central site of Game. The management tools will be also installed.
 
-SW_COMPONENT_VPNCLIENT_TITLE				Unite Gaming Game Client
+SW_COMPONENT_VPNCLIENT_TITLE				GAMING LAUNCHER Client
 SW_COMPONENT_VPNCLIENT_DESCRIPTION			Install it on Game client computers. A Game client computer will be able to connect to the central Game Server. The management tools will be also installed.
 
-SW_COMPONENT_VPNBRIDGE_TITLE				Unite Gaming Game Bridge
+SW_COMPONENT_VPNBRIDGE_TITLE				GAMING LAUNCHER Bridge
 SW_COMPONENT_VPNBRIDGE_DESCRIPTION			Install it on computers at each site. Each Game Bridge will establish a Game connection to the central Game Server. The management tools will be also installed.
 
-SW_COMPONENT_VPNSMGR_TITLE					Unite Gaming Game Server Manager (Admin Tools Only)
+SW_COMPONENT_VPNSMGR_TITLE					GAMING LAUNCHER Server Manager (Admin Tools Only)
 SW_COMPONENT_VPNSMGR_DESCRIPTION			Only the Game Server Manager will be installed. The Game Server service program will not be installed. You can use the Game Server Manager to connect and manage remote Game Servers and Game Bridges on other computers which can be run on Windows, Linux, Mac OS X, Solaris and FreeBSD.
 
-SW_COMPONENT_VPNCMGR_TITLE					Unite Gaming Game Client Manager (Admin Tools Only)
+SW_COMPONENT_VPNCMGR_TITLE					GAMING LAUNCHER Client Manager (Admin Tools Only)
 SW_COMPONENT_VPNCMGR_DESCRIPTION			Only the Game Client Manager will be installed. The Game Client service program will not be installed. You can use the Game Client Manager to connect and manage remote Game Clients on other computers which can be run on Windows and Linux.
 
 SW_WELCOME_TITLE							Welcome to the Unite Gaming Game  Setup Wizard
@@ -7250,9 +7250,9 @@ SW_ERROR_TITLE								Results of Setup
 SW_FINISH_TITLE								Setup Finished
 SW_UNINST1_TITLE							Uninstaller
 SW_LANG1_TITLE								Unite Gaming Game: Configure the Display Language
-SW_EASY1_TITLE								Welcome to Unite Gaming Game Client Easy Installer Creator
+SW_EASY1_TITLE								Welcome to GAMING LAUNCHER Client Easy Installer Creator
 SW_EASY2_TITLE								Specify Files
-SW_WEB1_TITLE								Welcome to Unite Gaming Game Client Web Installer Creator
+SW_WEB1_TITLE								Welcome to GAMING LAUNCHER Client Web Installer Creator
 SW_WEB2_TITLE								Specify Files
 
 SW_UNINSTALLINFO_URL						http://selinks.org/
@@ -7281,8 +7281,8 @@ SW_SYSTEM_MODE_ALREADY_INSTALLED			The software "%s" is already installed on thi
 SW_SETUPLOG_CORRUPTED						The "setuplog.dat" file is broken.
 SW_MSI_UNINSTALL_FAILED						The older version of %s (Product Code: "%S") is installed. Windows Installer failed to uninstall this older version.\r\n\r\nPlease uninstall this older version manually and restart this installer again.
 SW_MSI_UNINSTALL_REBOOT_REQUIRED			Windows Installer has uninstalled the older version of %s. The reboot of computer is required.\r\n\r\nPress Finish button and reboot the computer MANUALLY, and restart this installer after the reboot.
-SW_NOTICE_VPNSERVER_IS_INSTALLED			Unite Gaming Game Bridge is selected as a component to install. However, this computer has already had Unite Gaming Game Server installed.\r\n\r\nUsually, you don't need to install both Unite Gaming Game Server and Unite Gaming Game Bridge on the same computer.\r\nIf you install both software, conflicts such as port number duplication will occur.\r\nIf you want to replace the Unite Gaming Game Server to Unite Gaming Game Bridge, you should exit this installer, uninstall Unite Gaming Game Server and restart this installer after that.\r\n\r\nDo you really want to continue the Unite Gaming Game Bridge installation?
-SW_NOTICE_VPNBRIDGE_IS_INSTALLED			Unite Gaming Game Server is selected as a component to install. However, this computer has already had Unite Gaming Game Bridge installed.\r\n\r\nUsually, you don't need to install both Unite Gaming Game Bridge and Unite Gaming Game Server on the same computer.\r\nIf you install both software, conflicts such as port number duplication will occur.\r\nIf you want to replace the Unite Gaming Game Server to Unite Gaming Game Server, you should exit this installer, uninstall Unite Gaming Game Bridge and restart this installer after that.\r\n\r\nDo you really want to continue the Unite Gaming Game Server installation?
+SW_NOTICE_VPNSERVER_IS_INSTALLED			GAMING LAUNCHER Bridge is selected as a component to install. However, this computer has already had GAMING LAUNCHER Server installed.\r\n\r\nUsually, you don't need to install both GAMING LAUNCHER Server and GAMING LAUNCHER Bridge on the same computer.\r\nIf you install both software, conflicts such as port number duplication will occur.\r\nIf you want to replace the GAMING LAUNCHER Server to GAMING LAUNCHER Bridge, you should exit this installer, uninstall GAMING LAUNCHER Server and restart this installer after that.\r\n\r\nDo you really want to continue the GAMING LAUNCHER Bridge installation?
+SW_NOTICE_VPNBRIDGE_IS_INSTALLED			GAMING LAUNCHER Server is selected as a component to install. However, this computer has already had GAMING LAUNCHER Bridge installed.\r\n\r\nUsually, you don't need to install both GAMING LAUNCHER Bridge and GAMING LAUNCHER Server on the same computer.\r\nIf you install both software, conflicts such as port number duplication will occur.\r\nIf you want to replace the GAMING LAUNCHER Server to GAMING LAUNCHER Server, you should exit this installer, uninstall GAMING LAUNCHER Bridge and restart this installer after that.\r\n\r\nDo you really want to continue the GAMING LAUNCHER Server installation?
 SW_OS_FAILED								This operating system doesn't support %s.
 SW_LANG_NOT_CHANGED							The language settings of %s were not changed.
 SW_LANG_LIST_LOAD_FAILED					Loading the available language list failed.
@@ -7297,11 +7297,11 @@ SW_EASY_ERROR_MSG							Failed to create a Game Client Easy Installer.
 SW_OTHER_INSTANCE_EXISTS					Another Unite Gaming Game Setup Wizard is running.\r\n\r\nYou can continue this wizard after another wizard exits.
 SW_PERFORM_MSG_WEB_INFO						Compiling the Game Client Web Installer...
 SW_WEB_ERROR_MSG							Failed to create a Game Client Web Installer.
-SW_INSTALLER_CACHE_IS_NOT_SIGNED			The currently installed Unite Gaming Game Client of this computer has not been installed from the digital-signed package signed by an Authenticode digital certificate of Unite Gaming Game Project.\r\nIt might be installed from a customized installer (for example, an installer created by Easy Installer Creator.)\r\n\r\nIf you continue to create a Web Installer, a warning message will be appeared on the user's screen when its loading.\r\nTo avoid showing the warning message, you should cancel this creating wizard, download the latest version of Unite Gaming Game Client from the Unite Gaming Game Project's web site, re-install it and restart the Web Installer Creator wizard.\r\n\r\nDo you really to continue to create a Web Installer?
+SW_INSTALLER_CACHE_IS_NOT_SIGNED			The currently installed GAMING LAUNCHER Client of this computer has not been installed from the digital-signed package signed by an Authenticode digital certificate of Unite Gaming Game Project.\r\nIt might be installed from a customized installer (for example, an installer created by Easy Installer Creator.)\r\n\r\nIf you continue to create a Web Installer, a warning message will be appeared on the user's screen when its loading.\r\nTo avoid showing the warning message, you should cancel this creating wizard, download the latest version of GAMING LAUNCHER Client from the Unite Gaming Game Project's web site, re-install it and restart the Web Installer Creator wizard.\r\n\r\nDo you really to continue to create a Web Installer?
 SW_FILE_NOT_FOUNT							The file "%s" not found.
 SW_WEB_FINISHED								The Web Installer is created and saved as "%s".\r\n\r\nPlease extract inner files from the ZIP file, upload them into the Web server, and edit a HTML file and an inf file to replace URLs appropriately.\r\n\r\nThe explanation to deploy the Web Installer is described on the ZIP file.
 
-SW_VG_CONFIRM_MSG							Do you really want to install and activate the Game Gate P2P Relay Function plug-in module with Unite Gaming Game Client?\r\n\r\nThis plug-in will realize the stability of communication to bypass the government censorship firewall. However, the communication of Game Gate usually consumes some network bandwidth. Game Gate is not recommended to be used in the mobile connections. \r\n\r\nPlease note that there are some countries and regions which have the regulation to forbid the encrypted communications to bypass government censorship firewalls. In such a case, you must not use the Game Gate functions on your computer. Game Gate is intended to be used mainly in Japan. Game Gate is a research project for just academic purpose only. Game Gate is governed under the Japanese laws. Other countries' laws are none of our concerns nor responsibilities. By using this software and service, you must observe all concerned laws and rules with your own responsibility. You will be completely liable to any damages and responsibilities which are results of using this software and service, regardless of either inside or outside of Japan's territory.
+SW_VG_CONFIRM_MSG							Do you really want to install and activate the Game Gate P2P Relay Function plug-in module with GAMING LAUNCHER Client?\r\n\r\nThis plug-in will realize the stability of communication to bypass the government censorship firewall. However, the communication of Game Gate usually consumes some network bandwidth. Game Gate is not recommended to be used in the mobile connections. \r\n\r\nPlease note that there are some countries and regions which have the regulation to forbid the encrypted communications to bypass government censorship firewalls. In such a case, you must not use the Game Gate functions on your computer. Game Gate is intended to be used mainly in Japan. Game Gate is a research project for just academic purpose only. Game Gate is governed under the Japanese laws. Other countries' laws are none of our concerns nor responsibilities. By using this software and service, you must observe all concerned laws and rules with your own responsibility. You will be completely liable to any damages and responsibilities which are results of using this software and service, regardless of either inside or outside of Japan's territory.
 
 
 
@@ -7352,63 +7352,63 @@ SW_DIRNAME_CONFIG_TOOLS						Configuration Tools
 SW_DIRNAME_ADMIN_TOOLS						Administrative Tools
 SW_DIRNAME_LANGUAGE_TOOLS					Language Settings
 
-SW_RUN_TEXT_VPNSMGR							Start the Unite Gaming Game Server Manager.
-SW_RUN_TEXT_VPNCMGR							Start the Unite Gaming Game Client Manager.
+SW_RUN_TEXT_VPNSMGR							Start the GAMING LAUNCHER Server Manager.
+SW_RUN_TEXT_VPNCMGR							Start the GAMING LAUNCHER Client Manager.
 
-SW_NIC_UNINSTALL							Virtual Network Adapters of Unite Gaming Game Client have been created on the system.\r\nDo you want to delete these Virtual Network Adapters?
+SW_NIC_UNINSTALL							Virtual Network Adapters of GAMING LAUNCHER Client have been created on the system.\r\nDo you want to delete these Virtual Network Adapters?
 
 # Do not translate this section !!!
 SW_TAG_USERNAME_ENGLISH						\ (User-Mode)
-SW_LINK_NAME_VPNSERVER_SVC					Unite Gaming Game Server Developer User-mode Service
-SW_LINK_NAME_VPNBRIDGE_SVC					Unite Gaming Game Bridge Developer User-mode Service
-SW_LONG_VPNSERVER							Unite Gaming Game Server 
-SW_LONG_VPNCLIENT							Unite Gaming Game Client 
-SW_LONG_VPNBRIDGE							Unite Gaming Game Bridge 
-SW_LONG_VPNSMGR								Unite Gaming Game Server Manager 
-SW_LONG_VPNCMGR								Unite Gaming Game Client Manager 
+SW_LINK_NAME_VPNSERVER_SVC					GAMING LAUNCHER Server Developer User-mode Service
+SW_LINK_NAME_VPNBRIDGE_SVC					GAMING LAUNCHER Bridge Developer User-mode Service
+SW_LONG_VPNSERVER							GAMING LAUNCHER Server
+SW_LONG_VPNCLIENT							GAMING LAUNCHER Client
+SW_LONG_VPNBRIDGE							GAMING LAUNCHER Bridge
+SW_LONG_VPNSMGR								GAMING LAUNCHER Server Manager
+SW_LONG_VPNCMGR								GAMING LAUNCHER Client Manager
 SW_LANG_SET_FAILED							Failed to write the new language setting on lang.config file.
 # --- end of "Do not translate this section" ---
 
 
 # Shortcuts Filenames
-SW_LINK_NAME_VPNSMGR_SHORT					Unite Gaming Game Server Manager (Dev)
+SW_LINK_NAME_VPNSMGR_SHORT					GAMING LAUNCHER Server Manager (Dev)
 SW_LINK_NAME_VPNSMGR_SHORT_UM				SE-Game Server Manager (Dev User)
 SW_LINK_NAME_VPNSMGR_SHORT_TOOLSONLY		SE-Game Server Manager (Dev Tools)
 SW_LINK_NAME_VPNSMGR_SHORT_TOOLSONLY_UM	SE-Game Server Manager (Dev Tools User)
-SW_LINK_NAME_VPNSMGR_FULL					Unite Gaming Game Server Manager 
-SW_LINK_NAME_VPNSMGR_COMMENT				You can manage Unite Gaming Game Server or Unite Gaming Game Bridge on a remote computer.
+SW_LINK_NAME_VPNSMGR_FULL					GAMING LAUNCHER Server Manager 
+SW_LINK_NAME_VPNSMGR_COMMENT				You can manage GAMING LAUNCHER Server or GAMING LAUNCHER Bridge on a remote computer.
 
-SW_LINK_NAME_VPNCMGR_SHORT					Unite Gaming Game Client Manager (Dev)
-SW_LINK_NAME_VPNCMGR_FULL					Unite Gaming Game Client Manager 
-SW_LINK_NAME_VPNCMGR_COMMENT				You can connect to a Game Server by using Unite Gaming Game Client.
+SW_LINK_NAME_VPNCMGR_SHORT					GAMING LAUNCHER Client Manager (Dev)
+SW_LINK_NAME_VPNCMGR_FULL					GAMING LAUNCHER Client Manager 
+SW_LINK_NAME_VPNCMGR_COMMENT				You can connect to a Game Server by using GAMING LAUNCHER Client.
 
-SW_LINK_NAME_VPNCMGRTOOLS_SHORT				Unite Gaming Game Client Remote Manager (Dev)
+SW_LINK_NAME_VPNCMGRTOOLS_SHORT				GAMING LAUNCHER Client Remote Manager (Dev)
 SW_LINK_NAME_VPNCMGRTOOLS_SHORT_UM			SE-Game Client Remote Manager (Dev User)
-SW_LINK_NAME_VPNCMGRTOOLS_FULL				Unite Gaming Game Client Remote Manager 
+SW_LINK_NAME_VPNCMGRTOOLS_FULL				GAMING LAUNCHER Client Remote Manager 
 
-SW_LINK_NAME_VPNCMGR2_FULL					Manage Remote Computer's Unite Gaming Game Client
-SW_LINK_NAME_VPNCMGR2_COMMENT				You can establish a remote connection to and manage a Unite Gaming Game Client on a remote computer.
+SW_LINK_NAME_VPNCMGR2_FULL					Manage Remote Computer's GAMING LAUNCHER Client
+SW_LINK_NAME_VPNCMGR2_COMMENT				You can establish a remote connection to and manage a GAMING LAUNCHER Client on a remote computer.
 
-SW_LINK_NAME_VPNCMGRTRAY_FULL				Unite Gaming Game Client Manager  Startup
-SW_LINK_NAME_VPNCMGRTRAY_COMMENT			Registers an icon of Unite Gaming Game Client  on the taskbar's notification area.
+SW_LINK_NAME_VPNCMGRTRAY_FULL				GAMING LAUNCHER Client Manager  Startup
+SW_LINK_NAME_VPNCMGRTRAY_COMMENT			Registers an icon of GAMING LAUNCHER Client  on the taskbar's notification area.
 
 SW_LINK_NAME_EASYINSTALLER					Easy Installer Creator
-SW_LINK_NAME_EASYINSTALLER_COMMENT			A tool for enterprise system administrators to create a Unite Gaming Game Client Easy Installer which has a function to kick-start a Game connection to the specific destination automatically.
+SW_LINK_NAME_EASYINSTALLER_COMMENT			A tool for enterprise system administrators to create a GAMING LAUNCHER Client Easy Installer which has a function to kick-start a Game connection to the specific destination automatically.
 
 SW_LINK_NAME_WEBINSTALLER					Web Installer Creator
-SW_LINK_NAME_WEBINSTALLER_COMMENT			A tool for enterprise system administrators to create a Unite Gaming Game Client Web Installer (ActiveX Installer) which has a function to kick-start a Game connection to the specific destination automatically.
+SW_LINK_NAME_WEBINSTALLER_COMMENT			A tool for enterprise system administrators to create a GAMING LAUNCHER Client Web Installer (ActiveX Installer) which has a function to kick-start a Game connection to the specific destination automatically.
 
 
 SW_LINK_NAME_VPNCMD							Unite Gaming Game Command Line Utility (vpncmd)
-SW_LINK_NAME_VPNCMD_COMMENT					Manage Unite Gaming Game Server, Unite Gaming Game Bridge and Unite Gaming Game Client on the command-line interface in vpncmd.
+SW_LINK_NAME_VPNCMD_COMMENT					Manage GAMING LAUNCHER Server, GAMING LAUNCHER Bridge and GAMING LAUNCHER Client on the command-line interface in vpncmd.
 SW_LINK_NAME_TRAFFIC						Network Traffic Speed Test Tool
 SW_LINK_NAME_TRAFFIC_COMMENT				Performs transmitting packets between two computers connected with TCP/IP, with large amount of throughput as possible, in order to measure the actual network traffic speed available.
 SW_LINK_NAME_TCP							TCP Optimization Utility
 SW_LINK_NAME_TCP_COMMENT					TCP Optimization Utility can adjust the parameters of TCP/IP of Windows in order to increase the network communication throughput of this computer.
 SW_LINK_NAME_SERVICES						Services Running on this Computer
 SW_LINK_NAME_SERVICES_COMMENT				Starts, stops, and configures Windows services. You can start and stop Unite Gaming Game services.
-SW_LINK_NAME_VPNSERVER_SVC_COMMENT			Starts Unite Gaming Game Server Service in the User Mode.
-SW_LINK_NAME_VPNBRIDGE_SVC_COMMENT			Starts Unite Gaming Game Bridge Service in the User Mode.
+SW_LINK_NAME_VPNSERVER_SVC_COMMENT			Starts GAMING LAUNCHER Server Service in the User Mode.
+SW_LINK_NAME_VPNBRIDGE_SVC_COMMENT			Starts GAMING LAUNCHER Bridge Service in the User Mode.
 
 SW_LINK_NAME_UNINSTALL						Uninstall %s
 SW_LINK_NAME_UNINSTALL_COMMENT				Uninstall %s on this computer.
