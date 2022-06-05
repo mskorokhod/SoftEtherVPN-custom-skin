@@ -571,6 +571,16 @@ void CmEasyDlgInit(HWND hWnd, CM_EASY_DLG *d)
 
 	SetShow(hWnd, B_VGC, cm->Client->IsVgcSupported);
 
+	const HWND accountListView = GetDlgItem(hWnd, L_ACCOUNT);
+	const COLORREF outlineColor = RGB(94, 73, 116);
+	const COLORREF textColor = RGB(255, 255, 255);
+	const COLORREF backgroundColor = RGB(62, 62, 62);
+	const COLORREF textBackColor = RGB(56, 56, 56);
+	ListView_SetBkColor(accountListView, backgroundColor);
+	ListView_SetTextBkColor(accountListView, textBackColor);
+	ListView_SetTextColor(accountListView, textColor);
+	ListView_SetOutlineColor(accountListView, outlineColor);
+
 	CmEasyDlgRefresh(hWnd, d);
 
 	num = LvNum(hWnd, L_ACCOUNT);
@@ -712,10 +722,6 @@ static BOOL CmEasyDrawItem(const WORD itemId, DRAWITEMSTRUCT* drawItem)
 		free(text);
 		break;
 	}
-	//case IDOK:
-	//{
-	//	break;
-	//}
 	default:
 		return FALSE;
 	}
@@ -731,9 +737,10 @@ INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 	NMHDR *n;
 	UINT i;
 
-	static HBRUSH dialogBrush;
-	static HBRUSH buttonBrush;
-	static HBRUSH listboxBrush;
+	static HBRUSH dialogBrush = NULL;
+	static HBRUSH buttonBrush = NULL;
+	static HBRUSH connectButtonBrush = NULL;
+	static HBRUSH listboxBrush = NULL;
 
 	// Validate arguments
 	if (hWnd == NULL)
@@ -749,6 +756,7 @@ INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 
 		dialogBrush = CreateSolidBrush(RGB(22, 22, 22));
 		buttonBrush = CreateSolidBrush(RGB(50, 50, 50));
+		connectButtonBrush = CreateSolidBrush(RGB(105, 0, 209));
 		listboxBrush = CreateSolidBrush(RGB(58, 58, 58));
 
 		break;
@@ -796,7 +804,13 @@ INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 
 		DeleteObject(dialogBrush);
 		DeleteObject(buttonBrush);
+		DeleteObject(connectButtonBrush);
 		DeleteObject(listboxBrush);
+
+		dialogBrush = NULL;
+		buttonBrush = NULL;
+		connectButtonBrush = NULL;
+		listboxBrush = NULL;
 
 		EndDialog(hWnd, false);
 
@@ -807,31 +821,23 @@ INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 	}
 	case WM_CTLCOLORDLG:
 	{
-		SetTextColor((HDC)wParam, RGB(255, 0, 0));
 		return (INT_PTR)dialogBrush;
 	}
 	case WM_CTLCOLORBTN:
 	{
-		int id = GetDlgCtrlID((HWND)lParam);
-		if (id == IDCANCEL)
+		const int id = GetDlgCtrlID((HWND)lParam);
+		if (id == IDOK)
+		{
+			return (INT_PTR)connectButtonBrush;
+		}
+		else
 		{
 			return (INT_PTR)buttonBrush;
 		}
-		break;
-	}
-	case WM_CTLCOLORLISTBOX:
-	{
-		SetTextColor((HDC)wParam, RGB(255, 0, 0));
-		return (INT_PTR)listboxBrush;
-	}
-	case WM_CTLCOLORMSGBOX:
-	{
-		SetTextColor((HDC)wParam, RGB(255, 0, 0));
-		return (INT_PTR)dialogBrush;
+		
 	}
 	case WM_CTLCOLORSCROLLBAR:
 	{
-		SetTextColor((HDC)wParam, RGB(255, 0, 0));
 		return (INT_PTR)dialogBrush;
 	}
 	case WM_CTLCOLORSTATIC:
@@ -10574,16 +10580,7 @@ void CmRefreshAccountListEx2(HWND hWnd, bool easy, bool style_changed)
 
 	// Switching of icon / detail view
 	LvSetView(hWnd, L_ACCOUNT, cm->IconView == false || easy);
-
-	// Show grid
-	if (cm->ShowGrid || easy)
-	{
-		LvSetStyle(hWnd, L_ACCOUNT, LVS_EX_GRIDLINES);
-	}
-	else
-	{
-		LvRemoveStyle(hWnd, L_ACCOUNT, LVS_EX_GRIDLINES);
-	}
+	LvRemoveStyle(hWnd, L_ACCOUNT, LVS_EX_GRIDLINES);
 
 	if (style_changed)
 	{
