@@ -694,12 +694,47 @@ void CmEasyDlgRefresh(HWND hWnd, CM_EASY_DLG *d)
 	CmEasyDlgUpdate(hWnd, d);
 }
 
+static BOOL CmEasyDrawItem(const WORD itemId, DRAWITEMSTRUCT* drawItem)
+{
+	switch(itemId)
+	{
+	case IDCANCEL:
+	case B_STATUS:
+	case B_VGC:
+	case IDOK:
+	{
+		SetBkMode(drawItem->hDC, TRANSPARENT);
+		SetTextColor(drawItem->hDC, RGB(255, 255, 255));
+		const int textLen = GetWindowTextLengthA(drawItem->hwndItem);
+		char* text = (char*)malloc(textLen + 1);
+		GetWindowTextA(drawItem->hwndItem, text, textLen + 1);
+		DrawTextA(drawItem->hDC, text, textLen, &drawItem->rcItem, DT_CENTER | DT_VCENTER | DT_NOCLIP | DT_SINGLELINE | DT_MODIFYSTRING);
+		free(text);
+		break;
+	}
+	//case IDOK:
+	//{
+	//	break;
+	//}
+	default:
+		return FALSE;
+	}
+
+	return TRUE;
+}
+
+
 // Dialog procedure of the simple connection manager
-UINT CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param)
+INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param)
 {
 	CM_EASY_DLG *d = (CM_EASY_DLG *)param;
 	NMHDR *n;
 	UINT i;
+
+	static HBRUSH dialogBrush;
+	static HBRUSH buttonBrush;
+	static HBRUSH listboxBrush;
+
 	// Validate arguments
 	if (hWnd == NULL)
 	{
@@ -711,6 +746,11 @@ UINT CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param)
 	case WM_INITDIALOG:
 		CmEasyDlgInit(hWnd, d);
 		SetTimer(hWnd, 1, 10, NULL);
+
+		dialogBrush = CreateSolidBrush(RGB(22, 22, 22));
+		buttonBrush = CreateSolidBrush(RGB(50, 50, 50));
+		listboxBrush = CreateSolidBrush(RGB(58, 58, 58));
+
 		break;
 
 	case WM_TIMER:
@@ -733,7 +773,7 @@ UINT CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param)
 		break;
 
 	case WM_NOTIFY:
-		n = (NMHDR *)lParam;
+		n = (NMHDR*)lParam;
 		CmEasyDlgOnNotify(hWnd, d, n);
 		break;
 
@@ -741,7 +781,7 @@ UINT CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param)
 		i = LvGetSelected(hWnd, L_ACCOUNT);
 		if (i != INFINITE)
 		{
-			wchar_t *s = LvGetStr(hWnd, L_ACCOUNT, i, 0);
+			wchar_t* s = LvGetStr(hWnd, L_ACCOUNT, i, 0);
 			if (s != NULL)
 			{
 				UniStrCpy(cm->EasyLastSelectedAccountName, sizeof(cm->EasyLastSelectedAccountName),
@@ -753,8 +793,54 @@ UINT CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param)
 		{
 			Zero(cm->EasyLastSelectedAccountName, sizeof(cm->EasyLastSelectedAccountName));
 		}
+
+		DeleteObject(dialogBrush);
+		DeleteObject(buttonBrush);
+		DeleteObject(listboxBrush);
+
 		EndDialog(hWnd, false);
+
 		break;
+	case WM_DRAWITEM:
+	{
+		return (INT_PTR)CmEasyDrawItem((WORD)wParam, (DRAWITEMSTRUCT*)lParam);
+	}
+	case WM_CTLCOLORDLG:
+	{
+		SetTextColor((HDC)wParam, RGB(255, 0, 0));
+		return (INT_PTR)dialogBrush;
+	}
+	case WM_CTLCOLORBTN:
+	{
+		int id = GetDlgCtrlID((HWND)lParam);
+		if (id == IDCANCEL)
+		{
+			return (INT_PTR)buttonBrush;
+		}
+		break;
+	}
+	case WM_CTLCOLORLISTBOX:
+	{
+		SetTextColor((HDC)wParam, RGB(255, 0, 0));
+		return (INT_PTR)listboxBrush;
+	}
+	case WM_CTLCOLORMSGBOX:
+	{
+		SetTextColor((HDC)wParam, RGB(255, 0, 0));
+		return (INT_PTR)dialogBrush;
+	}
+	case WM_CTLCOLORSCROLLBAR:
+	{
+		SetTextColor((HDC)wParam, RGB(255, 0, 0));
+		return (INT_PTR)dialogBrush;
+	}
+	case WM_CTLCOLORSTATIC:
+	{
+		HDC hdc = (HDC)wParam;
+		SetTextColor(hdc, RGB(255, 255, 255));
+		SetBkColor(hdc, RGB(22, 22, 22));
+		return (INT_PTR)dialogBrush;
+	}
 	}
 
 	return 0;
@@ -781,7 +867,7 @@ void CmMainWindowOnShowEasy(HWND hWnd)
 		return;
 	}
 
-	Dialog(NULL, D_CM_EASY, CmEasyDlg, &d);
+	DialogEx(NULL, D_CM_EASY, CmEasyDlg, &d, false);
 
 	cm->hEasyWnd = NULL;
 }
