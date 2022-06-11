@@ -178,7 +178,7 @@ int TestMain(char *cmd)
 				}
 				Print("\n");
 			}
-			else if (StartWith(tmp, "vpncmd"))
+			else if (StartWith(tmp, "gamecmd"))
 			{
 				wchar_t *s = CopyStrToUni(tmp);
 				CommandMain(s);

@@ -11,19 +11,19 @@
 #include "WinUi.h"
 
 // Component string
-#define	SW_NAME_VPNSERVER			"vpnserver"
+#define	SW_NAME_VPNSERVER			"gameserver"
 #define	SW_LONG_VPNSERVER			_UU("SW_LONG_VPNSERVER")
 
-#define	SW_NAME_VPNCLIENT			"vpnclient"
+#define	SW_NAME_VPNCLIENT			"gamelient"
 #define	SW_LONG_VPNCLIENT			_UU("SW_LONG_VPNCLIENT")
 
-#define	SW_NAME_VPNBRIDGE			"vpnbridge"
+#define	SW_NAME_VPNBRIDGE			"gamebridge"
 #define	SW_LONG_VPNBRIDGE			_UU("SW_LONG_VPNBRIDGE")
 
-#define	SW_NAME_VPNSMGR				"vpnsmgr"
+#define	SW_NAME_VPNSMGR				"gamesmgr"
 #define	SW_LONG_VPNSMGR				_UU("SW_LONG_VPNSMGR")
 
-#define	SW_NAME_VPNCMGR				"vpncmgr"
+#define	SW_NAME_VPNCMGR				"gamecmgr"
 #define	SW_LONG_VPNCMGR				_UU("SW_LONG_VPNCMGR")
 
 #define	SW_VPN_CLIENT_UIHELPER_REGVALUE	GC_SW_UIHELPER_REGVALUE
@@ -34,7 +34,7 @@
 #define	SW_VPN_CLIENT_EXT_REGKEY_SUB2	"SOFTWARE\\Classes\\.vpn\\vpnfile\\ShellNew"
 
 #define	SW_VPN_CLIENT_VPNFILE_REGKEY	"SOFTWARE\\Classes\\vpnfile"
-#define	SW_VPN_CLIENT_VPNFILE_REGVALUE	"VPN Client Connection Setting File"
+#define	SW_VPN_CLIENT_VPNFILE_REGVALUE	"Game Client Connection Setting File"
 #define	SW_VPN_CLIENT_VPNFILE_ICON_REGKEY	"SOFTWARE\\Classes\\vpnfile\\DefaultIcon"
 #define	SW_VPN_CLIENT_VPNFILE_SHELLOPEN_CMD_REGKEY	"SOFTWARE\\Classes\\vpnfile\\shell\\open\\command"
 #define	SW_VPN_CLIENT_VPNFILE_SHELLOPEN_CMD_REGKEY_SUB1	"SOFTWARE\\Classes\\vpnfile\\shell\\open"

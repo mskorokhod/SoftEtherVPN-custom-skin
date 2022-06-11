@@ -5666,7 +5666,7 @@ void CmMainWindowOnCommandEx(HWND hWnd, WPARAM wParam, LPARAM lParam, bool easy)
 		{
 			wchar_t path[MAX_SIZE];
 
-			CombinePathW(path, sizeof(path), MsGetExeDirNameW(), L"vpnsetup.exe");
+			CombinePathW(path, sizeof(path), MsGetExeDirNameW(), L"gamesetup.exe");
 
 			if (MsExecuteW(path, L"/language:yes") == false)
 			{

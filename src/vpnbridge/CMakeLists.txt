@@ -1,52 +1,52 @@
 set(COMPONENT_NAME "Bridge")
-set(COMPONENT_INTERNAL_NAME "vpnbridge")
+set(COMPONENT_INTERNAL_NAME "gamebridge")
 
 if(WIN32)
-  add_executable(vpnbridge WIN32
+  add_executable(gamebridge WIN32
     "vpnbridge.c"
 
     "${TOP_DIRECTORY}/src/BuildFiles/Manifests/common.manifest"
   )
 
-  set_target_properties(vpnbridge
+  set_target_properties(gamebridge
     PROPERTIES
     PDB_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
   )
 
-  get_filename_component(COMPONENT_FILE_NAME vpnbridge NAME)
+  get_filename_component(COMPONENT_FILE_NAME gamebridge NAME)
   set(COMPONENT_FILE_NAME "${COMPONENT_FILE_NAME}.exe")
 
   configure_file("${TOP_DIRECTORY}/src/BuildFiles/VerScript/ver.rc" "${CMAKE_CURRENT_BINARY_DIR}/ver.rc")
-  target_sources(vpnbridge PRIVATE "vpnbridge.rc" "${CMAKE_CURRENT_BINARY_DIR}/ver.rc")
+  target_sources(gamebridge PRIVATE "vpnbridge.rc" "${CMAKE_CURRENT_BINARY_DIR}/ver.rc")
 else()
-  add_executable(vpnbridge vpnbridge.c)
+  add_executable(gamebridge vpnbridge.c)
 endif()
 
-set_target_properties(vpnbridge
+set_target_properties(gamebridge
   PROPERTIES
   ARCHIVE_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
   LIBRARY_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
   RUNTIME_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
 )
 
-target_link_libraries(vpnbridge cedar)
+target_link_libraries(gamebridge cedar)
 
 if(UNIX)
   # Copy binary and "hamcore.se2" to /usr/lib(exec)/softether/, install launch script and systemd service
-  install(TARGETS vpnbridge
+  install(TARGETS gamebridge
     COMPONENT "vpnbridge"
-    DESTINATION "${CMAKE_INSTALL_LIBEXECDIR}/softether/vpnbridge"
+    DESTINATION "${CMAKE_INSTALL_LIBEXECDIR}/softether/gamebridge"
     PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE
   )
 
   install(FILES "${BUILD_DIRECTORY}/hamcore.se2"
-    COMPONENT "vpnbridge"
-    DESTINATION "${CMAKE_INSTALL_LIBEXECDIR}/softether/vpnbridge"
+    COMPONENT "gamebridge"
+    DESTINATION "${CMAKE_INSTALL_LIBEXECDIR}/softether/gamebridge"
     PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ
   )
 
-  install_wrapper_script("vpnbridge")
+  install_wrapper_script("gamebridge")
   if(NOT "${CMAKE_INSTALL_SYSTEMD_UNITDIR}" STREQUAL "")
-    install_unit_file("vpnbridge")
+    install_unit_file("gamebridge")
   endif()
 endif()

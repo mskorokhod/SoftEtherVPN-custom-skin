@@ -1022,7 +1022,7 @@ void CncExit()
 	}
 
 #ifdef	OS_WIN32
-	MsKillOtherInstanceEx("vpnclient");
+	MsKillOtherInstanceEx("gameclient");
 #endif	// OS_WIN32
 }
 

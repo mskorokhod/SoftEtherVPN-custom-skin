@@ -3,22 +3,22 @@ if(NOT WIN32)
 endif()
 
 set(COMPONENT_NAME "Setup")
-set(COMPONENT_INTERNAL_NAME "vpnsetup")
+set(COMPONENT_INTERNAL_NAME "gamesetup")
 
-add_executable(vpnsetup WIN32
+add_executable(gamesetup WIN32
   "vpnsetup.c"
   "vpnsetup.rc"
 
   "${TOP_DIRECTORY}/src/BuildFiles/Manifests/common.manifest"
 )
 
-get_filename_component(COMPONENT_FILE_NAME vpnsetup NAME)
+get_filename_component(COMPONENT_FILE_NAME gamesetup NAME)
 set(COMPONENT_FILE_NAME "${COMPONENT_FILE_NAME}.exe")
 
 configure_file("${TOP_DIRECTORY}/src/BuildFiles/VerScript/ver.rc" "${CMAKE_CURRENT_BINARY_DIR}/ver.rc")
-target_sources(vpnsetup PRIVATE "vpnsetup.rc" "${CMAKE_CURRENT_BINARY_DIR}/ver.rc")
+target_sources(gamesetup PRIVATE "vpnsetup.rc" "${CMAKE_CURRENT_BINARY_DIR}/ver.rc")
 
-set_target_properties(vpnsetup
+set_target_properties(gamesetup
   PROPERTIES
   ARCHIVE_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
   LIBRARY_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
@@ -26,4 +26,4 @@ set_target_properties(vpnsetup
   PDB_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
 )
 
-target_link_libraries(vpnsetup cedar)
+target_link_libraries(gamesetup cedar)

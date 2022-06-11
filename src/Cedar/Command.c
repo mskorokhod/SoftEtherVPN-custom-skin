@@ -958,7 +958,7 @@ void VpnCmdInitBootPath()
 		{
 			bool b = false;
 			// Copy the vpncmdsys.exe to system32
-			Format(tmp, sizeof(tmp), "%s\\vpncmd.exe", MsGetSystem32Dir());
+			Format(tmp, sizeof(tmp), "%s\\gamecmd.exe", MsGetSystem32Dir());
 
 			if (MsIs64BitWindows() == false || Is64())
 			{
@@ -24963,7 +24963,7 @@ UINT CommandMain(wchar_t *command_line)
 		// Definition of commands of vpncmd
 		CMD cmd[] =
 		{
-			{"vpncmd", VpnCmdProc},
+			{"gamecmd", VpnCmdProc},
 		};
 
 		// Read ahead to check the CSV mode

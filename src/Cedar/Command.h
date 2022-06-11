@@ -27,7 +27,7 @@
 #define	TRAFFIC_VER_STR				"TrafficServer\r\n"
 
 // Constants for Win32
-#define	VPNCMD_BOOTSTRAP_REG_KEYNAME	"Software\\" GC_REG_COMPANY_NAME "\\VPN Command Line Utility"
+#define	VPNCMD_BOOTSTRAP_REG_KEYNAME	"Software\\" GC_REG_COMPANY_NAME "\\Game Command Line Utility"
 #define	VPNCMD_BOOTSTRAP_REG_VALUENAME_VER	"InstalledVersion"
 #define	VPNCMD_BOOTSTRAP_REG_VALUENAME_PATH	"InstalledPath"
 #define	VPNCMD_BOOTSTRAP_FILENAME		"|vpncmdsys.exe"

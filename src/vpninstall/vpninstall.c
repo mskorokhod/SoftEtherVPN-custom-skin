@@ -197,9 +197,9 @@ void ViInstallProcessStart(HWND hWnd, VI_INSTALL_DLG *d)
 		}
 
 		// (Just in case) start the VPN Client service
-		if (MsIsServiceRunning("vpnclient") == false)
+		if (MsIsServiceRunning("gameclient") == false)
 		{
-			MsStartService("vpnclient");
+			MsStartService("gameclient");
 		}
 
 		// Wait for that the service becomes available
@@ -1077,7 +1077,7 @@ bool ViLoadInfFromBuf(VI_SETTING *set, BUF *buf)
 
 	ret = false;
 
-	StrCpy(set->x86.VpnCMgrExeFileName, sizeof(set->x86.VpnCMgrExeFileName), (MsIsX64() ? "vpncmgr_x64.exe" : "vpncmgr.exe"));
+	StrCpy(set->x86.VpnCMgrExeFileName, sizeof(set->x86.VpnCMgrExeFileName), (MsIsX64() ? "gamecmgr_x64.exe" : "gamecmgr.exe"));
 
 	if (set->VpnInstallBuild != 0)
 	{
@@ -1187,7 +1187,7 @@ void ViLoadCurrentInstalledStatusForArch(VI_SETTING_ARCH *a)
 	}
 
 	// Read from the registry
-	Format(tmp, sizeof(tmp), "%s\\%s", SW_REG_KEY, "vpnclient");
+	Format(tmp, sizeof(tmp), "%s\\%s", SW_REG_KEY, "gameclient");
 
 	build = MsRegReadIntEx2(REG_LOCAL_MACHINE, tmp, "InstalledBuild", false, true);
 

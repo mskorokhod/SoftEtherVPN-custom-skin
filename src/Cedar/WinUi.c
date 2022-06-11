@@ -1796,13 +1796,13 @@ void RegistWindowsFirewallAll()
 }
 void RegistWindowsFirewallAllEx(char *dir)
 {
-	MsRegistWindowsFirewallEx2(CEDAR_CLIENT_STR, "vpnclient.exe", dir);
-	MsRegistWindowsFirewallEx2(CEDAR_CLIENT_MANAGER_STR, "vpncmgr.exe", dir);
-	MsRegistWindowsFirewallEx2(CEDAR_MANAGER_STR, "vpnsmgr.exe", dir);
-	MsRegistWindowsFirewallEx2(CEDAR_SERVER_STR, "vpnserver.exe", dir);
-	MsRegistWindowsFirewallEx2(CEDAR_BRIDGE_STR, "vpnbridge.exe", dir);
-	MsRegistWindowsFirewallEx2(CEDAR_CUI_STR, "vpncmd.exe", dir);
-	MsRegistWindowsFirewallEx2(CEDAR_PRODUCT_STR, "vpntest.exe", dir);
+	MsRegistWindowsFirewallEx2(CEDAR_CLIENT_STR, "gameclient.exe", dir);
+	MsRegistWindowsFirewallEx2(CEDAR_CLIENT_MANAGER_STR, "gamecmgr.exe", dir);
+	MsRegistWindowsFirewallEx2(CEDAR_MANAGER_STR, "gamesmgr.exe", dir);
+	MsRegistWindowsFirewallEx2(CEDAR_SERVER_STR, "gameserver.exe", dir);
+	MsRegistWindowsFirewallEx2(CEDAR_BRIDGE_STR, "gamebridge.exe", dir);
+	MsRegistWindowsFirewallEx2(CEDAR_CUI_STR, "gamecmd.exe", dir);
+	MsRegistWindowsFirewallEx2(CEDAR_PRODUCT_STR, "gametest.exe", dir);
 }
 
 // Check whether the notification service is already running
@@ -2114,7 +2114,7 @@ void ShowTcpIpConfigUtil(HWND hWnd, bool util_mode)
 
 		GetExeDirW(exedir, sizeof(exedir));
 
-		UniFormat(tmp, sizeof(tmp), L"%s\\vpncmd.exe", exedir);
+		UniFormat(tmp, sizeof(tmp), L"%s\\gamecmd.exe", exedir);
 		if (IsFileW(tmp))
 		{
 			RunW(tmp, L"/tool /cmd:exit", true, false);
@@ -2131,8 +2131,8 @@ void ShowTcpIpConfigUtil(HWND hWnd, bool util_mode)
 
 			for (i = 0;i < dl->NumFiles;i++)
 			{
-				if (UniInStr(dl->File[i]->FileNameW, L"vpnbridge") || 
-					UniInStr(dl->File[i]->FileNameW, L"vpnserver"))
+				if (UniInStr(dl->File[i]->FileNameW, L"gamebridge") || 
+					UniInStr(dl->File[i]->FileNameW, L"gameserver"))
 				{
 					b = true;
 				}
@@ -3049,7 +3049,7 @@ UINT AboutDlgProc(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 			{
 				wchar_t path[MAX_SIZE];
 
-				CombinePathW(path, sizeof(path), MsGetExeDirNameW(), L"vpnsetup.exe");
+				CombinePathW(path, sizeof(path), MsGetExeDirNameW(), L"gamesetup.exe");
 
 				if (IsFileExistsW(path))
 				{
