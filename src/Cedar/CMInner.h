@@ -14,9 +14,9 @@
 
 #include <stdlib.h>
 
-#define STARTUP_MUTEX_NAME	GC_SW_SOFTETHER_PREFIX "vpncmgr_startup_mutex"
+#define STARTUP_MUTEX_NAME	GC_SW_SOFTETHER_PREFIX "gamecmgr_startup_mutex"
 
-#define	NAME_OF_VPN_CLIENT_MANAGER	"vpncmgr"
+#define	NAME_OF_VPN_CLIENT_MANAGER	"gamecmgr"
 
 typedef struct LVB LVB;
 

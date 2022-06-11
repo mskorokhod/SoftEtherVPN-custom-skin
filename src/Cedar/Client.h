@@ -17,7 +17,7 @@
 #define CLIENT_WAIT_CN_READY_TIMEOUT		(10 * 1000)	// Standby time to start the client notification service
 
 // Constants
-#define	CLIENT_CONFIG_FILE_NAME				"$vpn_client.config"
+#define	CLIENT_CONFIG_FILE_NAME				"$game_client.config"
 #define	CLIENT_DEFAULT_KEEPALIVE_HOST		"keepalive.softether.org"
 #define	CLIENT_DEFAULT_KEEPALIVE_PORT		80
 #define	CLIENT_DEFAULT_KEEPALIVE_INTERVAL	KEEP_INTERVAL_DEFAULT
@@ -31,15 +31,15 @@
 
 #define	CLIENT_SAVER_INTERVAL				(30 * 1000)
 
-#define	CLIENT_NOTIFY_SERVICE_INSTANCENAME	GC_SW_SOFTETHER_PREFIX "vpnclient_uihelper"
+#define	CLIENT_NOTIFY_SERVICE_INSTANCENAME	GC_SW_SOFTETHER_PREFIX "gameclient_uihelper"
 
-#define	CLIENT_WIN32_EXE_FILENAME			"vpnclient.exe"
+#define	CLIENT_WIN32_EXE_FILENAME			"gameclient.exe"
 
 #define CLIENT_CUSTOM_INI_FILENAME			"$custom.ini"
 
 #define	CLIENT_GLOBAL_PULSE_NAME			"clientglobalpulse"
 
-#define	CLIENT_WIN32_REGKEYNAME				"Software\\" GC_REG_COMPANY_NAME "\\" CEDAR_PRODUCT_STR " VPN\\Client"
+#define	CLIENT_WIN32_REGKEYNAME				"Software\\" GC_REG_COMPANY_NAME "\\" CEDAR_PRODUCT_STR " Game\\Client"
 #define	CLIENT_WIN32_REGVALUE_PORT			"RpcPort"
 #define	CLIENT_WIN32_REGVALUE_PID			"RpcPid"
 

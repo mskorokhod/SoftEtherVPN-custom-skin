@@ -712,7 +712,7 @@ RETRY:
 	{
 		wchar_t tmp[MAX_SIZE];
 		// Use exec_command
-		if (UniStartWith(exec_command, L"vpncmd") == false)
+		if (UniStartWith(exec_command, L"gamecmd") == false)
 		{
 			if (prompt != NULL)
 			{

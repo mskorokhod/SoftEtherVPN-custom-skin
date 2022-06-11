@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
 		wchar_t *tmp;
 
 		tmp = Malloc(size);
-		UniFormat(tmp, size, L"vpncmd %s", s);
+		UniFormat(tmp, size, L"gamecmd %s", s);
 		ret = CommandMain(tmp);
 
 		Free(tmp);

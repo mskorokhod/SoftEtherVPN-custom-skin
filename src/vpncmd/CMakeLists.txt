@@ -1,9 +1,9 @@
 set(COMPONENT_NAME "Command Line Management Utility")
-set(COMPONENT_INTERNAL_NAME "vpncmd")
+set(COMPONENT_INTERNAL_NAME "gamecmd")
 
-add_executable(vpncmd vpncmd.c)
+add_executable(gamecmd vpncmd.c)
 
-set_target_properties(vpncmd
+set_target_properties(gamecmd
   PROPERTIES
   ARCHIVE_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
   LIBRARY_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
@@ -11,17 +11,17 @@ set_target_properties(vpncmd
 )
 
 if(WIN32)
-  set_target_properties(vpncmd
+  set_target_properties(gamecmd
     PROPERTIES
     PDB_OUTPUT_DIRECTORY "${BUILD_DIRECTORY}"
   )
 
-  get_filename_component(COMPONENT_FILE_NAME vpncmd NAME)
+  get_filename_component(COMPONENT_FILE_NAME gamecmd NAME)
   set(COMPONENT_FILE_NAME "${COMPONENT_FILE_NAME}.exe")
 
   configure_file("${TOP_DIRECTORY}/src/BuildFiles/VerScript/ver.rc" "${CMAKE_CURRENT_BINARY_DIR}/ver.rc")
 
-  target_sources(vpncmd PRIVATE
+  target_sources(gamecmd PRIVATE
     "vpncmd.rc"
     "ver.rc"
 
@@ -29,21 +29,21 @@ if(WIN32)
   )
 endif()
 
-target_link_libraries(vpncmd cedar)
+target_link_libraries(gamecmd cedar)
 
 if(UNIX)
   # Copy binary and "hamcore.se2" to /usr/lib(exec)/softether/, install launch script
-  install(TARGETS vpncmd
-    COMPONENT "vpncmd"
-    DESTINATION "${CMAKE_INSTALL_LIBEXECDIR}/softether/vpncmd"
+  install(TARGETS gamecmd
+    COMPONENT "gamecmd"
+    DESTINATION "${CMAKE_INSTALL_LIBEXECDIR}/softether/gamecmd"
     PERMISSIONS OWNER_READ OWNER_WRITE OWNER_EXECUTE GROUP_READ GROUP_EXECUTE WORLD_READ WORLD_EXECUTE
   )
 
   install(FILES "${BUILD_DIRECTORY}/hamcore.se2"
-    COMPONENT "vpncmd"
-    DESTINATION "${CMAKE_INSTALL_LIBEXECDIR}/softether/vpncmd"
+    COMPONENT "gamecmd"
+    DESTINATION "${CMAKE_INSTALL_LIBEXECDIR}/softether/gamecmd"
     PERMISSIONS OWNER_READ OWNER_WRITE GROUP_READ WORLD_READ
   )
 
-  install_wrapper_script("vpncmd")
+  install_wrapper_script("gamecmd")
 endif()

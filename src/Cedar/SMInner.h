@@ -17,18 +17,18 @@
 #include "Mayaqua/TcpIp.h"
 
 // Constants
-#define	SM_REG_KEY			"Software\\SoftEther VPN Developer Edition\\SoftEther VPN\\Server Manager"
-#define	SM_CERT_REG_KEY		"Software\\SoftEther VPN Developer Edition\\SoftEther VPN\\Server Manager\\Cert Tool"
-#define	SM_SETTING_REG_KEY	"Software\\SoftEther VPN Developer Edition\\SoftEther VPN\\Server Manager\\Settings"
-#define	SM_LASTHUB_REG_KEY	"Software\\SoftEther VPN Developer Edition\\SoftEther VPN\\Server Manager\\Last HUB Name"
-#define	SM_HIDE_CERT_UPDATE_MSG_KEY	"Software\\SoftEther VPN Developer Edition\\SoftEther VPN\\Server Manager\\Hide Cert Update Msg"
+#define	SM_REG_KEY			"Software\\UniteGaming Game Developer Edition\\UniteGaming Game\\Server Manager"
+#define	SM_CERT_REG_KEY		"Software\\UniteGaming Game Developer Edition\\UniteGaming Game\\Server Manager\\Cert Tool"
+#define	SM_SETTING_REG_KEY	"Software\\UniteGaming Game Developer Edition\\UniteGaming Game\\Server Manager\\Settings"
+#define	SM_LASTHUB_REG_KEY	"Software\\UniteGaming Game Developer Edition\\UniteGaming Game\\Server Manager\\Last HUB Name"
+#define	SM_HIDE_CERT_UPDATE_MSG_KEY	"Software\\UniteGaming Game Developer Edition\\UniteGaming Game\\Server Manager\\Hide Cert Update Msg"
 
-#define	NAME_OF_VPN_SERVER_MANAGER	"vpnsmgr"
-#define	NAME_OF_VPN_SERVER_TARGET	"vpnserver@%s"
-#define	NAME_OF_VPN_BRIDGE_TARGET	"vpnbridge@%s"
+#define	NAME_OF_VPN_SERVER_MANAGER	"gamesmgr"
+#define	NAME_OF_VPN_SERVER_TARGET	"gameserver@%s"
+#define	NAME_OF_VPN_BRIDGE_TARGET	"gamebridge@%s"
 
 // Constants (Old value)
-#define	SM_SETTING_REG_KEY_OLD	"Software\\SoftEther Corporation\\PacketiX VPN\\Server Manager\\Settings"
+#define	SM_SETTING_REG_KEY_OLD	"Software\\Unite Gaming\\PacketiX Game\\Server Manager\\Settings"
 
 // Connection setting
 // Do not change item size or order

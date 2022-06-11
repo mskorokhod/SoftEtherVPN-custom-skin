@@ -48,21 +48,21 @@ static SW_OLD_MSI old_msi_vpnbridge[] =
 // List of file names needed to SFX
 static char *sfx_vpn_server_bridge_files[] =
 {
-	"vpnsetup.exe",
-	"vpnserver.exe",
-	"vpnbridge.exe",
-	"vpnsmgr.exe",
-	"vpncmd.exe",
+	"gamesetup.exe",
+	"gameserver.exe",
+	"gamebridge.exe",
+	"gamesmgr.exe",
+	"gamecmd.exe",
 	"hamcore.se2",
 };
 static char *sfx_vpn_client_files[] =
 {
-	"vpnsetup.exe",
-	"vpnclient.exe",
-	"vpncmgr.exe",
-	"vpncmd.exe",
-	//"vpninstall.exe",
-	//"vpnweb.cab",
+	"gamesetup.exe",
+	"gameclient.exe",
+	"gamecmgr.exe",
+	"gamecmd.exe",
+	//"gameinstall.exe",
+	//"gameweb.cab",
 	"hamcore.se2",
 };
 
@@ -121,7 +121,7 @@ bool SwCompileSfx(LIST *o, wchar_t *dst_filename)
 	{
 		// Generate the setup.exe file in the Temp directory
 		ConbinePathW(exe_filename, sizeof(exe_filename), MsGetMyTempDirW(), L"setup.exe");
-		if (FileCopyW(L"vpnsetup.exe", exe_filename))
+		if (FileCopyW(L"gamesetup.exe", exe_filename))
 		{
 			// Resource updating start
 			HANDLE h = _BeginUpdateResourceW(exe_filename, false);
@@ -249,7 +249,7 @@ bool SwAddBasicFilesToList(LIST *o, char *component_name)
 			Add(o, SwNewSfxFile(name, src_file_name));
 		}
 	}
-	else if (StrCmpi(component_name, "vpnclient") == 0)
+	else if (StrCmpi(component_name, "gameclient") == 0)
 	{
 		// VPN Client
 		for (i = 0; i < (sizeof(sfx_vpn_client_files) / sizeof(char *)); i++)
@@ -407,7 +407,7 @@ bool SwSfxExtractProcess(HWND hWnd, bool *hide_error_msg)
 
 		ConbinePathW(tmp_filename, sizeof(tmp_filename), MsGetMyTempDirW(), filename_w);
 
-		if (EndWith(filename, "vpnsetup.exe"))
+		if (EndWith(filename, "gamesetup.exe"))
 		{
 			UniStrCpy(exec_filename, sizeof(exec_filename), tmp_filename);
 		}
@@ -774,7 +774,7 @@ void SwGenerateDefaultSfxFileName(wchar_t *name, UINT size)
 		return;
 	}
 
-	UniFormat(name, size, L"easy-" GC_SW_SOFTETHER_PREFIX_W L"vpnclient-v%u.%02u-%u-%04u-%02u-%02u-windows.exe",
+	UniFormat(name, size, L"easy-" GC_SW_SOFTETHER_PREFIX_W L"gameclient-v%u.%02u-%u-%04u-%02u-%02u-windows.exe",
 		CEDAR_VERSION_MAJOR, CEDAR_VERSION_MINOR, CEDAR_VERSION_BUILD,
 		BUILD_DATE_Y, BUILD_DATE_M, BUILD_DATE_D);
 }
@@ -788,7 +788,7 @@ void SwGenerateDefaultZipFileName(wchar_t *name, UINT size)
 		return;
 	}
 
-	UniFormat(name, size, L"web-" GC_SW_SOFTETHER_PREFIX_W L"vpnclient-v%u.%02u-%u-%04u-%02u-%02u-windows.zip",
+	UniFormat(name, size, L"web-" GC_SW_SOFTETHER_PREFIX_W L"gameclient-v%u.%02u-%u-%04u-%02u-%02u-windows.zip",
 		CEDAR_VERSION_MAJOR, CEDAR_VERSION_MINOR, CEDAR_VERSION_BUILD,
 		BUILD_DATE_Y, BUILD_DATE_M, BUILD_DATE_D);
 }
@@ -2326,7 +2326,7 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 
 	// Add the Setup program (themselves) to the copy list
 	Add(t->CopyTasks, (setup_exe = SwNewCopyTask(src_setup_exe_filename,
-		L"vpnsetup.exe", src_setup_exe_dir, sw->InstallDir, true, true)));
+		L"gamesetup.exe", src_setup_exe_dir, sw->InstallDir, true, true)));
 
 	// Generate the file processing list for each component
 	if (c->Id == SW_CMP_VPN_SERVER)
@@ -2339,7 +2339,7 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		Add(t->SetSecurityPaths, CopyUniStr(tmp));
 
 		vpnserver = SwNewCopyTask(L"vpnserver.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
-		vpncmd = SwNewCopyTask(L"vpncmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		vpncmd = SwNewCopyTask(L"gamecmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 		vpnsmgr = SwNewCopyTask(L"vpnsmgr.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 
 		Add(t->CopyTasks, vpnserver);
@@ -2368,12 +2368,12 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, NULL, NULL, 0, dir_app_program,
 			_UU("SW_LINK_NAME_VPNCMD"),
 			_UU("SW_LINK_NAME_VPNCMD_COMMENT"), false));
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnserver->DstFileName, L"/traffic", L"vpnsetup.exe", 2, dir_admin_tools,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnserver->DstFileName, L"/traffic", L"gamesetup.exe", 2, dir_admin_tools,
 			_UU("SW_LINK_NAME_TRAFFIC"),
 			_UU("SW_LINK_NAME_TRAFFIC_COMMENT"), false));
 
 		// Programs\PacketiX VPN Server\Configuration tool
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnserver->DstFileName, L"/tcp", L"vpnsetup.exe", 3, dir_config_program,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnserver->DstFileName, L"/tcp", L"gamesetup.exe", 3, dir_config_program,
 			_UU("SW_LINK_NAME_TCP"),
 			_UU("SW_LINK_NAME_TCP_COMMENT"), false));
 
@@ -2385,7 +2385,7 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		if (sw->IsSystemMode)
 		{
 			// Debugging information collecting tool
-			Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, L"/debug", L"vpnsetup.exe", 4, dir_admin_tools,
+			Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, L"/debug", L"gamesetup.exe", 4, dir_admin_tools,
 				_UU("SW_LINK_NAME_DEBUG"),
 				_UU("SW_LINK_NAME_DEBUG_COMMENT"), false));
 		}
@@ -2408,7 +2408,7 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		Add(t->SetSecurityPaths, CopyUniStr(tmp));
 
 		vpnbridge = SwNewCopyTask(L"vpnbridge.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
-		vpncmd = SwNewCopyTask(L"vpncmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		vpncmd = SwNewCopyTask(L"gamecmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 		vpnsmgr = SwNewCopyTask(L"vpnsmgr.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 
 		Add(t->CopyTasks, vpnbridge);
@@ -2437,12 +2437,12 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, NULL, NULL, 0, dir_app_program,
 			_UU("SW_LINK_NAME_VPNCMD"),
 			_UU("SW_LINK_NAME_VPNCMD_COMMENT"), false));
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnbridge->DstFileName, L"/traffic", L"vpnsetup.exe", 2, dir_admin_tools,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnbridge->DstFileName, L"/traffic", L"gamesetup.exe", 2, dir_admin_tools,
 			_UU("SW_LINK_NAME_TRAFFIC"),
 			_UU("SW_LINK_NAME_TRAFFIC_COMMENT"), false));
 
 		// Programs\PacketiX VPN Bridge\Configuration tool
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnbridge->DstFileName, L"/tcp", L"vpnsetup.exe", 3, dir_config_program,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnbridge->DstFileName, L"/tcp", L"gamesetup.exe", 3, dir_config_program,
 			_UU("SW_LINK_NAME_TCP"),
 			_UU("SW_LINK_NAME_TCP_COMMENT"), false));
 
@@ -2453,7 +2453,7 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		if (sw->IsSystemMode)
 		{
 			// Debugging information collecting tool
-			Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, L"/debug", L"vpnsetup.exe", 4, dir_admin_tools,
+			Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, L"/debug", L"gamesetup.exe", 4, dir_admin_tools,
 				_UU("SW_LINK_NAME_DEBUG"),
 				_UU("SW_LINK_NAME_DEBUG_COMMENT"), false));
 		}
@@ -2479,9 +2479,9 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		CombinePathW(tmp, sizeof(tmp), sw->InstallDir, L"backup.vpn_client.config");
 		Add(t->SetSecurityPaths, CopyUniStr(tmp));
 
-		vpnclient = SwNewCopyTask(L"vpnclient.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
-		vpncmd = SwNewCopyTask(L"vpncmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
-		vpncmgr = SwNewCopyTask(L"vpncmgr.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		vpnclient = SwNewCopyTask(L"gameclient.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		vpncmd = SwNewCopyTask(L"gamecmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		vpncmgr = SwNewCopyTask(L"gamecmgr.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 
 		if (vpncmgr != NULL)
 		{
@@ -2504,8 +2504,8 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 			}
 		}
 
-		//vpnweb = SwNewCopyTask(L"vpnweb.cab", NULL, sw->InstallSrc, sw->InstallDir, true, false);
-		//vpninstall = SwNewCopyTask(L"vpninstall.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		//vpnweb = SwNewCopyTask(L"gameweb.cab", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		//vpninstall = SwNewCopyTask(L"gameinstall.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 
 		Add(t->CopyTasks, vpnclient);
 		Add(t->CopyTasks, vpncmd);
@@ -2521,7 +2521,7 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 
 		src_config_filename = L"|empty.config";
 
-		Add(t->CopyTasks, (ct = SwNewCopyTask(src_config_filename, L"vpn_client.config", sw->InstallSrc, sw->InstallDir, false, false)));
+		Add(t->CopyTasks, (ct = SwNewCopyTask(src_config_filename, L"game_client.config", sw->InstallSrc, sw->InstallDir, false, false)));
 
 		Add(t->CopyTasks, SwNewCopyTask(L"|backup_dir_readme.txt", L"readme.txt", sw->InstallSrc, tmp, false, false));
 
@@ -2541,18 +2541,18 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, NULL, NULL, 0, dir_app_program,
 			_UU("SW_LINK_NAME_VPNCMGR_FULL"),
 			_UU("SW_LINK_NAME_VPNCMGR_COMMENT"), false));
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, L"/remote", L"vpnsetup.exe", 1, dir_app_program,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, L"/remote", L"gamesetup.exe", 1, dir_app_program,
 			_UU("SW_LINK_NAME_VPNCMGR2_FULL"),
 			_UU("SW_LINK_NAME_VPNCMGR2_COMMENT"), false));
 		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, NULL, NULL, 0, dir_app_program,
 			_UU("SW_LINK_NAME_VPNCMD"),
 			_UU("SW_LINK_NAME_VPNCMD_COMMENT"), false));
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnclient->DstFileName, L"/traffic", L"vpnsetup.exe", 2, dir_admin_tools,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnclient->DstFileName, L"/traffic", L"gamesetup.exe", 2, dir_admin_tools,
 			_UU("SW_LINK_NAME_TRAFFIC"),
 			_UU("SW_LINK_NAME_TRAFFIC_COMMENT"), false));
 
 		// Programs\PacketiX VPN Client\Configuration Tools
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnclient->DstFileName, L"/tcp", L"vpnsetup.exe", 3, dir_config_program,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpnclient->DstFileName, L"/tcp", L"gamesetup.exe", 3, dir_config_program,
 			_UU("SW_LINK_NAME_TCP"),
 			_UU("SW_LINK_NAME_TCP_COMMENT"), false));
 
@@ -2563,17 +2563,17 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		if (sw->IsSystemMode)
 		{
 			// Debugging information collecting tool
-			Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, L"/debug", L"vpnsetup.exe", 4, dir_admin_tools,
+			Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, L"/debug", L"gamesetup.exe", 4, dir_admin_tools,
 				_UU("SW_LINK_NAME_DEBUG"),
 				_UU("SW_LINK_NAME_DEBUG_COMMENT"), false));
 		}
 
 		// Programs\PacketiX VPN Client\System administrators tool
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, L"vpnsetup.exe", L"/easy:true", L"vpnsetup.exe", 12, dir_admin_tools,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, L"gamesetup.exe", L"/easy:true", L"gamesetup.exe", 12, dir_admin_tools,
 			_UU("SW_LINK_NAME_EASYINSTALLER"),
 			_UU("SW_LINK_NAME_EASYINSTALLER_COMMENT"), false));
 
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, L"vpnsetup.exe", L"/web:true", L"vpnsetup.exe", 1, dir_admin_tools,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, L"gamesetup.exe", L"/web:true", L"gamesetup.exe", 1, dir_admin_tools,
 			_UU("SW_LINK_NAME_WEBINSTALLER"),
 			_UU("SW_LINK_NAME_WEBINSTALLER_COMMENT"), false));
 
@@ -2587,7 +2587,7 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		// VPN Server Manager (Tools Only)
 		SW_TASK_COPY *vpncmd, *vpnsmgr;
 
-		vpncmd = SwNewCopyTask(L"vpncmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		vpncmd = SwNewCopyTask(L"gamecmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 		vpnsmgr = SwNewCopyTask(L"vpnsmgr.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 
 		Add(t->CopyTasks, vpncmd);
@@ -2615,23 +2615,23 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 		// VPN Client Manager (Tools Only)
 		SW_TASK_COPY *vpncmd, *vpncmgr;
 
-		vpncmd = SwNewCopyTask(L"vpncmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
-		vpncmgr = SwNewCopyTask(L"vpncmgr.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		vpncmd = SwNewCopyTask(L"gamecmd.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
+		vpncmgr = SwNewCopyTask(L"gamecmgr.exe", NULL, sw->InstallSrc, sw->InstallDir, true, false);
 
 		Add(t->CopyTasks, vpncmd);
 		Add(t->CopyTasks, vpncmgr);
 
 		//// Definition of the shortcuts
 		// Desktop and Start menu
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, L"/remote", L"vpnsetup.exe", 1, dir_desktop,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, L"/remote", L"gamesetup.exe", 1, dir_desktop,
 			_UU(sw->IsSystemMode ? "SW_LINK_NAME_VPNCMGRTOOLS_SHORT" : "SW_LINK_NAME_VPNCMGRTOOLS_SHORT_UM"),
 			_UU("SW_LINK_NAME_VPNCMGR2_COMMENT"), true));
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, L"/remote", L"vpnsetup.exe", 1, dir_startmenu,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, L"/remote", L"gamesetup.exe", 1, dir_startmenu,
 			_UU(sw->IsSystemMode ? "SW_LINK_NAME_VPNCMGRTOOLS_SHORT" : "SW_LINK_NAME_VPNCMGRTOOLS_SHORT_UM"),
 			_UU("SW_LINK_NAME_VPNCMGR2_COMMENT"), true));
 
 		// Programs\PacketiX VPN Client Manager (Tools Only)
-		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, L"/remote", L"vpnsetup.exe", 1, dir_app_program,
+		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmgr->DstFileName, L"/remote", L"gamesetup.exe", 1, dir_app_program,
 			_UU("SW_LINK_NAME_VPNCMGR2_FULL"),
 			_UU("SW_LINK_NAME_VPNCMGR2_COMMENT"), false));
 		Add(t->LinkTasks, SwNewLinkTask(sw->InstallDir, vpncmd->DstFileName, NULL, NULL, 0, dir_app_program,
@@ -2650,7 +2650,7 @@ void SwDefineTasks(SW *sw, SW_TASK *t, SW_COMPONENT *c)
 	UniFormat(tmp1, sizeof(tmp1), _UU("SW_LINK_NAME_LANGUAGE"), c->Title);
 	UniFormat(tmp2, sizeof(tmp2), _UU("SW_LINK_NAME_LANGUAGE_COMMENT"), c->Title);
 	Add(t->LinkTasks, SwNewLinkTask(setup_exe->DstDir, setup_exe->DstFileName, L"/language:yes",
-		L"vpnsetup.exe", 10, dir_config_language,
+		L"gamesetup.exe", 10, dir_config_language,
 		tmp1,
 		tmp2, false));
 
@@ -2698,7 +2698,7 @@ bool SwWebMain(SW *sw, WIZARD_PAGE *wp)
 		ToStr(ver_build, CEDAR_VERSION_BUILD);
 
 		Format(package_name, sizeof(package_name),
-			GC_SW_SOFTETHER_PREFIX "vpnclient-v%u.%02u-%u-%04u-%02u-%02u-windows.exe",
+			GC_SW_SOFTETHER_PREFIX "gameclient-v%u.%02u-%u-%04u-%02u-%02u-windows.exe",
 			CEDAR_VERSION_MAJOR, CEDAR_VERSION_MINOR, CEDAR_VERSION_BUILD,
 			BUILD_DATE_Y, BUILD_DATE_M, BUILD_DATE_D);
 
@@ -2708,10 +2708,10 @@ bool SwWebMain(SW *sw, WIZARD_PAGE *wp)
 		CombinePathW(installer_src_exe, sizeof(installer_src_exe), MsGetExeDirNameW(), SW_SFX_CACHE_FILENAME);
 
 		// Cab file
-		CombinePathW(src_cab, sizeof(src_cab), MsGetExeDirNameW(), L"vpnweb.cab");
+		CombinePathW(src_cab, sizeof(src_cab), MsGetExeDirNameW(), L"gameweb.cab");
 
 		// Vpninstall file
-		CombinePathW(vpninstall_exe, sizeof(vpninstall_exe), MsGetExeDirNameW(), L"vpninstall.exe");
+		CombinePathW(vpninstall_exe, sizeof(vpninstall_exe), MsGetExeDirNameW(), L"gameinstall.exe");
 
 		// Confirm existence of the file
 		if (IsFileExistsW(installer_src_exe) == false)
@@ -2793,8 +2793,8 @@ bool SwWebMain(SW *sw, WIZARD_PAGE *wp)
 		// Creating a ZIP
 		z = NewZipPacker();
 
-		if (ZipAddRealFileW(z, "vpnweb.cab", 0, 0, src_cab) == false ||
-			ZipAddRealFileW(z, "vpninstall.exe", 0, 0, vpninstall_exe) == false ||
+		if (ZipAddRealFileW(z, "gameweb.cab", 0, 0, src_cab) == false ||
+			ZipAddRealFileW(z, "gamecmd.exe", 0, 0, vpninstall_exe) == false ||
 			ZipAddRealFileW(z, package_name, 0, 0, installer_src_exe) == false)
 		{
 			goto LABEL_CLEANUP;
@@ -2844,7 +2844,7 @@ bool SwEasyMain(SW *sw, WIZARD_PAGE *wp)
 
 	o = SwNewSfxFileList();
 
-	SwAddBasicFilesToList(o, "vpnclient");
+	SwAddBasicFilesToList(o, "gameclient");
 
 	// Load a connection setting file
 	b = ReadDumpW(sw->Easy_SettingFile);
@@ -2954,7 +2954,7 @@ bool SwInstallMain(SW *sw, WIZARD_PAGE *wp, SW_COMPONENT *c)
 						void *proc_handle = NULL;
 						wchar_t exe[MAX_PATH];
 
-						CombinePathW(exe, sizeof(exe), MsGetExeDirNameW(), L"vpnsetup.exe");
+						CombinePathW(exe, sizeof(exe), MsGetExeDirNameW(), L"gamesetup.exe");
 
 						if (MsExecuteEx2W(exe, L"/SUINSTMODE:yes", &proc_handle, true))
 						{
@@ -3512,7 +3512,7 @@ LABEL_CREATE_SHORTCUT:
 		// Run the vpncmd and exit immediately
 		wchar_t fullpath[MAX_PATH];
 
-		ConbinePathW(fullpath, sizeof(fullpath), sw->InstallDir, (L"vpncmd.exe"));
+		ConbinePathW(fullpath, sizeof(fullpath), sw->InstallDir, (L"gamecmd.exe"));
 
 		RunW(fullpath, L"/?", true, false);
 	}
@@ -3613,7 +3613,7 @@ LABEL_REGISTER_UNINSTALL:
 
 		Format(install_date, sizeof(install_date), "%04u/%02u/%02u", st.wYear, st.wMonth, st.wDay);
 
-		CombinePathW(dst_setup_exe, sizeof(dst_setup_exe), sw->InstallDir, L"vpnsetup.exe");
+		CombinePathW(dst_setup_exe, sizeof(dst_setup_exe), sw->InstallDir, L"gamesetup.exe");
 
 		Format(uninstall_keyname, sizeof(uninstall_keyname),
 			"SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\softether_" GC_SW_SOFTETHER_PREFIX "%s", c->Name);
@@ -5853,35 +5853,35 @@ void SwDefineComponents(SW *sw)
 	SW_COMPONENT *c;
 	char *vpn_server_files[] =
 	{
-		"vpnserver.exe",
-		"vpnsmgr.exe",
-		"vpncmd.exe",
+		"gameserver.exe",
+		"gamesmgr.exe",
+		"gamecmd.exe",
 		"hamcore.se2",
 	};
 	char *vpn_client_files[] =
 	{
-		"vpnclient.exe",
-		"vpncmgr.exe",
-		"vpncmd.exe",
+		"gameclient.exe",
+		"gamecmgr.exe",
+		"gamecmd.exe",
 		"hamcore.se2",
 	};
 	char *vpn_bridge_files[] =
 	{
-		"vpnbridge.exe",
-		"vpnsmgr.exe",
-		"vpncmd.exe",
+		"gamebridge.exe",
+		"gamesmgr.exe",
+		"gamecmd.exe",
 		"hamcore.se2",
 	};
 	char *vpn_smgr_files[] =
 	{
-		"vpnsmgr.exe",
-		"vpncmd.exe",
+		"gamesmgr.exe",
+		"gamecmd.exe",
 		"hamcore.se2",
 	};
 	char *vpn_cmgr_files[] =
 	{
-		"vpncmgr.exe",
-		"vpncmd.exe",
+		"gamecmgr.exe",
+		"gamecmd.exe",
 		"hamcore.se2",
 	};
 	// Validate arguments
@@ -5891,16 +5891,16 @@ void SwDefineComponents(SW *sw)
 	}
 
 	// VPN Server
-	c = SwNewComponent(SW_NAME_VPNSERVER, GC_SVC_NAME_VPNSERVER, SW_CMP_VPN_SERVER, ICO_VPNSERVER, 5, L"vpnserver.exe",
+	c = SwNewComponent(SW_NAME_VPNSERVER, GC_SVC_NAME_VPNSERVER, SW_CMP_VPN_SERVER, ICO_VPNSERVER, 5, L"gameserver.exe",
 		SW_LONG_VPNSERVER, false, sizeof(vpn_server_files) / sizeof(char *), vpn_server_files,
-		L"vpnsmgr.exe", _UU("SW_RUN_TEXT_VPNSMGR"),
+		L"gamesmgr.exe", _UU("SW_RUN_TEXT_VPNSMGR"),
 		old_msi_vpnserver, sizeof(old_msi_vpnserver) / sizeof(SW_OLD_MSI));
 	//Add(sw->ComponentList, c);
 
 	// VPN Client
-	c = SwNewComponent(SW_NAME_VPNCLIENT, GC_SVC_NAME_VPNCLIENT, SW_CMP_VPN_CLIENT, ICO_VPN, 6, L"vpnclient.exe",
+	c = SwNewComponent(SW_NAME_VPNCLIENT, GC_SVC_NAME_VPNCLIENT, SW_CMP_VPN_CLIENT, ICO_VPN, 6, L"gameclient.exe",
 		SW_LONG_VPNCLIENT, true, sizeof(vpn_client_files) / sizeof(char *), vpn_client_files,
-		L"vpncmgr.exe", _UU("SW_RUN_TEXT_VPNCMGR"),
+		L"gamecmgr.exe", _UU("SW_RUN_TEXT_VPNCMGR"),
 		old_msi_vpnclient, sizeof(old_msi_vpnclient) / sizeof(SW_OLD_MSI));
 
 #ifdef	GC_ENABLE_VPNGATE
@@ -5909,23 +5909,23 @@ void SwDefineComponents(SW *sw)
 	Add(sw->ComponentList, c);
 
 	// VPN Bridge
-	c = SwNewComponent(SW_NAME_VPNBRIDGE, GC_SVC_NAME_VPNBRIDGE, SW_CMP_VPN_BRIDGE, ICO_CASCADE, 7, L"vpnbridge.exe",
+	c = SwNewComponent(SW_NAME_VPNBRIDGE, GC_SVC_NAME_VPNBRIDGE, SW_CMP_VPN_BRIDGE, ICO_CASCADE, 7, L"gamebridge.exe",
 		SW_LONG_VPNBRIDGE, false, sizeof(vpn_bridge_files) / sizeof(char *), vpn_bridge_files,
-		L"vpnsmgr.exe", _UU("SW_RUN_TEXT_VPNSMGR"),
+		L"gamesmgr.exe", _UU("SW_RUN_TEXT_VPNSMGR"),
 		old_msi_vpnbridge, sizeof(old_msi_vpnbridge) / sizeof(SW_OLD_MSI));
 	//Add(sw->ComponentList, c);
 
 	// VPN Server Manager (Tools Only)
 	c = SwNewComponent(SW_NAME_VPNSMGR, NULL, SW_CMP_VPN_SMGR, ICO_USER_ADMIN, 8, NULL,
 		SW_LONG_VPNSMGR, false, sizeof(vpn_smgr_files) / sizeof(char *), vpn_smgr_files,
-		L"vpnsmgr.exe", _UU("SW_RUN_TEXT_VPNSMGR"),
+		L"gamesmgr.exe", _UU("SW_RUN_TEXT_VPNSMGR"),
 		NULL, 0);
 	//Add(sw->ComponentList, c);
 
 	// VPN Client Manager (Tools Only)
 	c = SwNewComponent(SW_NAME_VPNCMGR, NULL, SW_CMP_VPN_CMGR, ICO_INTERNET, 9, NULL,
 		SW_LONG_VPNCMGR, false, sizeof(vpn_cmgr_files) / sizeof(char *), vpn_cmgr_files,
-		L"vpncmgr.exe /remote", _UU("SW_RUN_TEXT_VPNCMGR"),
+		L"gamecmgr.exe /remote", _UU("SW_RUN_TEXT_VPNCMGR"),
 		NULL, 0);
 	//Add(sw->ComponentList, c);
 }

@@ -344,13 +344,13 @@ bool MsSaveSystemInfo(wchar_t *dst_filename)
 	WriteBufLine(bat, tmp);
 
 	// Collect the information of the VPN software
-	MsCollectVpnInfo(bat, tmpdir, "vpnclient", L"vpn_client.config", L"client_log");
-	MsCollectVpnInfo(bat, tmpdir, "vpnserver", L"vpn_server.config", L"server_log");
-	MsCollectVpnInfo(bat, tmpdir, "vpnbridge", L"vpn_bridge.config", L"server_log");
+	MsCollectVpnInfo(bat, tmpdir, "gameclient", L"game_client.config", L"client_log");
+	MsCollectVpnInfo(bat, tmpdir, "gameserver", L"game_server.config", L"server_log");
+	MsCollectVpnInfo(bat, tmpdir, "gamebridge", L"game_bridge.config", L"server_log");
 
-	MsCollectVpnInfo(bat, tmpdir, "sevpnclient", L"vpn_client.config", L"client_log");
-	MsCollectVpnInfo(bat, tmpdir, "sevpnserver", L"vpn_server.config", L"server_log");
-	MsCollectVpnInfo(bat, tmpdir, "sevpnbridge", L"vpn_bridge.config", L"server_log");
+	MsCollectVpnInfo(bat, tmpdir, "uggameclient", L"game_client.config", L"client_log");
+	MsCollectVpnInfo(bat, tmpdir, "uggameserver", L"game_server.config", L"server_log");
+	MsCollectVpnInfo(bat, tmpdir, "uggamebridge", L"game_bridge.config", L"server_log");
 
 	WriteBufLine(bat, "");
 
@@ -4285,7 +4285,7 @@ UINT MsService(char *name, SERVICE_FUNCTION *start, SERVICE_FUNCTION *stop, UINT
 						wchar_t filename[MAX_PATH];
 
 						UniFormat(filename, sizeof(filename), L"\"%s\"", arg_w);
-						UniFormat(vpncmgr, sizeof(vpncmgr), L"%s\\vpncmgr.exe", MsGetExeDirNameW());
+						UniFormat(vpncmgr, sizeof(vpncmgr), L"%s\\gamecmgr.exe", MsGetExeDirNameW());
 
 						RunW(vpncmgr, filename, false, false);
 					}
