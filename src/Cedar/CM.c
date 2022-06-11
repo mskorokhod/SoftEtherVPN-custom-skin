@@ -704,6 +704,11 @@ void CmEasyDlgRefresh(HWND hWnd, CM_EASY_DLG *d)
 	CmEasyDlgUpdate(hWnd, d);
 }
 
+static const COLORREF kConnectButtonClr = RGB(105, 0, 209);
+static const COLORREF kDefaultButtonClr = RGB(50, 50, 50);
+static const COLORREF kDialogClr = RGB(22, 22, 22);
+static const COLORREF kDefaultTextColor = RGB(255, 255, 255);
+
 static BOOL CmEasyDrawItem(const WORD itemId, DRAWITEMSTRUCT* drawItem)
 {
 	switch(itemId)
@@ -713,8 +718,14 @@ static BOOL CmEasyDrawItem(const WORD itemId, DRAWITEMSTRUCT* drawItem)
 	case B_VGC:
 	case IDOK:
 	{
+		const COLORREF buttonColor = (itemId == IDOK) ? kConnectButtonClr : kDefaultButtonClr;
+		SetDCBrushColor(drawItem->hDC, buttonColor);
+		SelectObject(drawItem->hDC, GetStockObject(DC_BRUSH));
+		Rectangle(drawItem->hDC, drawItem->rcItem.left, drawItem->rcItem.top,
+			drawItem->rcItem.right, drawItem->rcItem.bottom);
+
 		SetBkMode(drawItem->hDC, TRANSPARENT);
-		SetTextColor(drawItem->hDC, RGB(255, 255, 255));
+		SetTextColor(drawItem->hDC, kDefaultTextColor);
 		const int textLen = GetWindowTextLengthA(drawItem->hwndItem);
 		char* text = (char*)malloc(textLen + 1);
 		GetWindowTextA(drawItem->hwndItem, text, textLen + 1);
@@ -729,7 +740,6 @@ static BOOL CmEasyDrawItem(const WORD itemId, DRAWITEMSTRUCT* drawItem)
 	return TRUE;
 }
 
-
 // Dialog procedure of the simple connection manager
 INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param)
 {
@@ -740,7 +750,6 @@ INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 	static HBRUSH dialogBrush = NULL;
 	static HBRUSH buttonBrush = NULL;
 	static HBRUSH connectButtonBrush = NULL;
-	static HBRUSH listboxBrush = NULL;
 
 	// Validate arguments
 	if (hWnd == NULL)
@@ -754,11 +763,9 @@ INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 		CmEasyDlgInit(hWnd, d);
 		SetTimer(hWnd, 1, 10, NULL);
 
-		dialogBrush = CreateSolidBrush(RGB(22, 22, 22));
-		buttonBrush = CreateSolidBrush(RGB(50, 50, 50));
-		connectButtonBrush = CreateSolidBrush(RGB(105, 0, 209));
-		listboxBrush = CreateSolidBrush(RGB(58, 58, 58));
-
+		dialogBrush = CreateSolidBrush(kDialogClr);
+		buttonBrush = CreateSolidBrush(kDefaultButtonClr);
+		connectButtonBrush = CreateSolidBrush(kConnectButtonClr);
 		break;
 
 	case WM_TIMER:
@@ -805,12 +812,10 @@ INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 		DeleteObject(dialogBrush);
 		DeleteObject(buttonBrush);
 		DeleteObject(connectButtonBrush);
-		DeleteObject(listboxBrush);
 
 		dialogBrush = NULL;
 		buttonBrush = NULL;
 		connectButtonBrush = NULL;
-		listboxBrush = NULL;
 
 		EndDialog(hWnd, false);
 
@@ -843,8 +848,8 @@ INT_PTR CmEasyDlg(HWND hWnd, UINT msg, WPARAM wParam, LPARAM lParam, void *param
 	case WM_CTLCOLORSTATIC:
 	{
 		HDC hdc = (HDC)wParam;
-		SetTextColor(hdc, RGB(255, 255, 255));
-		SetBkColor(hdc, RGB(22, 22, 22));
+		SetTextColor(hdc, kDefaultTextColor);
+		SetBkColor(hdc, kDialogClr);
 		return (INT_PTR)dialogBrush;
 	}
 	}
